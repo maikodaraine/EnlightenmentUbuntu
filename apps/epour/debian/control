@@ -1,0 +1,12 @@
+Source: epour
+Maintainer: Kai Huuhko <kai.huuhko@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7.4.3), python-distutils-extra
+Standards-Version: 3.9.1
+
+Package: epour
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-libtorrent, python-evas, python-elementary, python-edbus, python-ecore
+Description: Simple torrent client
+ Epour is a simple torrent client using EFL and libtorrent.

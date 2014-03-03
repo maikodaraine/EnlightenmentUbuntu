@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=ERuler
+GenericName=Screen Ruler
+Comment=On-Screen Rule and Measurement
+Exec=eruler
+Icon=eruler
+Categories=Graphics
+StartupWMClass=eruler

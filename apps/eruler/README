@@ -1,0 +1,79 @@
+ERuler - screen rule and measurement tools.
+
+ERuler is a software that allows on-screen virtual rule and
+measurement of areas.
+
+USAGE
+=====
+
+The traditional use is to press your mouse's left-button to start
+measuring, then move your mouse to the end point and release. This
+will give you a box with both points, the origin coordinates as well
+as the region size -- all in pixels.
+
+One can also use the keyboard to do the above flow by using "Space"
+key to mark start and end points, using the mouse or keyboard arrows
+to move the cursor. While using the arrows one can press "Shift" key
+modifier to use 10 pixels instead of a single one in that direction,
+useful for large regions.
+
+Alternatively one can type the coordinates during runtime by using "@"
+shortcut, or using the "Type coordinates" button. This will give you a
+text entry so you can type "x y width height" values (all separated by
+spaces).
+
+Last but not least you can use the command line argument "--ruler" (-r
+for short) to pre-populate the screen. In the case of using multiple
+screens you must specify the origin as absolute position in a global
+scene (if you have two 800x600 screens side by side and want to
+address the horizontal position 10 in right one, use 810 (800 + 10).
+
+It is possible to change the type/style of the measurement box (ruler)
+by using "t" shortcut or the Style selector in the toolbox.
+
+One can create multiple measurements by using "c" shortcut or the
+"Create Ruler" button in the toolbox. The operations will then all be
+on the newly created ruler. The distance between all rulers are
+displayed in semi-transparent colors and once mouse-over they become
+bolder. If those distance hints are distracting you, use "d" ("Show
+distances") to toggle its visibility.
+
+
+NOTE ABOUT ZOOM
+---------------
+
+There is no way in X11 to zoom into a screen region, particularly if
+we're not the compositor. To provide the zoom capability we take a
+screenshot at the beginning and use this copy. However once the screen
+is updated, the copy becomes out of sync and one must toggle zoom to
+refresh it. You'll see that ERuler will hide itself for a moment then
+restore automatically, this is an implementation annoyance we can't
+get rid anytime soon :-(
+
+
+KEYBOARD SHORTCUTS
+------------------
+
+ * Escape: quit;
+ * F2: toggle ERuler visibility;
+ * p: print size to stdout;
+ * c: create new ruler;
+ * Control-c: clear current zone rulers;
+ * g: toggle display of guide lines;
+ * d: toggle display of distances between boxes;
+ * t: toggle ruler type (dark, light, filled...);
+ * z: toggle zoom;
+ * x: toggle display of colors in hexadecimal;
+ * @: open command box to type ruler placement;
+ * Space: start or stop measure using keyboard;
+ * Left: move ruler start point to the left (Shift to use 10px step);
+ * Control-Left: move ruler end point to the left (Shift to use 10px
+   step);
+ * Right: move ruler start point to the right (Shift to use 10px
+   step);
+ * Control-Right: move ruler end point to the right (Shift to use 10px
+   step);
+ * Up: move ruler start point up (Shift to use 10px step);
+ * Control-Up: move ruler end point up (Shift to use 10px step);
+ * Down: move ruler start point down (Shift to use 10px step);
+ * Control-Down: move ruler end point down (Shift to use 10px step).

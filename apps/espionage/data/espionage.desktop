@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Espionage
+GenericName=D-Bus inspector
+GenericName[es]=Inspector D-Bus
+GenericName[gl]=Inspector D-Bus
+GenericName[it]=Ispettore D-Bus
+GenericName[pt]=Inspetor D-Bus
+Exec=espionage
+Icon=espionage
+Type=Application
+Terminal=false
+Categories=Development;Debugger;
+StartupNotify=true

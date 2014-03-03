@@ -1,0 +1,22 @@
+I18N:
+  This should wait until most of the features are in and the strings are stable.
+  ☐ Make strings localizable
+  ☐ Create pot file
+  ☐ Generate po files
+Add Torrent-dialog:
+  ☐ Create a new class to hold a torrent and store its instances between sessions.
+    Migrate the old dict(ihash->torrent_file) to the new list of torrents
+  ☐ Dialog window
+   ☐ Initial paused-state
+   ☐ File selector
+   ☐ Storage path
+  ☐ Add preferences for initial/automatic values for the above
+Misc:
+ ☐ Torrent tooltips
+   handle.status()
+ ☐ More tooltips in general
+ ☐ More D-Bus controls #epour/Epour.py@EpourDBus
+ ✔ Auto-paste magnet links from clipboard #epour/gui/Main.py@select_torrent @done (13-08-11 21:45)
+   Note: The pasted text is not filtered.
+ ☐ Construct and populate #epour/gui/Preferences.py@SessionSettings with an Idler
+ ✔ Move proxy settings to its own naviframe page and don't autocollapse the frames @done (13-08-18 18:02)

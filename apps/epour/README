@@ -1,0 +1,45 @@
+============
+REQUIREMENTS
+============
+
+* libtorrent-rasterbar 0.16.0 or later, tested and developed with 0.16.10
+
+    http://www.rasterbar.com/products/libtorrent/
+
+* Enlightenment Foundation Libraries 1.7.99 or later
+
+    http://www.enlightenment.org/
+
+* Python Bindings for EFL 1.7.99 or later
+
+  - 1.7.99 bindings:
+
+    https://build.enlightenment.org/job/base_pyefl_build/lastSuccessfulBuild/artifact/dist/efl-1.7.99.tar.gz
+
+    or
+
+    http://git.enlightenment.org/bindings/python/python-efl.git/
+
+* Python 2.x or later
+
+  http://www.python.org/
+
+* python-distutils-extra
+
+  https://launchpad.net/python-distutils-extra
+
+* dbus-python
+
+=======
+INSTALL
+=======
+
+sudo ./setup.py install
+
+============
+CONTACT/BUGS
+============
+
+Launchpad: https://launchpad.net/epour
+Email: kai.huuhko@gmail.com
+Forums: http://forums.bodhilinux.com/index.php?/topic/7722-epour/

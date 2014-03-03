@@ -1,0 +1,125 @@
+ORDERING
+--------
+Consider the following order to implement this todo:
+
+ 1. create eet to persist data (used by lib/manager, preferences, resume...)
+   - versioned
+   - provide defaults
+ 2. Save/Resume state between runs (simple data);
+   - window geometry
+   - volume
+   - repeat and shuffle states
+ 3. Create preferences infrastructure:
+   - new elm_layout style (in Elementary) for preferences
+   - choose media backend (xine, gstreamer)
+ 4. Create library manager preferences:
+   - add/remove directories (or at least choose folder)
+   - rescan, stop-scan. with progress feedback
+   - option to choose rescan schedule
+   - remove command line scan
+ 5. Refactor some features into plugins
+   - define ecore_events and plugin interface
+   - coverart-lastfm
+   - cover art local fs lookup
+ 6. Modular plugins (elm_module)
+   - selection saved in eet
+   - gui to select enabled plugins
+ 7. Save/Resume between runs (list, nowplaying and navigation)
+
+
+Library (from "Preferences")
+----------------------------
+ * manager:
+  - allows add directories; - DONE
+  - allows remove directories;
+  - maybe limit to one single folder to simplify GUI?
+  - or settle with $XDG_MUSIC_DIR and no need for GUI?
+ * rescan: allows rescan media immediately
+ * stop-scan: while scanning, allows cancel the process
+ * provide progress feedback;
+ * put all this stuff into the UI (currently scan just works from the cmd line);
+ * while scan remember to stop any access to database to avoid locks;
+ * option to choose rescan schedule: always, every day/week/month, never
+ * remove command line scan?
+
+
+Plugins
+-------
+
+Must cover the following cases:
+
+ * [EASY] Listeners: It should be done in a way to allow things like
+   last.fm to be informed of favorite musics, chats, twitter,
+   facebook, osd-notify, MPRIS dbus interface. Basically post
+   meaningful ecore_events to main loop.
+
+ * [HARD] Providers: It should be done to provide new lists or items
+   to lists. Needs thinking if the plugin should provide the full
+   widget (ie: genlist) or just the contents. How to cope with
+   filtering. How to do navigation.
+
+ * [MEDIUM] Settings: similar to providers, but auguments simpler
+   configurations. Likely should provide the full widget, unless we
+   create a configuration UI standard. Examples: Cover lookup from
+   filesystem, amazon.com or last.fm
+
+ * [MEDIUM] Playback Gadgets: random Evas_Object that will react to
+   music playback, things like showing wikipedia for band, lyrics,
+   etc. They can use Listeners case to udpate themselves, but needs
+   thinking how to show them on the screen. Maybe another tab/area on
+   the now playing screen?
+
+
+Work to cover the above cases:
+
+ * create ecore_events to notify listeners plugins.
+  - database contents changed;
+ * query plugins for available settings:
+  - give a context path with settings area. like "/", "/library/", "/$plugin/"
+  - allow plugins to specify priority (list positioning)?
+  - allow plugins to specify relative positioning (above/below "$plugin")
+ * query plugins for available major providers (root list entries):
+  - similar to settings, may require priority/relative positioning
+ * query plugins for available minor providers (item providers):
+  - needs requirements... postponed
+ * query plugins for available playback gadgets:
+  - needs requirements... postponed
+
+
+More
+----
+ * Save/Resume state between runs (start from the same place as last time);
+  - window geometry
+  - volume
+  - current playing
+  - repeat and shuffle states
+  - navigation (full, or at least current list)
+ * Preferences:
+  - choose media backend (xine, gstreamer)
+  - choose to resume media playback on restart
+  - list/enable/disable plugins
+
+
+Media List
+----------
+ * filter limits the current section and thus creates a dynamic playlist
+
+
+Misc
+----
+ * plugin: search covers locally. For every music in the database
+   without associated cover, walk the music directory and look for
+   jpeg (Currently done from inside enjoy/list, must be moved)
+ * playlist support (use lms to scan for playlists, etc)
+ * on-the-go playlist (dynamic playlist). Hold items to add to
+   playlist, be a virtual-folder or a single song.
+ * plugin: search covers at amazon.com
+ * plugin: search covers at last.fm
+ * plugin: internet radio (shoutcast.com? tunein.com?)
+ * plugin: inform now playing music to webservices
+ * plugin: fetch lyrics from webservices (maybe use webkit)
+ * plugin: fetch track/artist/album info from webservices (wikipedia?
+   uses webkit)
+ * plugin: support for e_notify (libnotify)
+ * evas: read cover from id3? requires id3 image loader in evas
+ * plugin: audio bookmarks

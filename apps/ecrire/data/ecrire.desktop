@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Ecrire
+Name[fr]=Écrire
+Comment=Simple text editor
+Comment[eo]=Simpla tekst-redaktilo
+Comment[es]=Un simple editor de texto
+Comment[gl]=Un simple editor de texto
+Comment[it]=Semplice editor di testo
+Comment[pt]=Editor de texto
+Comment[ru]=Простой текстовый редактор
+Icon=ecrire
+Exec=ecrire %f
+Terminal=false
+MimeType=text/plain
+Categories=Utility;TextEditor;
+StartupNotify=true

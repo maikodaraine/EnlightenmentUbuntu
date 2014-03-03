@@ -1,0 +1,1668 @@
+collections {
+
+   styles {
+      style { name: "hint_style";
+         base: "font=Sans font_size=12 align=center color=#dcdcdc style=shadow,bottom shadow_color=#00000080 wrap=word";
+         tag: "hilight" "+ font=Sans:style=Bold style=glow color=#3399ffff glow_color=#3399ff18 align=center glow2_color=#3399ff12";
+         tag: "title" "+ font_size=16 font=Sans:style=Bold";
+         tag: "/title" "- \n \n";
+         tag: "br" "\n";
+      }
+   }
+
+   group {
+      name: "eruler/display_pos";
+
+      parts {
+         part {
+            name: "bg";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 200;
+            }
+         }
+
+         part {
+            name: "text";
+            type: TEXT;
+            effect: SHADOW;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 220 220 220 255;
+               color2: 32 32 32 128;
+               rel1.offset: 5 5;
+               rel2.offset: -6 -6;
+               text {
+                  font: "Sans";
+                  size: 10;
+                  min: 1 1;
+               }
+            }
+         }
+
+      }
+   }
+
+   group {
+      name: "eruler/zoom_viewfinder";
+
+      data {
+         item: "ideal_size" "256 256";
+         item: "factor" "10";
+      }
+
+      parts {
+         part {
+            name: "content";
+            type: SWALLOW;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+            }
+         }
+
+         part {
+            name: "top";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 255;
+               rel2 {
+                  relative: 1.0 0.0;
+                  offset: -1 0;
+               }
+            }
+         }
+
+         part {
+            name: "bottom";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 255;
+               rel1 {
+                  relative: 0.0 1.0;
+                  offset: 0 -1;
+               }
+            }
+         }
+
+         part {
+            name: "left";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 255;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 1;
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  offset: 0 -2;
+               }
+            }
+         }
+
+         part {
+            name: "right";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 255;
+               rel1 {
+                  relative: 1.0 0.0;
+                  offset: -1 1;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -2;
+               }
+            }
+         }
+
+         part {
+            name: "guide_h0";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.0 0.5;
+                  offset: 1 -5;
+               }
+               rel2 {
+                  relative: 0.5 0.5;
+                  offset: -5 -5;
+               }
+            }
+         }
+
+         part {
+            name: "guide_h1";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.0 0.5;
+                  offset: 1 4;
+               }
+               rel2 {
+                  relative: 0.5 0.5;
+                  offset: -5 4;
+               }
+            }
+         }
+
+         part {
+            name: "guide_h2";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.5 0.5;
+                  offset: 4 -5;
+               }
+               rel2 {
+                  relative: 1.0 0.5;
+                  offset: -2 -5;
+               }
+            }
+         }
+
+         part {
+            name: "guide_h3";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.5 0.5;
+                  offset: 4 4;
+               }
+               rel2 {
+                  relative: 1.0 0.5;
+                  offset: -2 4;
+               }
+            }
+         }
+
+         part {
+            name: "guide_v0";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.5 0.0;
+                  offset: -5 1;
+               }
+               rel2 {
+                  relative: 0.5 0.5;
+                  offset: -5 -5;
+               }
+            }
+         }
+
+         part {
+            name: "guide_v1";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.5 0.0;
+                  offset: 4 1;
+               }
+               rel2 {
+                  relative: 0.5 0.5;
+                  offset: 4 -5;
+               }
+            }
+         }
+
+         part {
+            name: "guide_v2";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.5 0.5;
+                  offset: -5 4;
+               }
+               rel2 {
+                  relative: 0.5 1.0;
+                  offset: -5 -2;
+               }
+            }
+         }
+
+         part {
+            name: "guide_v3";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 0 0 255;
+               rel1 {
+                  relative: 0.5 0.5;
+                  offset: 4 4;
+               }
+               rel2 {
+                  relative: 0.5 1.0;
+                  offset: 4 -2;
+               }
+            }
+         }
+
+         part {
+            name: "color_bg";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 32 32 32 200;
+               rel1 {
+                  to: "color";
+                  offset: -1 -1;
+               }
+            }
+         }
+
+         part {
+            name: "color";
+            type: TEXT;
+            effect: SHADOW;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               align: 1.0 1.0;
+               color: 220 220 220 255;
+               color2: 32 32 32 128;
+               rel1 {
+                  relative: 1.0 1.0;
+                  offset: -5 -2;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -5 -2;
+               }
+               text {
+                  font: "Sans";
+                  size: 10;
+                  text: "#ffffff";
+                  min: 1 1;
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/hint";
+
+      parts {
+         part {
+            name: "clipper";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 255 255 255;
+            }
+            description {
+               state: "hidden" 0.0;
+               color: 255 255 255 0;
+               visible: 0;
+            }
+         }
+
+         part {
+            name: "top";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 96;
+               rel2 {
+                  relative: 1.0 0.0;
+                  offset: -1 128;
+               }
+            }
+         }
+
+         part {
+            name: "hint";
+            type: TEXTBLOCK;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               rel1.to: "top";
+               rel2.to: "top";
+               text.style: "hint_style";
+            }
+         }
+
+         part {
+            name: "eventarea";
+            type: RECT;
+            mouse_events: 1;
+            repeat_events: 1;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 0;
+               rel1.to: "top";
+               rel2.to: "top";
+            }
+         }
+
+         programs {
+            program {
+               signal: "mouse,in";
+               source: "eventarea";
+               action: STATE_SET "hidden" 0.0;
+               target: "clipper";
+               transition: ACCELERATE 0.3 CURRENT;
+            }
+            program {
+               signal: "mouse,out";
+               source: "eventarea";
+               action: STATE_SET "default" 0.0;
+               target: "clipper";
+               transition: DECELERATE 0.3 CURRENT;
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/distance_horizontal";
+
+      parts {
+         part {
+            name: "clipper";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 255 255 32;
+            }
+            description {
+               state: "over" 0.0;
+               color: 255 255 255 255;
+            }
+         }
+
+         part {
+            name: "start";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 0 255 255 255;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  offset: 1 -1;
+               }
+            }
+         }
+
+         part {
+            name: "end";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 0 255 255 255;
+               rel1 {
+                  relative: 1.0 0.0;
+                  offset: -2 0;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+            }
+         }
+
+         part {
+            name: "link";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 0 255 255 255;
+               rel1 {
+                  relative: 0.0 0.5;
+                  offset: 1 0;
+               }
+               rel2 {
+                  relative: 1.0 0.5;
+                  offset: -2 0;
+               }
+            }
+         }
+
+         part {
+            name: "display";
+            type: TEXT;
+            effect: SHADOW;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 255 255 255;
+               color2: 32 32 32 128;
+               align: 0.5 1.0;
+               visible: 0;
+               rel1 {
+                  relative: 0.0 0.5;
+                  offset: 3 -2;
+               }
+               rel2 {
+                  relative: 1.0 0.5;
+                  offset: -4 -2;
+               }
+               text {
+                  font: "Sans";
+                  size: 10;
+                  min: 1 1;
+                  fit: 1 0;
+                  size_range: 8 12;
+               }
+            }
+            description {
+               state: "over" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+
+         part {
+            name: "eventarea";
+            type: RECT;
+            mouse_events: 1;
+            repeat_events: 1;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 0;
+            }
+         }
+
+         programs {
+            program {
+               signal: "mouse,in";
+               source: "eventarea";
+               action: STATE_SET "over" 0.0;
+               transition: LINEAR 0.2;
+               target: "clipper";
+               target: "display";
+            }
+            program {
+               signal: "mouse,out";
+               source: "eventarea";
+               action: STATE_SET "default" 0.0;
+               transition: LINEAR 0.2;
+               target: "clipper";
+               target: "display";
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/distance_vertical";
+
+      parts {
+         part {
+            name: "clipper";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 255 255 32;
+            }
+            description {
+               state: "over" 0.0;
+               color: 255 255 255 255;
+            }
+         }
+
+         part {
+            name: "start";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 255 255 0 255;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.0 0.0;
+                  offset: -1 0;
+               }
+            }
+         }
+
+         part {
+            name: "end";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 255 255 0 255;
+               rel1 {
+                  relative: 0.0 1.0;
+                  offset: 0 -1;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+            }
+         }
+
+         part {
+            name: "link";
+            type: RECT;
+            mouse_events: 0;
+            clip_to: "clipper";
+            description {
+               state: "default" 0.0;
+               color: 255 255 0 255;
+               rel1 {
+                  relative: 0.5 0.0;
+                  offset: 0 1;
+               }
+               rel2 {
+                  relative: 0.5 1.0;
+                  offset: 0 -2;
+               }
+            }
+         }
+
+         part {
+            name: "display";
+            type: TEXT;
+            effect: SHADOW;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 255 0 255;
+               color2: 32 32 32 128;
+               align: 1.0 0.5;
+               visible: 0;
+               rel1 {
+                  relative: 0.5 0.0;
+                  offset: -2 3;
+               }
+               rel2 {
+                  relative: 0.5 1.0;
+                  offset: -2 -4;
+               }
+               text {
+                  font: "Sans";
+                  size: 10;
+                  min: 1 1;
+                  fit: 0 1;
+                  size_range: 8 12;
+               }
+            }
+            description {
+               state: "over" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+
+         part {
+            name: "eventarea";
+            type: RECT;
+            mouse_events: 1;
+            repeat_events: 1;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 0;
+            }
+         }
+
+         programs {
+            program {
+               signal: "mouse,in";
+               source: "eventarea";
+               action: STATE_SET "over" 0.0;
+               transition: LINEAR 0.2;
+               target: "clipper";
+               target: "display";
+            }
+            program {
+               signal: "mouse,out";
+               source: "eventarea";
+               action: STATE_SET "default" 0.0;
+               transition: LINEAR 0.2;
+               target: "clipper";
+               target: "display";
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/default";
+
+      parts {
+         part {
+            name: "fill";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 0 0;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 1 1;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -2 -2;
+               }
+            }
+         }
+
+         part {
+            name: "hbar1";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 32 32 32 128;
+               rel2 {
+                  relative: 1.0 0.0;
+                  offset: 0 0;
+               }
+            }
+            description {
+               state: "inverted" 0.0;
+               inherit: "default" 0.0;
+               rel1 {
+                  relative: 0.0 1.0;
+                  offset: 0 -1;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+            }
+         }
+
+         part {
+            name: "hbar2";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 220 220 220 128;
+               rel1 {
+                  relative: 0.0 1.0;
+                  offset: 0 -1;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+            }
+            description {
+               state: "inverted" 0.0;
+               inherit: "default" 0.0;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.0 0.0;
+                  offset: -1 0;
+               }
+            }
+         }
+
+         part {
+            name: "vbar1";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 32 32 32 128;
+               rel1.offset: 0 0;
+               rel2 {
+                  relative: 0.0 1.0;
+                  offset: 0 -1;
+               }
+            }
+            description {
+               state: "inverted" 0.0;
+               inherit: "default" 0.0;
+               rel1 {
+                  relative: 1.0 0.0;
+                  offset: -1 0;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+            }
+         }
+
+         part {
+            name: "vbar2";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 220 220 220 128;
+               rel1 {
+                  relative: 1.0 0.0;
+                  offset: -1 0;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+            }
+            description {
+               state: "inverted" 0.0;
+               inherit: "default" 0.0;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  offset: 0 -1;
+               }
+            }
+         }
+
+         part {
+            name: "start";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 255 0 128;
+               rel1.offset: -2 -2;
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 1 1;
+               }
+            }
+            description {
+               state: "inverted-xy" 0.0;
+               inherit: "default" 0.0;
+               rel1.relative: 1.0 1.0;
+               rel2.relative: 1.0 1.0;
+            }
+            description {
+               state: "inverted-x" 0.0;
+               inherit: "default" 0.0;
+               rel1.relative: 1.0 0.0;
+               rel2.relative: 1.0 0.0;
+            }
+            description {
+               state: "inverted-y" 0.0;
+               inherit: "default" 0.0;
+               rel1.relative: 0.0 1.0;
+               rel2.relative: 0.0 1.0;
+            }
+         }
+
+         part {
+            name: "end";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 0 0 255 128;
+               rel1 {
+                  relative: 1.0 1.0;
+                  offset: -2 -2;
+               }
+               rel2.offset: 1 1;
+            }
+            description {
+               state: "inverted-xy" 0.0;
+               inherit: "default" 0.0;
+               rel1.relative: 0.0 0.0;
+               rel2.relative: 0.0 0.0;
+            }
+            description {
+               state: "inverted-x" 0.0;
+               inherit: "default" 0.0;
+               rel1.relative: 0.0 1.0;
+               rel2.relative: 0.0 1.0;
+            }
+            description {
+               state: "inverted-y" 0.0;
+               inherit: "default" 0.0;
+               rel1.relative: 1.0 0.0;
+               rel2.relative: 1.0 0.0;
+            }
+         }
+
+         part {
+            name: "display_bg";
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 32 32 32 200;
+               rel1 {
+                  to: "display";
+                  offset: -1 -1;
+               }
+               rel2 {
+                  to: "display";
+                  offset: 0 0;
+               }
+            }
+         }
+
+         part {
+            name: "display";
+            type: TEXT;
+            effect: SHADOW;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               align: 0.5 0.5;
+               color: 220 220 220 255;
+               color2: 32 32 32 128;
+               rel1.relative: 0.5 0.5;
+               rel2.relative: 0.5 0.5;
+               text {
+                  font: "Sans:style=Bold";
+                  size: 10;
+                  min: 1 1;
+               }
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/light";
+      inherit: "eruler/rule/default";
+
+      parts {
+         part { name: "vbar1";
+
+            description { state: "default" 0.0; color: 220 220 220 128; }
+            description { state: "inverted" 0.0; color: 220 220 220 128; }
+         }
+         part { name: "vbar2";
+            description { state: "default" 0.0; color: 220 220 220 128; }
+            description { state: "inverted" 0.0; color: 220 220 220 128; }
+         }
+         part { name: "hbar1";
+            description { state: "default" 0.0; color: 220 220 220 128; }
+            description { state: "inverted" 0.0; color: 220 220 220 128; }
+         }
+         part { name: "hbar2";
+            description { state: "default" 0.0; color: 220 220 220 128; }
+            description { state: "inverted" 0.0; color: 220 220 220 128; }
+         }
+         part { name: "start";
+            description { state: "default" 0.0; color: 220 220 220 128; }
+            description { state: "inverted-x" 0.0; color: 220 220 220 128; }
+            description { state: "inverted-y" 0.0; color: 220 220 220 128; }
+            description { state: "inverted-xy" 0.0; color: 220 220 220 128; }
+         }
+         part { name: "end";
+            description { state: "default" 0.0; color: 220 220 220 128; }
+            description { state: "inverted-x" 0.0; color: 220 220 220 128; }
+            description { state: "inverted-y" 0.0; color: 220 220 220 128; }
+            description { state: "inverted-xy" 0.0; color: 220 220 220 128; }
+         }
+
+         part {
+            name: "display_bg"; description { state: "default" 0.0;
+               color: 220 220 220 200;
+            }
+         }
+         part {
+            name: "display";
+            effect: NONE;
+            description { state: "default" 0.0;
+               color: 32 32 32 255;
+               color2: 220 220 220 128;
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/dark";
+      inherit: "eruler/rule/default";
+
+      parts {
+         part { name: "vbar1";
+
+            description { state: "default" 0.0; color: 32 32 32 128; }
+            description { state: "inverted" 0.0; color: 32 32 32 128; }
+         }
+         part { name: "vbar2";
+            description { state: "default" 0.0; color: 32 32 32 128; }
+            description { state: "inverted" 0.0; color: 32 32 32 128; }
+         }
+         part { name: "hbar1";
+            description { state: "default" 0.0; color: 32 32 32 128; }
+            description { state: "inverted" 0.0; color: 32 32 32 128; }
+         }
+         part { name: "hbar2";
+            description { state: "default" 0.0; color: 32 32 32 128; }
+            description { state: "inverted" 0.0; color: 32 32 32 128; }
+         }
+         part { name: "start";
+            description { state: "default" 0.0; color: 32 32 32 128; }
+            description { state: "inverted-x" 0.0; color: 32 32 32 128; }
+            description { state: "inverted-y" 0.0; color: 32 32 32 128; }
+            description { state: "inverted-xy" 0.0; color: 32 32 32 128; }
+         }
+         part { name: "end";
+            description { state: "default" 0.0; color: 32 32 32 128; }
+            description { state: "inverted-x" 0.0; color: 32 32 32 128; }
+            description { state: "inverted-y" 0.0; color: 32 32 32 128; }
+            description { state: "inverted-xy" 0.0; color: 32 32 32 128; }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/light-filled";
+      inherit: "eruler/rule/light";
+
+      parts {
+         part {
+            name: "fill"; description { state: "default" 0.0;
+               color: 220 220 220 96;
+            }
+         }
+         part {
+            name: "display_bg"; description { state: "default" 0.0;
+               color: 0 0 0 0;
+            }
+         }
+         part {
+            name: "display";
+            effect: NONE;
+            description { state: "default" 0.0;
+               color: 32 32 32 255;
+               color2: 220 220 220 128;
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/dark-filled";
+      inherit: "eruler/rule/dark";
+
+      parts {
+         part {
+            name: "fill"; description { state: "default" 0.0;
+               color: 32 32 32 96;
+            }
+         }
+         part {
+            name: "display_bg"; description { state: "default" 0.0;
+               color: 0 0 0 0;
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/good";
+      inherit: "eruler/rule/default";
+
+      parts {
+         part { name: "vbar1";
+
+            description { state: "default" 0.0; color: 96 255 96 128; }
+            description { state: "inverted" 0.0; color: 96 255 96 128; }
+         }
+         part { name: "vbar2";
+            description { state: "default" 0.0; color: 96 255 96 128; }
+            description { state: "inverted" 0.0; color: 96 255 96 128; }
+         }
+         part { name: "hbar1";
+            description { state: "default" 0.0; color: 96 255 96 128; }
+            description { state: "inverted" 0.0; color: 96 255 96 128; }
+         }
+         part { name: "hbar2";
+            description { state: "default" 0.0; color: 96 255 96 128; }
+            description { state: "inverted" 0.0; color: 96 255 96 128; }
+         }
+         part { name: "start";
+            description { state: "default" 0.0; color: 96 255 96 128; }
+            description { state: "inverted-x" 0.0; color: 96 255 96 128; }
+            description { state: "inverted-y" 0.0; color: 96 255 96 128; }
+            description { state: "inverted-xy" 0.0; color: 96 255 96 128; }
+         }
+         part { name: "end";
+            description { state: "default" 0.0; color: 96 255 96 128; }
+            description { state: "inverted-x" 0.0; color: 96 255 96 128; }
+            description { state: "inverted-y" 0.0; color: 96 255 96 128; }
+            description { state: "inverted-xy" 0.0; color: 96 255 96 128; }
+         }
+
+         part {
+            name: "display_bg"; description { state: "default" 0.0;
+               color: 96 255 96 128;
+            }
+         }
+
+         part {
+            name: "display";
+            effect: NONE;
+            description { state: "default" 0.0;
+               color: 32 32 32 255;
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/warning";
+      inherit: "eruler/rule/default";
+
+      parts {
+         part { name: "vbar1";
+
+            description { state: "default" 0.0; color: 255 255 96 128; }
+            description { state: "inverted" 0.0; color: 255 255 96 128; }
+         }
+         part { name: "vbar2";
+            description { state: "default" 0.0; color: 255 255 96 128; }
+            description { state: "inverted" 0.0; color: 255 255 96 128; }
+         }
+         part { name: "hbar1";
+            description { state: "default" 0.0; color: 255 255 96 128; }
+            description { state: "inverted" 0.0; color: 255 255 96 128; }
+         }
+         part { name: "hbar2";
+            description { state: "default" 0.0; color: 255 255 96 128; }
+            description { state: "inverted" 0.0; color: 255 255 96 128; }
+         }
+         part { name: "start";
+            description { state: "default" 0.0; color: 255 255 96 128; }
+            description { state: "inverted-x" 0.0; color: 255 255 96 128; }
+            description { state: "inverted-y" 0.0; color: 255 255 96 128; }
+            description { state: "inverted-xy" 0.0; color: 255 255 96 128; }
+         }
+         part { name: "end";
+            description { state: "default" 0.0; color: 255 255 96 128; }
+            description { state: "inverted-x" 0.0; color: 255 255 96 128; }
+            description { state: "inverted-y" 0.0; color: 255 255 96 128; }
+            description { state: "inverted-xy" 0.0; color: 255 255 96 128; }
+         }
+
+         part {
+            name: "display_bg"; description { state: "default" 0.0;
+               color: 255 255 96 128;
+            }
+         }
+
+         part {
+            name: "display";
+            effect: NONE;
+            description { state: "default" 0.0;
+               color: 32 32 32 255;
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+
+   group {
+      name: "eruler/rule/bad";
+      inherit: "eruler/rule/default";
+
+      parts {
+         part { name: "vbar1";
+
+            description { state: "default" 0.0; color: 255 96 96 128; }
+            description { state: "inverted" 0.0; color: 255 96 96 128; }
+         }
+         part { name: "vbar2";
+            description { state: "default" 0.0; color: 255 96 96 128; }
+            description { state: "inverted" 0.0; color: 255 96 96 128; }
+         }
+         part { name: "hbar1";
+            description { state: "default" 0.0; color: 255 96 96 128; }
+            description { state: "inverted" 0.0; color: 255 96 96 128; }
+         }
+         part { name: "hbar2";
+            description { state: "default" 0.0; color: 255 96 96 128; }
+            description { state: "inverted" 0.0; color: 255 96 96 128; }
+         }
+         part { name: "start";
+            description { state: "default" 0.0; color: 255 96 96 128; }
+            description { state: "inverted-x" 0.0; color: 255 96 96 128; }
+            description { state: "inverted-y" 0.0; color: 255 96 96 128; }
+            description { state: "inverted-xy" 0.0; color: 255 96 96 128; }
+         }
+         part { name: "end";
+            description { state: "default" 0.0; color: 255 96 96 128; }
+            description { state: "inverted-x" 0.0; color: 255 96 96 128; }
+            description { state: "inverted-y" 0.0; color: 255 96 96 128; }
+            description { state: "inverted-xy" 0.0; color: 255 96 96 128; }
+         }
+
+         part {
+            name: "display_bg"; description { state: "default" 0.0;
+               color: 255 96 96 128;
+            }
+         }
+
+         part {
+            name: "display";
+            effect: NONE;
+            description { state: "default" 0.0;
+               color: 32 32 32 255;
+            }
+         }
+      }
+
+      script {
+         public start_x, start_y;
+
+         public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+               new sx, sy;
+
+               sx = getarg(2);
+               sy = getarg(3);
+
+               set_int(start_x, sx);
+               set_int(start_y, sy);
+            } else if ((type == MSG_INT_SET) && (id == 1)) {
+               new dx, dy, sx, sy;
+               new buf[64];
+
+               dx = getarg(2);
+               dy = getarg(3);
+
+               sx = get_int(start_x);
+               sy = get_int(start_y);
+
+               snprintf(buf, sizeof(buf), "%dx%d @ %d,%d", dx, dy, sx, sy);
+               set_text(PART:"display", buf);
+
+               if (dx < 0) {
+                  set_state(PART:"vbar1", "inverted", 0.0);
+                  set_state(PART:"vbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"vbar1", "default", 0.0);
+                  set_state(PART:"vbar2", "default", 0.0);
+               }
+
+               if (dy < 0) {
+                  set_state(PART:"hbar1", "inverted", 0.0);
+                  set_state(PART:"hbar2", "inverted", 0.0);
+               } else {
+                  set_state(PART:"hbar1", "default", 0.0);
+                  set_state(PART:"hbar2", "default", 0.0);
+               }
+
+               if (dx < 0 && dy < 0) {
+                  set_state(PART:"start", "inverted-xy", 0.0);
+                  set_state(PART:"end", "inverted-xy", 0.0);
+               } else if (dx < 0) {
+                  set_state(PART:"start", "inverted-x", 0.0);
+                  set_state(PART:"end", "inverted-x", 0.0);
+               } else if (dy < 0) {
+                  set_state(PART:"start", "inverted-y", 0.0);
+                  set_state(PART:"end", "inverted-y", 0.0);
+               } else {
+                  set_state(PART:"start", "default", 0.0);
+                  set_state(PART:"end", "default", 0.0);
+               }
+            }
+         }
+      }
+   }
+}

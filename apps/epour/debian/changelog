@@ -1,0 +1,79 @@
+epour (0.5.2.0) precise; urgency=low
+
+  * Handle file:// URI's
+  * Make the magnet link entry editable so it can be copied easily when using EFL 1.7.
+  * Add auto-pasted text to add torrent selectors magnet entry (EFL1.8 only).
+  * Update desktop file, thanks to cippp for ideas.
+  * Add identification info to session init and settings.
+  * Move session to its own file.
+  * Allow a higher maximum for the settings spinners
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Sat, 17 Aug 2013 21:27:14 +0300
+
+epour (0.5.1) precise; urgency=low
+
+  * Fix limit widgets
+  * Improve the session preferences layout.
+  * Reorder top box initialization to silence complaints from Evas.
+  * Fix adding links through dbus.
+  * Use handle.name() instead of getting it from torrent_info.
+  * Check that torrent contains metadata before showing preferences.
+  * A small optimization for the torrent list updates.
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Sun, 11 Aug 2013 12:33:15 +0300
+
+epour (0.5) precise; urgency=low
+
+  * Rewrite preferences dialog code.
+  * Use info_hash as the stored torrent filenames instead of torrent name.
+  * Add formatting for logging messages.
+  * Add an option to delete the original .torrent file when it's added to Epour.
+  * Add download queue number to torrent status string.
+  * Re-organize for better separation between gui and internals.
+  * Make a copy of the original torrent file instead of regenerating it through libtorrent.
+  * Add a Panel to hold the session information and controls.
+  * Use a Menu instead of CtxPopup for torrent actions, add queue actions.
+  * Move torrent file list into its own naviframe page.
+  * Use global elementary scale as a multiplier for the initial window size.
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Fri, 09 Aug 2013 03:00:50 +0300
+
+epour (0.4) precise; urgency=low
+
+  * Clean up fast resume data on torrent removal.
+  * Open file when activated from the file list. Checks that the file is complete.
+  * Improve the torrent status string.
+  * Change the download/upload icons to up/down instead of record/play.
+  * Add more alert handling.
+  * Change the fileselector to non-tree mode in Add torrent dialog.
+  * Better formatting for file sizes.
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Fri, 26 Jul 2013 17:52:51 +0300
+
+epour (0.3.3) precise; urgency=low
+
+  * fix directory initialization for the log file
+  * add a couple of tooltips
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Wed, 13 Mar 2013 17:02:04 +0200
+
+epour (0.3.2) precise; urgency=low
+
+  * move pause/resume functionality
+  * bug fixes
+  * errors and exceptions logged to disk in ~/.local/share/epour/epour.log
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Mon, 18 Feb 2013 11:29:04 +0200
+
+epour (0.3) precise; urgency=low
+
+  * Preferences
+  * Various fixes
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Sat, 26 Jan 2013 12:39:06 +0200
+
+epour (0.2-1) unstable; urgency=low
+
+  * source package automatically created by stdeb 0.6.0+git
+
+ -- Kai Huuhko <kai.huuhko@gmail.com>  Tue, 22 Jan 2013 19:57:42 +0200

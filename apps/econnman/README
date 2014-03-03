@@ -1,0 +1,43 @@
+ConnMan User Interface in EFL
+
+REQUIREMENTS
+============
+
+ * Python-Elementary >= 1.7.0
+ * Python-E_DBus >= 1.7.0
+ * Python >= 2.7
+
+
+RUNNING
+=======
+
+Executing econnman without arguments will start it WITHOUT the agent
+support. Any requested interaction will be left to existing agents, if
+any. This means that if you need to input passwords, it will use
+another agent.
+
+If you do not have another agent and need to type in passwords, then
+start econnman with the agent support:
+
+        econnman-bin --agent
+
+
+
+BUILDING AND INSTALLING
+=======================
+
+This package uses automake, so execute:
+
+Build::
+
+        ./configure --prefix=/usr --localstatedir=/var
+        make all
+
+Install::
+
+        make install
+        chown root:users /var/lib/connman/econnman.config
+        chmod g+w /var/lib/connman/econnman.config
+
+If you wish to install at alternative locations, then make sure to
+configure your PYTHONPATH to be able to access this location!

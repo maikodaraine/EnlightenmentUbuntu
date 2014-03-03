@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Name=Epour
+GenericName=BitTorrent Client
+GenericName[es]=Cliente BitTorrent
+GenericName[gl]=Cliente BitTorrent
+GenericName[it]=Client BitTorrent
+GenericName[pt]=Cliente Bittorrent
+Comment=Download and share files over BitTorrent
+Comment[es]=Descarga y comparte archivos por BitTorrent
+Comment[gl]=Descarga e comparte ficheiros por BitTorrent
+Comment[it]=Scarica e condivide file su BitTorrent
+Comment[pt]=Transferir e partilhar ficheiros por bittorrent
+TryExec=epour
+Exec=epour %U
+Icon=epour
+Type=Application
+Terminal=false
+Categories=Network;FileTransfer;P2P;
+StartupNotify=true
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;

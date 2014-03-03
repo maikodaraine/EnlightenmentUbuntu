@@ -1,0 +1,10 @@
+IEEE802.1x
+==========
+
+(See phab T654)
+
+Questions that are still there:
+
+ - 1 vs. N config file(s)? The latter would either need changes to connman's .service file or entire write access to /var/lib/connman. Both of which aren't really desireable
+ - integrate modes guessing into econnman vs. standalone app?
+ - remember passwords in files or some keyring?

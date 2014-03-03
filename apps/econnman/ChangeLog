@@ -1,0 +1,4 @@
+Since 1.1:
+* Added basic support for ieee802.1x  wireless networks configuration
+  The user running econnman needs to be able to write its own configfile at
+  /var/lib/connman/econnman.config
