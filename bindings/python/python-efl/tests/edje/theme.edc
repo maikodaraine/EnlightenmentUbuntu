@@ -1,0 +1,559 @@
+
+externals {
+    external: "elm";
+}
+
+data {
+    item: "key1" "value1";
+    item: "key2" "value2";
+}
+
+styles {
+    style {
+        name: "style1";
+        base: "font=Sans font_size=13 color=#fff wrap=word";
+        tag:  "br" "\n";
+        tag:  "tab" "\t";
+    }
+    style {
+        name: "style2";
+        base: "font=Sans font_size=9 color=#ccc";
+        tag:  "br" "\n";
+        tag:  "tab" "\t";
+        tag:  "b" "+ font=Sans:style=Bold";
+    }
+}
+
+color_classes {
+    color_class {
+        name: "colorclass1";
+        color: 1 2 3 4;
+        color2: 5 6 7 8;
+        color3: 9 10 11 12;
+    }
+    color_class {
+        name: "colorclass2";
+        color: 13 14 15 16;
+        color2: 17 18 19 20;
+        color3: 21 22 23 24;
+    }
+}
+
+
+collections {
+    group {
+        name: "main";
+        min: 200 200;
+        max: 400 400;
+
+        data {
+            item: "key3" "value3";
+            item: "key4" "value4";
+        }
+
+        script {
+            public my_func(val) {
+                set_text(PART:"label", "asd");
+            }
+        }
+
+        parts {
+            part { name: "bg";
+                type: RECT;
+                mouse_events: 0;
+                description { state: "default" 0.0;
+                    color: 255 255 255 255;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        offset: 0 0;
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        offset: -1 -1;
+                    }
+                }
+            }
+            part { name: "rect";
+                type: RECT;
+                mouse_events: 1;
+                description {
+                    state: "default" 0.0;
+                    color: 255 0 0 255;
+                    rel1 {
+                        relative: 0.5 0.5;
+                        offset: -50 -50;
+                    }
+                    rel2 {
+                        relative: 0.5 0.5;
+                        offset: 49 49;
+                    }
+                }
+            }
+            part { name: "label";
+                type: TEXT;
+                description { state: "default" 0.0;
+                    color: 0 0 200 255;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        offset: 0 0;
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        offset: -1 -1;
+                    }
+                    text {
+                        font: "Sans";
+                        size: 12;
+                        text: "label test";
+                    }
+                }
+            }
+            //// Used to test edje edit
+            part { name: "test_clip";
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                }
+            }
+            part { name: "edit_test";
+                type: RECT;
+                mouse_events: 0;
+                repeat_events: 0;
+                scale: 1;
+                effect: OUTLINE BOTTOM;
+                ignore_flags: ON_HOLD;
+                clip_to: "test_clip";
+                api: "api_name" "api_description";
+                description {
+                    state: "default" 0.0;
+                }
+                description {
+                    state: "state1" 0.0;
+                }
+                description {
+                    state: "state2" 0.0;
+                }
+                description {
+                    state: "state2" 0.1;
+                }
+                dragable {
+                    confine: "label";
+                    events: "edit_test_drag_event";
+                    x: 1 6 8;
+                    y: 1 7 9;
+                }
+            }
+            part { name: "edit_test_drag_event";
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                }
+                dragable {
+                    x: 1 0 0;
+                    y: 1 0 0;
+                }
+            }
+            //// Externals (hiddens, only used for the unittests)
+            part { name: "ext_elm_actionslider";
+                type: EXTERNAL;
+                source: "elm/actionslider";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        string: "label" "ActionSlideR";
+                    }
+                }
+            }
+            part { name: "ext_elm_bg";
+                type: EXTERNAL;
+                source: "elm/bg";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_bubble";
+                type: EXTERNAL;
+                source: "elm/bubble";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_button";
+                type: EXTERNAL;
+                source: "elm/button";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_calendar";
+                type: EXTERNAL;
+                source: "elm/calendar";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_check";
+                type: EXTERNAL;
+                source: "elm/check";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_clock";
+                type: EXTERNAL;
+                source: "elm/clock";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        int: "hours" 23;
+                        int: "minutes" 58;
+                        int: "seconds" 59;
+                        bool: "editable" 1;
+                        bool: "am/pm" 1;
+                        bool: "show seconds" 1;
+                    }
+                }
+            }
+            part { name: "ext_elm_entry";
+                type: EXTERNAL;
+                source: "elm/entry";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_fileselector";
+                type: EXTERNAL;
+                source: "elm/fileselector";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_fileselector_button";
+                type: EXTERNAL;
+                source: "elm/fileselector_button";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_fileselector_entry";
+                type: EXTERNAL;
+                source: "elm/fileselector_entry";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_frame";
+                type: EXTERNAL;
+                source: "elm/frame";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_gengrid";
+                type: EXTERNAL;
+                source: "elm/gengrid";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_genlist";
+                type: EXTERNAL;
+                source: "elm/genlist";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_hoversel";
+                type: EXTERNAL;
+                source: "elm/hoversel";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_icon";
+                type: EXTERNAL;
+                source: "elm/icon";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_index";
+                type: EXTERNAL;
+                source: "elm/index";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_label";
+                type: EXTERNAL;
+                source: "elm/label";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        string: "label" "This is an elm label";
+                    }
+                }
+            }
+            part { name: "ext_elm_list";
+                type: EXTERNAL;
+                source: "elm/list";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_map";
+                type: EXTERNAL;
+                source: "elm/map";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_multibuttonentry";
+                type: EXTERNAL;
+                source: "elm/multibuttonentry";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_naviframe";
+                type: EXTERNAL;
+                source: "elm/naviframe";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_notify";
+                type: EXTERNAL;
+                source: "elm/notify";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_panes";
+                type: EXTERNAL;
+                source: "elm/panes";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_photocam";
+                type: EXTERNAL;
+                source: "elm/photocam";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_progressbar";
+                type: EXTERNAL;
+                source: "elm/progressbar";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_radio";
+                type: EXTERNAL;
+                source: "elm/radio";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_scroller";
+                type: EXTERNAL;
+                source: "elm/scroller";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_segment_control";
+                type: EXTERNAL;
+                source: "elm/segment_control";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_slider";
+                type: EXTERNAL;
+                source: "elm/slider";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        string: "label" "external slider";
+                        double: "min" -1;
+                        double: "max" 999;
+                        double: "value" 0.6;
+                        bool: "inverted" 1;
+                        bool: "horizontal" 1;
+                        int: "span" 45;
+                        string: "unit format" "test %f";
+                        string: "indicator format" "%f ind";
+                        string: "icon" "folder";
+                    }
+                }
+            }
+            part { name: "ext_elm_slideshow";
+                type: EXTERNAL;
+                source: "elm/slideshow";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_spinner";
+                type: EXTERNAL;
+                source: "elm/spinner";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_thumb";
+                type: EXTERNAL;
+                source: "elm/thumb";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_toolbar";
+                type: EXTERNAL;
+                source: "elm/toolbar";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_video";
+                type: EXTERNAL;
+                source: "elm/video";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+            part { name: "ext_elm_web";
+                type: EXTERNAL;
+                source: "elm/web";
+                description { state: "default" 0.0;
+                    visible: 0;
+                    params {
+                        // TODO
+                    }
+                }
+            }
+        }
+        programs {
+            program { name: "emit_back_message";
+                signal: "emit,message";
+                script {
+                    send_message(MSG_INT, 1, 33);
+                }
+            }
+            program { name: "prog1";
+                source: "edit_test";
+                signal: "mouse,down,1";
+                in: 1.1 2.2;
+                action: STATE_SET "state2" 0.1;
+                target: "edit_test";
+                target: "test_clip";
+                after: "prog2";
+                after: "prog3";
+                api: "p_api_name" "p_api_desc";
+            }
+            program { name: "prog2";
+            }
+            program { name: "prog3";
+            }
+            program { name: "prog4";
+            }
+        }
+    }
+}

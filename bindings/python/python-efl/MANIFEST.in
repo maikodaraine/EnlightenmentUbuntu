@@ -1,0 +1,7 @@
+include README INSTALL COPYING COPYING.LESSER AUTHORS changes.html
+recursive-include efl *.c *.h
+graft tests
+recursive-exclude tests *.pyc
+graft examples
+recursive-exclude examples *.pyc
+graft doc

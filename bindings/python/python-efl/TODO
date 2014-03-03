@@ -1,0 +1,47 @@
+
+BUGS
+====
+* EdjeEdit: PartState API does not work
+* Elm.Map: overlays_show segfaults, scrollers in examples are jumpy
+* Elementary: when we use custom function callbacks we usually leak some
+    reference around, some examples:
+    - Entry.markup_filter_append()
+    - Fileselector.custom_filter_append()
+    - Multibuttonentry.format_function_set()
+    - Multibuttonentry.filter_append()
+    - Multibuttonentry.filterprepend()
+
+Failing unit tests
+------------------
+* tests.edje.test_04_edit: testPartEffect (marked as known failure)
+* tests.edje.test_04_edit: testGroupDel (skipped, segfault)
+* tests.edje.test_04_edit: testExternal (skipped, TODO)
+
+TODO (after 1.8)
+================
+* update links and text on:
+  http://www.freedesktop.org/wiki/Software/DBusBindings
+  (requires fd.org shell account?)
+* Review the internal functions and name them consistently
+* Evas: SmartObject needs testing, work. Make it inheritable by extension
+  classes?
+* Elm unit tests, things like top_widget and getting child objects
+  can be done easily.
+* include python-ethumb
+* edje: complete the unit tests
+* Initial Evas GL support (for Elm)
+* Add more documentation for callbacks, events, etc.
+* Check for missing Eo type mappings
+
+Elm
+---
+* Drag-n-Drop
+* Automate compilation of the example edje files.
+* Add more examples
+* Prefs
+* GLView
+* Images missing in the documentation:
+   - datetime
+   - video
+   - web
+   - window ?

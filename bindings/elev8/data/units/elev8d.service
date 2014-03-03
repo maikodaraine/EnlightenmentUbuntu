@@ -1,0 +1,16 @@
+[Unit]
+Description=Elev8 javascript preloading service
+Requires=xorg.target
+After=xorg.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/elev8 --server
+KillMode=process
+WatchdogSec=1
+TimeoutSec=1
+NotifyAccess=all
+
+[Install]
+Also=elev8d.socket
+

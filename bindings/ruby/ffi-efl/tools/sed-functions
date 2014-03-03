@@ -1,0 +1,21 @@
+# eat all comments
+/^\s*\/\*/ {
+  :comment
+  /\*\/\s*$/ { n; b nocomment }
+  n; b comment
+}
+:nocomment
+# drop if don't start with EAPI
+/^\s*EAPI/ ! b
+# drop extern definitions
+/EAPI\s+extern/ b
+# if does not end with ;, append next line
+/EAPI.*[^;]\s*$/ { N; s/\n/ / }
+# while unfinished argument list, append next line
+:loop
+/,$/ { N; s/\n/ /; t loop }
+# replace multi spaces with one ...
+s/\t/ /g
+s/ {2,}/ /g
+s/\s+EINA_.*/;/
+s/^\s*EAPI/EAPI/p

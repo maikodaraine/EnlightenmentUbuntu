@@ -1,0 +1,7 @@
+The goal of this project is to provide a stable API/ABI in C++ for EFL and
+still take advantage of all C++ feature. It leverage its feature from latest
+EFL 1.8.
+
+Before doing any patch to it, please read :
+http://techbase.kde.org/Policies/Binary_Compatibility_Issues_With_C++
+

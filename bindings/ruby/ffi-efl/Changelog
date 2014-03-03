@@ -1,0 +1,133 @@
+2013-XX-YY Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.1.1
+	* move Efl::MethodResolver from efl.rb into native.rb
+	* lots of new examples, thanks to Marius Hanne
+	* add .so.1 to ffi_lib calls, no need for debian *-dev packages
+
+2013-01-04 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.1.0
+	* add e_dbus native binding
+	* add enotify native binding
+	* add ebluez native binding
+	* add ehal native binding
+	* add eofono native binding
+	* add eukit native binding
+	* add enotification_daemon native binding
+	* add econnman native binding
+	* add eeze native binding
+	* add eeze_disk native binding
+	* add eeze_net native binding
+	* add emotion native binding
+
+2012-12-21 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.16
+	* add eina_file native binding
+	* add eio native binding
+	* add efreet native binding
+
+2012-11-29 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.15
+	* add ethumb ethumb_client and ethumb_plugin
+	* spec fixes and various API updates
+
+2012-07-10 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.14
+	* add missing Gemfile and Gemfile.lock files
+	* mostly elementary API updates
+
+2012-05-19 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.13
+	* now uses bundler http://http://gembundler.com
+	* mostly elementary API updates
+
+2012-03-08 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.12
+	* elementary API freeze 2012.03.07
+
+2012-02-29 Jérémy Zurcher <jeremy@asynk.ch>
+	* remove usage of autoload
+	* efl.rb holds objects and method_missing helper code
+	* native.rb only helps for ffi mapping
+	* follow new elementary header split
+	* object constructors use instance_eval instead of yield
+	* elm widgets complete but rough
+
+2011-09-02 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.9
+	* implement test_bg, test_actionslider, test_box
+	* Efl::Native eats Efl::FFIHelper
+
+2011-08-18 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.8
+	* add Efl::Elm::ElmObject base class
+	* quick add classes : ElmFrame, ElmToggle, ElmIndex
+	* start test_elementary.rb
+
+2011-08-18 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.7
+	* update sed and generation tools
+	* bugfix Autopointer usage in REvas
+	* REvas use instance level pointers for native API parameters
+	* elementary objects constructor helper
+	* elementary objects may wrap callback pointers
+	* quick add classes : ElmDiskSelectorItem, ElmEntry, ElmFlipSelector, ElmFLipSelectorItem, ElmHoversel, ElmHoverselItem, ElmGenlistItemClassStruct, ElmHover, ElmButton, ElmListItem, ElmGenList,
+	* auto complete _set and _get function suffixes
+	* bugfix ecore_getopt
+	* add REinaList#from_a ptrt
+	* add REinaList#to_a ptrt=nil
+	* rework EcoreGetopt
+
+2011-05-11 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.6
+	* use ditz ass issure tracker
+	* use FFI.attach_variable for EAPI extern ...
+	* Efl::EinaLog module and specs
+	* quick add classes : ElmWin, ElmInWIn, ElmBg, ElmLayout, ElmBox, ElmList, ElmIcon, ElmNotify, ElmDiskSelector, ElmPager
+	* REinaList has #to_a and #to_ary
+	* add ClassHelper #null? #to_a #to_ary #to_s
+	* rework REvasObject#initialize
+	* rework ClassHelper#method_missing
+
+2011-05-06 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.5
+	* add REvasText class + specs
+	* add REvasBox class + specs
+	* add EinaRectangleStruct
+	* add REvasPolygon#<<
+	* add REvasObject#center set/get/=
+	* update REvasObject#initialize
+	* bugfix REvasObject#free
+	* bugfix evas_spec and test_evas
+
+2011-05-05 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.4
+	* ruby 1.8.7 compatible
+	* FFI::AutoPointer usage fixed, constructors cleaned
+	* module Efl::Native used for all FFI => require 'efl/native'
+	* ClassHelper#method_missing enhanced
+	* REinaList and REinaHash cleaned
+	* EcoreEvas specs completed
+	* REvas and REvasObject spec completed
+	* REvasRectanlge, REvasLine, EvasPolygon classes added
+	* more test/*.rb
+
+2011-05-01 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.3
+	+ Evas, Evas_Ecore, Edje, Elm ... usable
+	* use FFI::AutoPointer in ruby classes
+	* cleanup method_missing proxies usage and definition
+	* Eina_List <=> Array
+	* Eina_Hash <=> Hash
+	* .*= setters handled
+	* .*? getters handled
+	* evas test from http://docs.enlightenment.org/auto/evas/ implemented
+	* edje test from http://docs.enlightenment.org/auto/edje/ implemented
+
+2011-04-25 Jérémy Zurcher <jeremy@asynk.ch>
+	* release 0.0.2
+	* ecore getopt seems good
+	* basis of module function mapping and class method_missing usage setup
+	* small elementary elm_Win test app
+
+2011-04-08 Jérémy Zurcher <jeremy@asynk.ch>
+	* Project creation

@@ -1,0 +1,69 @@
+
+Style
+=====
+
+* For indentation, use *four space characters* per level of indentation. Keep
+  lines under the 80 chars limit (only exception are the functions definition)
+
+* When comparing C pointers with NULL, use == and != instead of the python
+  operator "is". This makes a visual distinction between python and C code.
+
+
+Design patterns
+===============
+
+ * From "The Zen of Python":
+
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
+
+
+Tips
+====
+
+* cython does automatic dict <-> struct conversion with basic struct members
+
+
+Discussion
+==========
+
+* Internal utility functions used in the bindings must start with an
+  underscore and must have the shortest name as possible.
+  ^
+  This needs further discussion/expansion.
+
+  When we define a function with cdef it is not exposed to Python API.
+  This should be explicit enough to not need the underscore prefix, which
+  at best looks ugly, and at worst just plain confusing.
+
+  A function name should summarize its functionality in one clear text,
+  short sentence. We have both too long and too short names. And I admit to
+  being guilty of adding many of both.
+
+  Let's build up a short review so we can see where we stand with this and
+  make necessary corrections.
+
+  / kuuko
+
+
+  The underscore usage is a coding standard in all the EFL, we should try
+  to follow the efl style also here (where is possible and make sense)
+
+  / davemds

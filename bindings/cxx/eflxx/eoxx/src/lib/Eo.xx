@@ -1,0 +1,24 @@
+void eo::invalidate()
+{
+  _unref();
+  iobj = NULL;
+}
+
+bool eo::valid() const
+{
+  return iobj != NULL;
+}
+
+void eo::assign(const eo &r)
+{
+  _unref();
+  iobj = r.iobj;
+  _ref();
+}
+
+void eo::assign(eo &r)
+{
+  _unref();
+  iobj = r.iobj;
+  _ref();
+}

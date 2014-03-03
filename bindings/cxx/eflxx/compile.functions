@@ -1,0 +1,98 @@
+#!/bin/bash
+
+####################
+##### functions ####
+####################
+
+do_bootstrap ()
+{
+  module=$1
+
+  cd $BASEDIR/$module
+
+  echo "Bootstrapping '$module'..."
+
+  LOGFILE=$BASEDIR/logs/$module.bootstrap.log
+  ./bootstrap &> $LOGFILE
+ 
+  if [ $? != 0 ]; then
+    echo "Failed while bootstrapping!"
+    echo "See $LOGFILE for more information..."
+    $val_skip_error || exit
+  else
+    echo "Successfull bootstrapped!"
+  fi
+
+  echo ""
+}
+
+do_configure ()
+{
+  module=$1
+
+  cd $BASEDIR/$module
+
+  echo "Configuring '$module'..."
+
+  LOGFILE=$BASEDIR/logs/$module.configure.log
+
+  ## choose debug
+  if [ $val_debug = true ]; then
+    CXXFLAGS="-O0 -ggdb" CFLAGS="-O0 -ggdb" ./configure $CONFIG_ARGS &> $LOGFILE
+  else
+    ./configure $CONFIG_ARGS &> $LOGFILE
+  fi
+
+  if [ $? != 0 ]; then
+    echo "Failed while configuring!"
+    echo "See $LOGFILE for more information..."
+    $val_skip_error || exit
+  else
+    echo "Successfull configuring!"
+  fi
+
+  echo ""
+}
+
+do_make ()
+{
+  module=$1
+  params=$2
+
+  cd $BASEDIR/$module
+
+  LOGFILE=$BASEDIR/logs/$module.make.log
+
+  echo "Compiling '$module'... ($params)"
+
+  make $params &> $LOGFILE
+  if [ $? != 0 ]; then
+    echo "Failed while compiling ($params)!"
+    echo "See $LOGFILE for more information..."
+    $val_skip_error || exit
+  else
+    echo "Successfull compiled ($params)!"
+  fi
+
+  echo ""
+}
+
+print_help()
+{
+cat << EOF
+
+Set "CONFIG_ARGS" environment variable to define arguments to configure script
+
+Usage:
+$0 [OPTIONS]...
+  --help                          show this help
+  --no-bootstrap                  don't generate autotools files
+  --no-configure                  don't configure the source
+  --no-debug                      compile the sources without debug flags
+  --skip-error                    skip errors while generating/building otherwise exit
+  --clean                         clean the sources (without generating)
+  --no-make                       don't make the sources
+  --install			  intall the build files
+EOF
+
+}

@@ -1,0 +1,51 @@
+# eat all comments
+/^\s*\/\*/ {
+  :comment
+  /\*\/\s*$/ { n; b nocomment }
+  n; b comment
+}
+:nocomment
+# drop if don't start with (typedef)? enum
+/^\s*(typedef\s)?\s*enum/ ! b
+#
+s/^\s*(typedef\s)?\s*(enum(\s+\w+)?).*$/\1\2 { /
+# drop if substitution fail, copy pattern to  hold space
+T;h
+:attrs;n
+# read again if {
+/^\s*\{/ b attrs
+# append each item finished by , or \/
+s/^\s*([A-Z0-9_]+)(\s*=\s*[^,\/]+)?\s*([,|\)])?[\/]?.*$/\1\2\3 /
+# goto next if subsitution fails, append pattern, loop to attrs
+T next;H;b attrs
+:next
+# try again if } not found
+/^\s*\}/ ! b attrs
+# read enumeration name if any
+s/^\s*}\s*(\w+).*$/ } \1;/
+t finish
+:close
+n
+# eat all comments
+/^\s*\/\*/ {
+  :comment2
+  /\*\/\s*$/ { n; b nocomment2 }
+  n; b comment2
+}
+:nocomment2
+# eat empty lines
+/^\s*$/ b close
+# read the enum typedef
+s/^\s*typedef\s+enum\s+\w+\s+(\w+)\s*;/ } \1/
+# finish if substitution fail
+T
+:finish
+# append pattern, exchange hold space and pattern space
+H;x
+# remove \n
+s/\n//g
+# replace multi spaces with one
+s/\t/ /g
+s/ {2,}/ /g
+s/, }/ }/
+p

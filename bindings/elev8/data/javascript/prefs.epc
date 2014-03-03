@@ -1,0 +1,85 @@
+collection
+{
+   page
+   {
+      name: "main";
+      version: 1;
+      title: "Elev8 Preferences Widget";
+      subtitle: "Elev8 Example";
+      widget: "elm/vertical_box";
+
+      items {
+         item {
+            name: "sep";
+            type: SEPARATOR;
+         }
+
+         item {
+            name: "size_x";
+            type: INT;
+            label: "Items Size X";
+
+            int {
+               default: 64;
+               min: 0;
+               max: 400;
+            }
+         }
+
+         item {
+            name: "size_y";
+            type: INT;
+            label:"Items Size Y";
+
+            int {
+               default: 64;
+               min: 0;
+               max: 400;
+            }
+         }
+
+         item {
+            name: "icon_elm";
+            type: BOOL;
+            label: "Elementary Icons";
+
+            bool {
+               default: true;
+            }
+         }
+
+         item {
+            name: "icon_freedsk";
+            type: BOOL;
+            label: "Free Desktop Icons";
+
+            bool {
+               default: true;
+            }
+         }
+
+         item {
+            name: "filter";
+            type: TEXT;
+            editable: 1;
+            label: "Filter";
+
+            text {
+               placeholder: "";
+               default: "default str.";
+            }
+         }
+
+         item {
+            name: "sep2";
+            type: SEPARATOR;
+         }
+
+         item {
+            name: "refresh";
+            type: ACTION;
+            label: "Refresh";
+         }
+      }
+   }
+}
