@@ -1,0 +1,269 @@
+Changes since 0.17.0:
+---------------------
+
+Additions:
+    Modules:
+        * music-control: control any mpris2-compatible music player
+        * appmenu: externally show a menu of the current focused application
+        * bluez4: control bluetoothd daemon
+        * conf_comp: configuration dialogs for composite, like in previous comp
+          module
+        * teamwork
+    API:
+        * Added action to reset filemanager
+        * Added function to hide all active menus
+        * Added enum for deskflip animation mode
+        * Added e_win_elm_available()
+        * Added D-Bus notification to systray module
+        * Added D-Bus menu support
+        * Added e_comp namespace and E_EVENT_COMP events
+        * Added API for fetching module .desktop files
+        * e_config_xkb functions
+        * added functions for freeing binding config structs
+        * E_Config_DD structs are now tracked and retrievable through e_config_descriptor_find
+        * add e_border_pointer_warp_to_center_now()
+        * e_widget_check_widget_disable_on_*
+        * e_widget_on_disable_hook_set
+        * e_int_border_remember_edit
+        * Added function for getting children of e_layout
+        * added utility function for printing all objects above a given object
+        * added e_layout functions for returning objects above or below a layout child
+        * added functions for noting objects which are part of a popup
+        * added E_LIST_REVERSE_FREE macro
+        * added e_object_ref_debug_set
+        * added e_gadcon_repopulate
+        * added e_comp_win_effect* api
+        * added deskmirror
+        * add e_exec_desktop_instances_find
+        * add e_exec_phony
+        * e_border_inset utility functions
+    Config:
+        * Added option for disabling icons in menus
+        * Added option for disabling pointer warping when performing directional focus changes using winlist
+        * comp settings now uses the "e_comp" config domain
+        * added options to disable comp effects on types of windows
+        * added option to disable comp effects on screen
+        * added options and functionality for "fast" composite effects
+        * split comp window match settings into separate dialog
+        * edge bindings can now be set to "drag only"
+        * new option for disabling all pointer warps
+        * added option for preventing all keyboard layout changes
+        * added option for remembering filemanager windows globally
+	* Added support for systemd user session
+	* Added support for systemd hibernate and suspend
+        * added support for systemd halt and poweroff
+        * new winlist config option for moving selected window to current desk
+
+Changes:
+        * e now uses and looks for elementary themes
+        * elementary + emotion now hard dependencies
+    Modules:
+        * modules no longer require shutdown or save functions
+        * merged all binding config dialogs into conf_bindings module
+    API:
+        * e_menu_category_callback create callback parameter order has been changed
+        * e_xkb_layout API now deals directly with E_Config_XKB_Layout structs
+        * e_shelf_desk_visible_get now takes const params
+        * e_util_size_debug_set now also prints for object show/hide events
+        * E_FN_DEL renamed to E_FREE_FUNC for consistency
+        * deskpreview renamed to bgpreview
+        * e_widget_bgpreview_desk_add now takes an evas instead of an evas object
+        * e_fm2_optimal_size_calc returns bool to indicate whether the returned size can be used
+        * e_desk_last_focus now returns the border it tries to apply focus to
+    Config:
+        * move winlist_warp_speed option to pointer_warp_speed
+        * bindings now use new E_Binding_Event structs for mouse events
+
+Deprecations:
+    *
+
+Removed:
+    * e_manager_comp namespace
+    * HAL support for filemanager
+    * "raise on focus" config option
+    * ability to alter gadgets in EFM toolbars
+    * physics module
+
+Improvements:
+    * mixer shows more channels when using alsa subsystem and correctly disable controls
+    * Check changed added to several settings dialogs:
+     - clientlist,
+     - startup theme,
+     - desktop environments,
+     - language,
+     - notification,
+    * Improve UI of desk settings.
+    * Add icons for gadcon settings.
+    * Improve strings of pager settings.
+    * Improve title of fileman settings.
+    * Mixer settings dialog is now resizable
+    * Increased maximum menu size, improved menu autoscrolling
+    * Various #defines in e_int_menus.h are now enums
+    * No backlight dimming when in presentation mode.
+    * Backlight fade time only applies to dimming - undimming is fixed 0.5 .
+    * Added elm win trap callback for base size setting, calling this causes ICCCM hints to be applied
+    * "System Default" language in wizard now displays which language it is and no longer removes language from list
+    * Desktop->Shelves menu now shows shelf names
+    * geometry_auto_move option now also corrects applications which fail in their attempts to center windows
+    * E_LIST_HANDLER_APPEND macro now asserts the event handler to make debugging easier
+    * config submenu now sets "config" category
+    * composite settings dialog is now accessible from Settings menu
+    * added focus-out color class and functionality to default theme
+    * added fallback timer for system actions
+    * compositor now applies focus/urgency state to windows on first show
+    * prevent windows dragged from one screen to another from being larger than the destination screen
+    * track module directories
+    * improve module config dialog load speed
+    * No longer build illume edj files
+    * add support for AltGr in illume2's E_Kbd_Buf_Key, fix related leak
+    * split out binding configs into separate config domain
+    * binding dialogs are now able to reset bindings to the system profile file bindings
+    * "No listable items" in Navigate menu is now clickable
+    * optimize use of edje_file_collection_list
+    * add support for edje files in filepreview widget
+    * improve load time of apps dialogs
+    * new tab in focus settings for pointer warping
+    * unify all pointer warp animators
+    * clock listens to /etc/timezone changes now too
+    * enable image preloading for all e_widget_preview using edje
+    * window remember dialog now allows editing of remembers
+    * container now uses compositor window
+    * Menu->Applications now only list valid .desktop files
+    * desklock now uses compositor canvas
+    * e_gadcon_unpopulate now correctly freezes the container while deleting gadgets
+    * e_popup is now a wrapper for drawing objects onto the compositor canvas
+    * compositor nocomp mode now dynamically enables/disables based on the state and stacking of fullscreen windows and comp objects
+    * e_util_size_debug_set now displays delete events
+    * compositor now allows user changing/remembering of object opacity
+    * EFM toolbar now has its own gadcon location
+    * DND canvas merged to compositor
+    * shelf gadcon can no longer resize smaller than 16x16, ensuring dnd success
+    * Don't rely on bash or zsh behavior when starting enlightenment_init and tempget.
+    * menus are now drawn directly on the compositor canvas
+    * window borders now drawn on compositor canvas
+    * desk flip animations moved to edje
+    * startup splash screen moved to compositor canvas
+    * added new modes for notification display on multiple monitors
+    * add check for vmware window in another spot to disable key remapping
+    * border menu now has top-level item to set borderless state
+    * added dnd support for text/x-moz-url
+    * filemanager dnd operations now show all files when dragging
+    * added check changed to shelf config dialog
+    * udisks2 support
+    * Navigate menu item now opens $HOME
+    * Clicking in the filemanager when renaming cancels the rename
+    * Shrink filemanager icon event area to allow easier selections
+    * Select previously-renaming filemanager icon when rename ends
+    * Improve reliability of new file/directory creation
+    * Clicking Settings->All in menu now opens settings panel
+    * Open Terminal Here now available when clicking regular files
+    * Add more filetypes to thumbnailer
+    * Improve focus handling with external desktop filemanagers
+    * Add back/forward button support for filemanager when toolbar is present
+    * Increase text file preview size
+    * Improve text file preview layout
+    * e now uses and looks for elementary themes
+    * Improve battery gadget text sizing
+    * Greatly improve filemanager icon selection
+    * clock gadgets now default to digital mode when added
+    * ignore netwm activate during startup
+
+Fixes:
+    * IBar menu didn't allow to configure different icon sources, show contents menu even on empty IBar.
+    * Shelf option 'overlapping' made clearer and disabled when window automatic movement on shelf hide isn't set.
+    * Backlight, screenlock and screensaver don't check for fullscreen windows - we have presentation mode for that.
+    * Force check changed upon confirmation dialog closure for engine settings.
+    * Clock date formats are now internationalizable.
+    * Advanced pager settings check changed accounts for flip desktop on mouse wheel.
+    * File manager settings values are now all read, checked and applied as they should.
+    * Fixed crash when changing ibar source
+    * Fixed SIGFPE in tiling module and functionality of toggle_rows_count
+    * Filemanager now uses global setting option for showing desktop
+      icons
+    * Fixed error in Evry when trying to call edje functions on non-edje object
+    * Fix construction of variant list for setxkbmap
+    * Fix border(less) style of internal elm tooltip windows
+    * Fix incorrect config value clamping for window autoraise delay
+    * Always hide menus on desklock
+    * e_win now traps elm_win_activate to ensure that internal elm
+      windows don't fail to raise as expected if user has configured
+      E to ignore activate hints
+    * Fix restarting E17 after manually monitoring it.
+    * Fix build with uClibc.
+    * Restore default keybindings no longer restores two bindings for ctrl+alt+f
+    * entry/scrollframe: Fixed issues with submembers.
+    * Fixed bug where keyboard resizing of windows would not be possible if timeout was set to zero
+    * Fixed crash when clicking apply in wallpaper settings dialog and no wallpaper is selected
+    * Fixed bug where disabled slider widgets could be changed with mouse wheel
+    * Fixed bug where fileman config slider widgets were not properly disabled
+    * Tasks gadgets now apply the selected style
+    * Fixed crash when changing desktop configuration while clock popup was present
+    * fixed bug where window border insets were not applied to initial positioning geometry, causing them to be placed incorrectly
+    * Fixed bug with desktop config profile where conf module version variable was misnamed
+    * fixed bug where internal dialogs would not redraw after unfullscreening
+    * fixed bug where starting with a nonexistent config could cause a crash instead of simply restarting
+    * fixed window border hide bug where after iconification hides leave ghosts
+    * fixed bug where backlight settings would try to update dummy backlight devices
+    * Reuse notifications for mixer and battery modules.
+    * fixed gadget dragging on desktop near screen edges
+    * fixed bug where "don't composite fullscreen windows" option would cause some windows to stop appearing
+    * module error dialog is no longer remembered across restarts
+    * fix small leak in efm when performing dnd onto mounted drive icon
+    * fixed small leak in e_import_config_dialog_show during failure case
+    * fixed small leak in e_import_dialog_show during failure case
+    * fixed small leak in illume2 policy config
+    * fixed path setting in import dialog
+    * fixed possible NULL deref in desktop editor
+    * fixed possible NULL deref in e_sys when debugging
+    * fixed map then unmap race condition for some windows (needs efl 1.8)
+    * fixed bug where dragging files into sidebar would move them instead of creating links
+    * fixed window autoraise triggering from pointer slide
+    * fixed opening of links in filemanager in some cases
+    * filemanager now ignores changes to .part files
+    * fixed bugs where keyboard layouts could not be applied or selected
+    * fixed leak in profile list dbus method
+    * fixed behavior of Up/Down keys in filemanager when typebuf was visible
+    * fix possible crash in xkb rule parsing
+    * fix list update on deletion of personal app launchers
+    * fix button toggling in personal app launchers dialog
+    * fix bug where edge flips would stop functioning after dragging to an invalid edge containing a shelf
+    * moved "allow windows above fullscreen windows" option to geometry settings dialog
+    * fix filemanager efreet cache listeners and updates
+    * fix clock timerfd usage to actually detect date changes
+    * keyboard mapping change now also disables for window class "vmware"
+    * don't call efreet_menu_parse from a thread
+    * fixed bug where pointer warping to new clients would start at a random location
+    * fix crash when locking screen from Start gadget and then activating gadget again
+    * fixed bug where e_layout would ignore frozen state and crash
+    * fixed disable of input methods in input method config dialog
+    * fixed pointer warp when pointer was inside warp window but not directly over it
+    * toolbar gadgets no longer crash when trying to display a popup
+    * fixed theme bug which prevented windows from unshading correctly when animations were disabled
+    * filemanager windows no longer resize to 0x0 when double clicked with no icons present
+    * fixed e_exec to open .desktop url links
+    * fix remember size/position apply
+    * fixed bug where e widgets would not unset focus
+    * fixed bug with filemanager setting path with too many spaces when opened from menu
+    * fixed crash when multiple windows shared a remember
+    * fixed bug where double clicking filemanager windows would not correctly autosize
+    * fixed bug where setting min size on a gadget would not be passed to desktop gadgets
+    * fixed bug where new files could not be created repeatedly
+    * fixed filemanager spring window closing when dragging from desktop
+    * fixed catching XWindow closes during DND operations on those windows
+    * wsod: Fixed gdb hangs when generating backtraces.
+    * Entry: Fixed issues with entry not scrolling to cursor.
+    * Fixed NoDisplay entries in Everything launcher
+    * Remember view mode for desktop icons
+    * Fixed evry crash when switching views
+    * Correctly start pulseaudio from mixer
+    * Fix winlist case where activation would have no effect
+    * Reapply default filemanager view after changing settings
+    * Fix flickering in advanced wallpaper settings
+    * Fix focus/stacking of windows on restart
+    * More accurately set current desk in Move to... submenu
+    * Disable resizing of buttons in window remember dialog
+    * Fix unfocusing of disabled widgets
+    * Fix crash when activating e's restart from start gadget triggered menu
+    * Further improve initial window placement coordinates
+    * Fixed cases where gadgets would sometimes reorder randomly on shelves
+    * fixed filemanager race condition causing create-queued icons to not be deleted

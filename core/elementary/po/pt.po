@@ -1,0 +1,290 @@
+# Portuguese translation for Elementary.
+# This file is put in the public domain.
+# Sérgio Marques <smarquespt@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: Elementary\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2014-02-26 00:59+0900\n"
+"PO-Revision-Date: 2013-11-05 14:11-0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"Language-Team: \n"
+"Language: Portuguese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-12-07 16:20+0000\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: src/lib/elc_fileselector.c:1365
+msgid "Up"
+msgstr "Para cima"
+
+#: src/lib/elc_fileselector.c:1380
+msgid "Home"
+msgstr "Pasta pessoal"
+
+#: src/lib/elc_fileselector.c:1607 src/lib/elm_entry.c:1388
+#: src/lib/elm_entry.c:1413
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/lib/elc_fileselector.c:1616
+msgid "OK"
+msgstr "Aceitar"
+
+#: src/lib/elc_multibuttonentry.c:616
+msgid "multi button entry label"
+msgstr "texto da entrada de botão múltiplo"
+
+#: src/lib/elc_multibuttonentry.c:637
+msgid "multi button entry item"
+msgstr "item da entrada de botão múltiplo"
+
+#: src/lib/elc_multibuttonentry.c:1514
+msgid "multi button entry"
+msgstr "entrada do botão múltiplo"
+
+#: src/lib/elc_naviframe.c:405
+msgid "Title"
+msgstr "Título"
+
+#: src/lib/elc_naviframe.c:934 src/lib/elc_naviframe.c:1154
+msgid "Back"
+msgstr "Recuar"
+
+#: src/lib/elc_naviframe.c:1235
+msgid "Next"
+msgstr "Avançar"
+
+#: src/lib/elc_popup.c:280 src/lib/elc_popup.c:901
+msgid "Popup Title"
+msgstr "Título do alerta"
+
+#: src/lib/elc_popup.c:290 src/lib/elc_popup.c:969
+msgid "Popup Body Text"
+msgstr "Texto do alerta"
+
+#: src/lib/elm_bubble.c:217
+msgid "Bubble"
+msgstr "Balão"
+
+#: src/lib/elm_button.c:58
+msgid "Clicked"
+msgstr "Clicado"
+
+#: src/lib/elm_button.c:279 src/lib/elm_check.c:224 src/lib/elm_gengrid.c:693
+#: src/lib/elm_genlist.c:1463 src/lib/elm_list.c:1567 src/lib/elm_radio.c:267
+#: src/lib/elm_segment_control.c:541 src/lib/elm_spinner.c:593
+#: src/lib/elm_toolbar.c:1980
+msgid "State: Disabled"
+msgstr "Estado: inativo"
+
+#: src/lib/elm_button.c:304
+msgid "Button"
+msgstr "Botão"
+
+#: src/lib/elm_calendar.c:146
+msgid "%B %Y"
+msgstr "%B %Y"
+
+#: src/lib/elm_calendar.c:155
+msgid "%B"
+msgstr "%B"
+
+#: src/lib/elm_calendar.c:164
+msgid "%Y"
+msgstr "%Y"
+
+#: src/lib/elm_calendar.c:279
+msgid "calendar item"
+msgstr "item do calendário"
+
+#: src/lib/elm_calendar.c:305
+msgid "calendar decrement month button"
+msgstr "botão de redução do mês de calendário"
+
+#: src/lib/elm_calendar.c:310
+msgid "calendar decrement year button"
+msgstr "botão de redução do ano de calendário"
+
+#: src/lib/elm_calendar.c:315
+msgid "calendar increment month button"
+msgstr "botão de aumento do mês de calendário"
+
+#: src/lib/elm_calendar.c:320
+msgid "calendar increment year button"
+msgstr "botão de aumento do ano de calendário"
+
+#: src/lib/elm_calendar.c:325
+msgid "calendar month"
+msgstr "mês do calendário"
+
+#: src/lib/elm_calendar.c:330
+msgid "calendar year"
+msgstr "ano do calendário"
+
+#: src/lib/elm_check.c:54 src/lib/elm_check.c:237 src/lib/elm_radio.c:94
+#: src/lib/elm_radio.c:268
+msgid "State: On"
+msgstr "Estado: ligado"
+
+#: src/lib/elm_check.c:60 src/lib/elm_check.c:249 src/lib/elm_radio.c:270
+msgid "State: Off"
+msgstr "Estado: desligado"
+
+#: src/lib/elm_check.c:233 src/lib/elm_check.c:246
+msgid "State"
+msgstr "Estado"
+
+#: src/lib/elm_check.c:314
+msgid "Check"
+msgstr "Seleção"
+
+#: src/lib/elm_clock.c:303
+msgid "clock increment button for am,pm"
+msgstr "botão de aumento do relógio para am, pm"
+
+#: src/lib/elm_clock.c:311
+msgid "clock decrement button for am,pm"
+msgstr "botão de redução do relógio para am, pm"
+
+#: src/lib/elm_clock.c:651
+msgid "State: Editable"
+msgstr "Estado: editável"
+
+#: src/lib/elm_clock.c:687
+msgid "Clock"
+msgstr "Relógio"
+
+#: src/lib/elm_colorselector.c:1363
+msgid "color selector palette item"
+msgstr "item do seletor de cor"
+
+#: src/lib/elm_config.c:2568
+msgid "default:LTR"
+msgstr "padrão: LTR"
+
+#: src/lib/elm_dayselector.c:422
+msgid "day selector item"
+msgstr "item do seletor de dia"
+
+#: src/lib/elm_diskselector.c:669
+msgid "diskselector item"
+msgstr "item do seletor de disco"
+
+#: src/lib/elm_entry.c:1375
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/lib/elm_entry.c:1380
+msgid "Cut"
+msgstr "Cortar"
+
+#: src/lib/elm_entry.c:1384 src/lib/elm_entry.c:1407
+msgid "Paste"
+msgstr "Colar"
+
+#: src/lib/elm_entry.c:1400
+msgid "Select"
+msgstr "Selecionar"
+
+#: src/lib/elm_entry.c:3364
+msgid "Entry"
+msgstr "Entrada"
+
+#: src/lib/elm_gengrid.c:723
+msgid "Gengrid Item"
+msgstr "Item da grelha genérica"
+
+#: src/lib/elm_index.c:91
+msgid "Index"
+msgstr "Índice"
+
+#: src/lib/elm_index.c:118
+msgid "Index Item"
+msgstr "Item do índice"
+
+#: src/lib/elm_label.c:396
+msgid "Label"
+msgstr "Texto"
+
+#: src/lib/elm_panel.c:54
+msgid "state: opened"
+msgstr "estado: aberto"
+
+#: src/lib/elm_panel.c:55
+msgid "state: closed"
+msgstr "estado: fechado"
+
+#: src/lib/elm_panel.c:118
+msgid "panel button"
+msgstr "botão do painel"
+
+#: src/lib/elm_progressbar.c:298
+msgid "progressbar"
+msgstr "barra de progresso"
+
+#: src/lib/elm_radio.c:298
+msgid "Radio"
+msgstr "Opção"
+
+#: src/lib/elm_segment_control.c:544 src/lib/elm_toolbar.c:1982
+msgid "State: Selected"
+msgstr "Estado: selecionado"
+
+#: src/lib/elm_segment_control.c:546
+msgid "State: Unselected"
+msgstr "Estado: não selecionado"
+
+#: src/lib/elm_segment_control.c:558
+msgid "Segment Control Item"
+msgstr "Item do controlo de segmento"
+
+#: src/lib/elm_slider.c:896
+msgid "slider"
+msgstr "barra deslizante"
+
+#: src/lib/elm_spinner.c:682
+msgid "spinner increment button"
+msgstr "botão de aumento do spinner"
+
+#: src/lib/elm_spinner.c:691
+msgid "spinner decrement button"
+msgstr "botão de diminuição do spinner"
+
+#: src/lib/elm_spinner.c:699
+msgid "spinner"
+msgstr "spinner"
+
+#: src/lib/elm_toolbar.c:1451 src/lib/elm_toolbar.c:2041
+msgid "Selected"
+msgstr "Selecionado"
+
+#: src/lib/elm_toolbar.c:1978
+msgid "Separator"
+msgstr "Separador"
+
+#: src/lib/elm_toolbar.c:1984
+msgid "Has menu"
+msgstr "Tem menu"
+
+#: src/lib/elm_toolbar.c:2036
+msgid "Unselected"
+msgstr "Não selecionado"
+
+#: src/lib/elm_toolbar.c:2053
+msgid "Toolbar Item"
+msgstr "Item da barra de ferramentas"
+
+#~ msgid "Genlist Item"
+#~ msgstr "Item da lista genérica"
+
+#~ msgid "List Item"
+#~ msgstr "Item da lista"
+
+#~ msgid "ON"
+#~ msgstr "Ligar"
+
+#~ msgid "OFF"
+#~ msgstr "Desligar"
