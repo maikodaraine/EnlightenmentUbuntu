@@ -1,0 +1,13 @@
+EWeather
+=========
+
+A weather gadget using libeweather.
+
+To find the code for your area, go to http://developer.yahoo.com/yql/console/
+and type
+
+ select * from geo.places where text='Paris' and country='France'
+
+and look for your woeid -- it should look something like this:
+
+  "<woeid>615702</woeid>"

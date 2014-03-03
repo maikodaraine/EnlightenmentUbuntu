@@ -1,0 +1,26 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Link
+Name=News
+Name[cs]=Novinky
+Name[el]=Νέα
+Name[eo]=Aktualaĵoj
+Name[es]=Noticias
+Name[fr]=Actualités
+Name[gl]=Novas
+Name[hu]=Hírek
+Name[pt]=Notícias
+Name[ru]=Новости
+Comment=Gadget to monitor RSS feeds.
+Comment[cs]=Gadget k monitorování RSS.
+Comment[el]=Συστατικό για την παρακολούθηση Ροών RSS.
+Comment[eo]=Elrigardi la RSS-abonfluojn.
+Comment[es]=Módulo para gestionar los canales RSS.
+Comment[fr]=Module pour suivre les flux RSS.
+Comment[gl]=Módulo para xestionar as fontes RSS.
+Comment[hu]=RSS hírforrásokat olvashatunk.
+Comment[it]=Modulo per il monitoraggio dei feed RSS.
+Comment[pt]=Módulo para monitorizar as fontes RSS
+Comment[ru]=Гаджет для отображения RSS-лент.
+Icon=e-module-news
+X-Enlightenment-ModuleType=utils

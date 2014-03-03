@@ -1,0 +1,363 @@
+# Russian translation of Photo module
+# Copyright (C) 2013 Enlightenment development team
+# This file is distributed under the same license as the enlightenment package.
+# Igor Murzov <e-mail@date.by>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: photo\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-02-04 02:18+0400\n"
+"PO-Revision-Date: 2013-02-04 01:40+0400\n"
+"Last-Translator: Igor Murzov <e-mail@date.by>\n"
+"Language-Team: Russian <enlightenment-intl@lists.sourceforge.net>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/e_mod_main.c:53 src/e_mod_main.c:60 src/e_mod_main.c:67
+#: src/e_mod_main.c:74 src/e_mod_main.c:81 src/e_mod_main.c:88
+msgid "Photo Module"
+msgstr "Модуль \"Фото\""
+
+#: src/e_mod_main.c:53
+msgid "E Canvas init failed !"
+msgstr ""
+
+#: src/e_mod_main.c:60
+msgid "Theme init failed !"
+msgstr ""
+
+#: src/e_mod_main.c:67
+msgid "Config init failed"
+msgstr ""
+
+#: src/e_mod_main.c:74
+msgid "Picture subsystem init failed"
+msgstr ""
+
+#: src/e_mod_main.c:81
+msgid "Popup warn subsystem init failed"
+msgstr ""
+
+#: src/e_mod_main.c:88
+msgid "Popup info subsystem init failed"
+msgstr ""
+
+#: src/e_mod_main.c:181
+msgid "Photo"
+msgstr "Фото"
+
+#: src/photo_config.c:65
+#, c-format
+msgid ""
+"<hilight>Photo module : Configuration Upgraded</hilight><br><br>Your "
+"configuration of photo module<br>has been upgraded<br>Your settings were "
+"removed<br>Sorry for the inconvenience<br><br>(%d -> %d)"
+msgstr ""
+
+#: src/photo_config.c:71 src/photo_config.c:85
+msgid "Photo Module version "
+msgstr ""
+
+#: src/photo_config.c:79
+#, c-format
+msgid ""
+"<hilight>Photo module : Configuration Downgraded</hilight><br><br>Your "
+"configuration of Photo module<br>has been downgraded<br>Your settings were "
+"removed<br>Sorry for the inconvenience<br><br>(%d ->%d)"
+msgstr ""
+
+#: src/photo_config_dialog.c:64
+msgid "Photo Configuration"
+msgstr "Конфигурация Фото"
+
+#: src/photo_config_dialog.c:220
+msgid "Picture directories"
+msgstr "Каталог с изображениями"
+
+#: src/photo_config_dialog.c:235
+msgid "Add"
+msgstr "Добавить"
+
+#: src/photo_config_dialog.c:237
+msgid "Delete"
+msgstr "Удалить"
+
+#: src/photo_config_dialog.c:239
+msgid "Configure"
+msgstr "Настроить"
+
+#: src/photo_config_dialog.c:242
+msgid "Reload picture directories"
+msgstr "Обновить изображения"
+
+#: src/photo_config_dialog.c:245
+msgid "Stop loading"
+msgstr "Остановить загрузку"
+
+#: src/photo_config_dialog.c:252 src/photo_config_dialog_item.c:127
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: src/photo_config_dialog.c:254 src/photo_config_dialog_item.c:136
+msgid "Always show label"
+msgstr "Всегда показывать метку"
+
+#: src/photo_config_dialog.c:256
+msgid "Nice transitions"
+msgstr "Плавные переходы"
+
+#: src/photo_config_dialog.c:262
+msgid "Default Mouse actions"
+msgstr ""
+
+#: src/photo_config_dialog.c:264 src/photo_config_dialog_item.c:191
+msgid "Over"
+msgstr ""
+
+#: src/photo_config_dialog.c:268 src/photo_config_dialog_item.c:195
+msgid "Left"
+msgstr ""
+
+#: src/photo_config_dialog.c:270 src/photo_config_dialog.c:276
+#: src/photo_config_dialog_item.c:197 src/photo_config_dialog_item.c:203
+msgid "click"
+msgstr ""
+
+#: src/photo_config_dialog.c:274 src/photo_config_dialog_item.c:201
+msgid "Middle"
+msgstr ""
+
+#: src/photo_config_dialog.c:279 src/photo_config_dialog_item.c:142
+msgid "No"
+msgstr "Нет"
+
+#: src/photo_config_dialog.c:318
+msgid "Popups"
+msgstr "Всплывающие окна"
+
+#: src/photo_config_dialog.c:320
+msgid "Picture loader popup"
+msgstr "Окно загрузчика изображений"
+
+#: src/photo_config_dialog.c:323
+msgid "Never"
+msgstr "Никогда"
+
+#: src/photo_config_dialog.c:325
+msgid "Summary"
+msgstr "Кратко"
+
+#: src/photo_config_dialog.c:327
+msgid "Verbose"
+msgstr "Подробно"
+
+#: src/photo_config_dialog.c:332
+msgid "Miscellaneous"
+msgstr "Разное"
+
+#: src/photo_config_dialog.c:334
+msgid "Remove generated backgrounds"
+msgstr "Удалять сгенерированные фоновые изображения"
+
+#: src/photo_config_dialog.c:338
+msgid "Pictures viewer"
+msgstr "Просмотрщик изображений"
+
+#: src/photo_config_dialog.c:344
+msgid "Images Quality"
+msgstr "Качество изображений"
+
+#: src/photo_config_dialog.c:346
+#, c-format
+msgid "%1.0f pix"
+msgstr "%1.0f пикс."
+
+#: src/photo_config_dialog.c:353
+msgid "Automaticly reload directories"
+msgstr "Автоматически перезагружать изображения"
+
+#: src/photo_config_dialog.c:356
+msgid "when add / modify directory list"
+msgstr "при модификации списка каталогов с изображениями"
+
+#: src/photo_config_dialog.h:36
+msgid "Show label"
+msgstr "Показать метку"
+
+#: src/photo_config_dialog.h:38
+msgid "Show informations"
+msgstr "Показать информацию"
+
+#: src/photo_config_dialog.h:40 src/photo_menu.c:72
+msgid "Previous picture"
+msgstr "Предыдущее изображение"
+
+#: src/photo_config_dialog.h:42 src/photo_menu.c:68
+msgid "Next picture"
+msgstr "Следующее изображение"
+
+#: src/photo_config_dialog.h:44
+msgid "Pause"
+msgstr "Пауза"
+
+#: src/photo_config_dialog.h:46 src/photo_menu.c:92
+msgid "Set as background"
+msgstr "Установить как фон"
+
+#: src/photo_config_dialog.h:48
+msgid "Open viewer"
+msgstr "Открыть просмотрщик"
+
+#: src/photo_config_dialog.h:50
+msgid "Show menu"
+msgstr "Показать меню"
+
+#: src/photo_config_dialog_dir.c:38
+msgid "Photo Directory Configuration"
+msgstr "Настройки каталога изображений"
+
+#: src/photo_config_dialog_dir.c:118
+msgid "Directory"
+msgstr "Каталог"
+
+#: src/photo_config_dialog_dir.c:127
+msgid "Loading options"
+msgstr "Параметры загрузки"
+
+#: src/photo_config_dialog_dir.c:129
+msgid "Recursive"
+msgstr "Рекурсивно"
+
+#: src/photo_config_dialog_dir.c:131
+msgid "Read hidden files"
+msgstr "Читать скрытые файлы"
+
+#: src/photo_config_dialog_dir.c:158
+msgid "Photo Module Warning"
+msgstr "Предупреждение модуля \"Фото\""
+
+#: src/photo_config_dialog_item.c:48
+msgid "Photo Item Configuration"
+msgstr "Настройки отображения"
+
+#: src/photo_config_dialog_item.c:112
+msgid "Timer between pictures change"
+msgstr "Интервал смены изображений"
+
+#: src/photo_config_dialog_item.c:114
+msgid "Activate"
+msgstr "Активировать"
+
+#: src/photo_config_dialog_item.c:117
+#, c-format
+msgid "%1.0f seconds"
+msgstr "%1.0f с."
+
+#: src/photo_config_dialog_item.c:129
+msgid "Alpha"
+msgstr "Альфа-коэффициент"
+
+#: src/photo_config_dialog_item.c:132
+#, c-format
+msgid "%1.0f"
+msgstr "%1.0f"
+
+#: src/photo_config_dialog_item.c:140
+msgid "Yes"
+msgstr "Да"
+
+#: src/photo_config_dialog_item.c:144 src/photo_config_dialog_item.c:206
+msgid "Default setting"
+msgstr "По умолчанию"
+
+#: src/photo_config_dialog_item.c:189
+msgid "Mouse actions"
+msgstr "Действия мыши"
+
+#: src/photo_item.c:389 src/photo_item.c:452
+#, c-format
+msgid ""
+"<hilight>File %s doesn't exist.</hilight><br><br>This file is in the picture "
+"list, but it seems you removed<br>it from disk. It can't be set as "
+"background, sorry."
+msgstr ""
+"<hilight>Файл %s не существует.</hilight><br><br>Файл присутствует в списке "
+"изображений, но похоже он был удалён<br>с диска, поэтому он не может быть "
+"установлен в качестве фона."
+
+#: src/photo_item.c:392 src/photo_item.c:417 src/photo_item.c:455
+#: src/photo_item.c:475 src/photo_picture_local.c:259
+msgid "Photo Module Error"
+msgstr "Ошибка модуля \"Фото\""
+
+#: src/photo_item.c:413
+#, c-format
+msgid ""
+"<hilight>e17setroot needed</hilight><br><br>%s is not an edje file!<br>Photo "
+"module needs e17setroot util from e_utils package to set your picture as "
+"background. Please install it and try again."
+msgstr ""
+
+#: src/photo_item.c:472
+#, c-format
+msgid ""
+"<hilight>Viewer %s not found !</hilight><br><br>You can change the viewer "
+"for images in the Photo module configuration panel (Advanced view)"
+msgstr ""
+"<hilight>Программа %s не найдена!</hilight><br><br>Изменить программу для "
+"просмотра изображений можно<br>в панели настроек модуля \"Фото\""
+
+#: src/photo_menu.c:41
+msgid "Module Settings"
+msgstr "Настройки модуля"
+
+#: src/photo_menu.c:47
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/photo_menu.c:58
+msgid "Pause slideshow"
+msgstr "Пауза"
+
+#: src/photo_menu.c:63
+msgid "Resume slideshow"
+msgstr "Возобновить демонстрацию"
+
+#: src/photo_menu.c:78
+msgid "Historic"
+msgstr "История"
+
+#: src/photo_menu.c:88
+msgid "Picture informations"
+msgstr "Информация об изображении"
+
+#: src/photo_menu.c:96
+msgid "Open in"
+msgstr "Открыть в"
+
+#: src/photo_picture_local.c:253
+#, c-format
+msgid ""
+"<hilight>Directory %s doesnt exists.</hilight><br><br>You can change the "
+"picture's folders in main configuration panel<br>They can be jpeg or "
+"png<br><br>After import, if you can remove these files and the pictures "
+"still can<br>be viewed, but you wont be able to set them as wallpaper "
+"anymore<br><br>"
+msgstr ""
+
+#: src/photo_picture_local.c:591
+msgid "Photo Module Information"
+msgstr "Информация модуля \"Фото\""
+
+#: src/photo_picture_local.c:592
+msgid ""
+"<hilight>Creating thumbs</hilight><br><br>Some pictures are being thumbed in "
+"a <hilight>background task</hilight>.<br>It can take a while, but after, "
+"loading will be faster and lighter :)<br><br>Each time wou will load "
+"pictures that haven't been loaded in Photo module before,<br>they will be "
+"thumbed.<br><br>While creating popups, you will not be able to see any "
+"picture in Photo.<br>I hope i'll be able to change that :)"
+msgstr ""

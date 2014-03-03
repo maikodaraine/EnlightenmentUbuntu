@@ -1,0 +1,88 @@
+# Serbian translation for enlightenment
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-08-24 11:51+0200\n"
+"PO-Revision-Date: 2013-06-24 08:58+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-08-25 05:04+0000\n"
+"X-Generator: Launchpad (build 16738)\n"
+"Language: sr\n"
+
+#: src/e_mod_config.c:39
+msgid "MPDule Configuration"
+msgstr "Поставке Мпдule"
+
+#: src/e_mod_config.c:87
+msgid "Configuration"
+msgstr "Поставке"
+
+#: src/e_mod_config.c:88
+msgid "Poll Time:"
+msgstr "Време добављања:"
+
+#: src/e_mod_config.c:91
+#, c-format
+msgid "%1.0f seconds"
+msgstr "%1.0f секунди"
+
+#: src/e_mod_config.c:94
+msgid "Hostname:"
+msgstr "Име домаћина:"
+
+#: src/e_mod_config.c:101
+msgid "Port:"
+msgstr "Прикључник:"
+
+#: src/e_mod_config.c:106
+msgid "Show Popup"
+msgstr "Приказуј искакање"
+
+#: src/e_mod_main.c:193
+msgid "MPDule"
+msgstr "Мпдуле"
+
+#: src/e_mod_main.c:231
+msgid "Settings"
+msgstr "Поставке"
+
+#: src/e_mod_main.c:499
+msgid "Unknown"
+msgstr "Непознато"
+
+#: src/e_mod_main.c:507
+msgid "Stopped"
+msgstr "Заустављено"
+
+#: src/e_mod_main.c:515
+msgid "Playing"
+msgstr "Изводи се"
+
+#: src/e_mod_main.c:523
+msgid "Paused"
+msgstr "Предах"
+
+#: src/e_mod_main.c:715
+msgid "Artist:"
+msgstr "Извођач:"
+
+#: src/e_mod_main.c:716
+msgid "Title:"
+msgstr "Наслов:"
+
+#: src/e_mod_main.c:717
+msgid "Album:"
+msgstr "Албум:"
+
+#: src/e_mod_main.c:718
+msgid "Genre:"
+msgstr "Жанр:"

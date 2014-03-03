@@ -1,0 +1,75 @@
+# Italian translation for MPDule
+# Copyright (C) 2013 Enlightenment development team
+# This file is distributed under the same license as the mpdule package.
+# Maiurana Massimo <maiurana@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mpdule\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-01-04 23:06+0100\n"
+"PO-Revision-Date: 2013-02-01 09:53+0100\n"
+"Last-Translator: Marc Furtià i Puig <marc.furtia@gmail.com>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/e_mod_config.c:39
+msgid "MPDule Configuration"
+msgstr "Configuració MPDule"
+
+#: src/e_mod_config.c:87
+msgid "Configuration"
+msgstr "Configuració"
+
+#: src/e_mod_config.c:88
+msgid "Poll Time:"
+msgstr "Temps d'enquesta"
+
+#: src/e_mod_config.c:91
+#, c-format
+msgid "%1.0f seconds"
+msgstr "%1.0f segons"
+
+#: src/e_mod_config.c:94
+msgid "Hostname:"
+msgstr "Nom de host:"
+
+#: src/e_mod_config.c:101
+msgid "Port:"
+msgstr "Port:"
+
+#: src/e_mod_config.c:106
+msgid "Show Popup"
+msgstr "Mostra Finestra Emergent"
+
+#: src/e_mod_main.c:175
+msgid "MPDule"
+msgstr "MPDule"
+
+#: src/e_mod_main.c:217
+msgid "Settings"
+msgstr "Preferències"
+
+#: src/e_mod_main.c:495
+#: src/e_mod_main.c:497
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: src/e_mod_main.c:502
+#: src/e_mod_main.c:504
+msgid "Stopped"
+msgstr "Parat"
+
+#: src/e_mod_main.c:509
+#: src/e_mod_main.c:511
+msgid "Playing"
+msgstr "Reproduint "
+
+#: src/e_mod_main.c:516
+#: src/e_mod_main.c:518
+msgid "Paused"
+msgstr "Pausat "
+

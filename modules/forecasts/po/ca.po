@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Marc Furtià  i Puig\\\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-01-29 18:09+0100\n"
+"PO-Revision-Date: 2013-02-01 09:53+0100\n"
+"Last-Translator: Marc Furtià i Puig <marc.furtia@gmail.com>\n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Bookmarks: -1,-1,1139,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: src/e_mod_config.c:42
+msgid "Forecasts Settings"
+msgstr "Preferències de Prediccions "
+
+#: src/e_mod_config.c:90
+msgid "Display Settings"
+msgstr "Preferències de pantalla"
+
+#: src/e_mod_config.c:91
+msgid "Poll Time"
+msgstr "Taxa d'actualització"
+
+#: src/e_mod_config.c:94
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f minuts"
+
+#: src/e_mod_config.c:97
+msgid "Show Description"
+msgstr "Mostrar Descripció"
+
+#: src/e_mod_config.c:99
+msgid "Popup on mouse over"
+msgstr "Mostrar finestra emergente si el ratí és sobre"
+
+#: src/e_mod_config.c:103
+msgid "Unit Settings"
+msgstr "Opcions d'unitat"
+
+#: src/e_mod_config.c:105
+msgid "Celsius"
+msgstr "Celsius"
+
+#: src/e_mod_config.c:107
+msgid "Fahrenheit"
+msgstr "Quantitat"
+
+#: src/e_mod_config.c:111
+msgid "Weather.com Forecasts Code"
+msgstr "Códi de prediccions metereològiques de Weather.com"
+
+#: src/e_mod_config.c:112
+msgid "Forecasts Code/US Zip Code"
+msgstr "Codi de prediccions metereològiques/Codi ZIP EE.UU."
+
+#: src/e_mod_config.c:117
+msgid "To find the code for your area, go to:"
+msgstr "Per trobar el codi de la teva àrea, anar a:"
+
+#: src/e_mod_config.c:119
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, trobi la seva àrea, i miri-la a la URL"
+
+#: src/e_mod_main.c:257
+msgid "Forecasts"
+msgstr "Prediccions"
+
+#: src/e_mod_main.c:299
+msgid "Settings"
+msgstr "Preferències"
+
+#: src/e_mod_main.c:998
+#, c-format
+msgid "%s: Current Conditions"
+msgstr "%s: Condiciones actuals"
+
+#: src/e_mod_main.c:1014
+msgid "Wind Chill"
+msgstr "Temperatura del vent"
+
+#: src/e_mod_main.c:1020
+msgid "Wind Speed"
+msgstr "Velocitat del vent"
+
+#: src/e_mod_main.c:1026
+msgid "Humidity"
+msgstr "Humitat"
+
+#: src/e_mod_main.c:1032
+msgid "Visibility"
+msgstr "Visibilitat"
+
+#: src/e_mod_main.c:1038
+msgid "Pressure"
+msgstr "Pressió"
+
+#: src/e_mod_main.c:1045
+msgid "Rising"
+msgstr "Alçament "
+
+#: src/e_mod_main.c:1047
+msgid "Falling"
+msgstr "Caient "
+
+#: src/e_mod_main.c:1049
+msgid "Steady"
+msgstr "Subjectar"
+
+#: src/e_mod_main.c:1053
+msgid "Sunrise / Sunset"
+msgstr "Sortida del sol/Posta del sol"
+
+#: src/e_mod_main.c:1071
+msgid "Today"
+msgstr "Avui"
+
+#: src/e_mod_main.c:1073
+msgid "Tomorrow"
+msgstr "Demà"
+
+#: src/e_mod_main.c:1081
+msgid "High"
+msgstr "Alt"
+
+#: src/e_mod_main.c:1092
+msgid "Low"
+msgstr "Baix"
+
+#~ msgid "Metric"
+#~ msgstr "Métrico"
+
+#~ msgid "English"
+#~ msgstr "Inglés"
+
+#~ msgid "Forecasts Configuration"
+#~ msgstr "Configuración de predicciones meteorológicas"
+
+#~ msgid "Configuration"
+#~ msgstr "Configuración"

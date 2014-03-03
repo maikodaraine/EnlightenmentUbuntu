@@ -1,0 +1,87 @@
+# Italian translation for Eweather
+# Copyright (C) 2013 Enlightenment development team
+# This file is distributed under the same license as the eweather package.
+# Massimo Maiurana <maiurana@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eweather\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-01-06 23:43+0100\n"
+"PO-Revision-Date: 2013-01-06 23:44+0100\n"
+"Last-Translator: Massimo Maiurana <maiurana@gmail.com>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/module/e_mod_config.c:122
+msgid "EWeather Configuration"
+msgstr "Configurazione di EWeather"
+
+#: src/module/e_mod_config.c:181
+msgid "Poll Time"
+msgstr "Tempo di campionamento"
+
+#: src/module/e_mod_config.c:184
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f minuti"
+
+#: src/module/e_mod_config.c:192
+msgid "Select a data source"
+msgstr "Selezionare una fonte dati"
+
+#: src/module/e_mod_config.c:207
+msgid "Units Settings"
+msgstr "Impostazione unità di misura"
+
+#: src/module/e_mod_config.c:211
+msgid "(°F) Fahrenheit"
+msgstr "(°F) Fahrenheit"
+
+#: src/module/e_mod_config.c:213
+msgid "(°C) Celsius"
+msgstr "(°C) Centigradi"
+
+#: src/module/e_mod_config.c:222
+msgid "Yahoo Forecasts Code"
+msgstr "Codice meteo di Yahoo"
+
+#: src/module/e_mod_config.c:227
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "Codice meteo Yahoo/ Codice Zip USA"
+
+#: src/module/e_mod_config.c:232
+msgid "To find the code for your area, go to:"
+msgstr "Per conoscere il codice della propria zona visitare:"
+
+#: src/module/e_mod_config.c:234
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, trovare la zona e vedere la URL"
+
+#: src/module/e_mod_config.c:243
+msgid "Google Forecasts Code"
+msgstr "Codice meteo di Google"
+
+#: src/module/e_mod_config.c:248
+msgid "Google Forecasts City Code"
+msgstr "Codice meteo città di Google"
+
+#: src/module/e_mod_config.c:253
+msgid "Specify the name of your city"
+msgstr "Specificare il nome della città"
+
+#: src/module/e_mod_config.c:255
+msgid " with extra information like the state or the country"
+msgstr " con info aggiuntive come stato o provincia"
+
+#: src/module/e_mod_gadcon.c:105
+msgid "EWeather"
+msgstr "EWeather"
+
+#: src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "Impostazioni"

@@ -1,0 +1,122 @@
+# Portuguese translationof eweather module.
+# Copyright (C) 2013 Enlightenment development team
+# This file is distributed under the same license as the Enlightenment package.
+# Adaptado ao acordo ortográfico de 1990
+# Sérgio Marques <smarquespt@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eweather\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-04-08 11:31+0200\n"
+"PO-Revision-Date: 2013-04-30 13:03-0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: pt_PT\n"
+
+#: src/module/e_mod_config.c:130
+msgid "Weather Configuration"
+msgstr "Definições"
+
+#: src/module/e_mod_config.c:189
+msgid "Poll Time"
+msgstr "Intervalo entre análises"
+
+#: src/module/e_mod_config.c:192
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f minutos"
+
+#: src/module/e_mod_config.c:200
+msgid "Select a data source"
+msgstr "Escolha a fonte de dados"
+
+#: src/module/e_mod_config.c:215
+msgid "Units Settings"
+msgstr "Unidade de medida"
+
+#: src/module/e_mod_config.c:219
+msgid "(°F) Fahrenheit"
+msgstr "(°F) Fahrenheit"
+
+#: src/module/e_mod_config.c:221
+msgid "(°C) Celcius"
+msgstr "(°C) Celsius"
+
+#: src/module/e_mod_config.c:230
+msgid "Yahoo Forecasts Code"
+msgstr "Código Yahoo"
+
+#: src/module/e_mod_config.c:235
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "Código Yahoo/Código postal dos EUA"
+
+#: src/module/e_mod_config.c:240
+msgid "To find the code for your area, go to:"
+msgstr "Para descobrir o seu código, aceda a:"
+
+#: src/module/e_mod_config.c:242
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, procure o seu local e consulte o URL."
+
+#: src/module/e_mod_config.c:251
+msgid "Google Forecasts Code"
+msgstr "Código Google"
+
+#: src/module/e_mod_config.c:256
+msgid "Google Forecasts City Code"
+msgstr "Código de cidades do Google"
+
+#: src/module/e_mod_config.c:261
+msgid "Specify the name of your city"
+msgstr "Indique o nome da sua cidade"
+
+#: src/module/e_mod_config.c:263
+msgid " with extra information like the state or the country"
+msgstr " e as informações referentes ao estado ou país."
+
+#: src/module/e_mod_gadcon.c:105
+msgid "EWeather"
+msgstr "EWeather"
+
+#: src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "Definições"
+
+#: src/module/e_mod_main.c:49
+msgid ""
+"Weather Module Configuration data needed upgrading. Your old "
+"configuration<br> has been wiped and a new set of defaults initialized. "
+"This<br>will happen regularly during development, so don't report a<br>bug. "
+"This simply means Weather module needs new configuration<br>data by default "
+"for usable functionality that your old<br>configuration simply lacks. This "
+"new set of defaults will fix<br>that by adding it in. You can re-configure "
+"things now to your<br>liking. Sorry for the inconvenience.<br>"
+msgstr ""
+"As definições precisam de ser atualizadas. As suas antigas<br>definições "
+"serão apagadas e serão iniciados novos<br>valores padrão. Isto irá ocorrer "
+"repetidamente durante o<br> desenvolvimento e não deve reportar qualquer "
+"erro.<br>Isto significa que o módulo precisa de dados<br>que as suas antigas "
+"definições não possuem.<br>Este conjunto de valores corrige a situação. Mais "
+"tarde<br>poderá configurar o módulo ao seu gosto.<br>Desculpe qualquer "
+"inconveniente.<br>"
+
+#: src/module/e_mod_main.c:67
+msgid ""
+"Your Weather Module configuration is NEWER than the Weather Module version. "
+"This is very<br>strange. This should not happen unless you downgraded<br>the "
+"Weather Module or copied the configuration from a place where<br>a newer "
+"version of the Weather Module was running. This is bad and<br>as a "
+"precaution your configuration has been now restored to<br>defaults. Sorry "
+"for the inconvenience.<br>"
+msgstr ""
+"As suas definições são mais recentes que as do módulo.>br>Isto é muito "
+"estranho e só acontece se reverter a<br>versão do Enlightenment ou se copiar "
+"as definições de<br>um local em que está instalada uma versão mais recente "
+"do módulo.<br>Isto é mau e, por precaução, as definições originais<br>foram "
+"restauradas.<br>Desculpe qualquer inconveniente.<br>"

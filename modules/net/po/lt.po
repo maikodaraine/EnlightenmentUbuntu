@@ -1,0 +1,72 @@
+# Lithuanian translation for enlightenment
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2012-12-04 13:32+0100\n"
+"PO-Revision-Date: 2013-01-05 22:18+0000\n"
+"Last-Translator: Mantas Kriaučiūnas <mantas@akl.lt>\n"
+"Language-Team: Lithuanian <lt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-01-06 04:52+0000\n"
+"X-Generator: Launchpad (build 16393)\n"
+"Language: lt\n"
+
+#: src/e_mod_configure.c:44
+msgid "Net Module Settings"
+msgstr "Tinklo modulio nustatymai"
+
+#: src/e_mod_configure.c:116
+msgid "General Settings"
+msgstr "Bendri nustatymai"
+
+#: src/e_mod_configure.c:117
+msgid "Show Text"
+msgstr "Rodyti tekstą"
+
+#: src/e_mod_configure.c:119
+msgid "Show Popup On Mouse-Over"
+msgstr "Užvedus žymeklį rodyti iššokantį langą"
+
+#: src/e_mod_configure.c:121
+msgid "Launch Application On Double-Click"
+msgstr "Dukart spustelėjus paleisti programą"
+
+#: src/e_mod_configure.c:127
+msgid "Activity Notification Level"
+msgstr "Aktyvumo informavimo lygis"
+
+#: src/e_mod_configure.c:129
+msgid "High (MB)"
+msgstr "Aukštas (MB)"
+
+#: src/e_mod_configure.c:131
+msgid "Middle (KB)"
+msgstr "Vidutinis (KB)"
+
+#: src/e_mod_configure.c:133
+msgid "Low (B)"
+msgstr "Žemas (B)"
+
+#: src/e_mod_configure.c:139
+msgid "Device Settings"
+msgstr "Įrenginio nustatymai"
+
+#: src/e_mod_gadcon.c:91
+msgid "Net"
+msgstr "Tinklas"
+
+#: src/e_mod_net.c:162
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: src/e_mod_net.c:195
+#, c-format
+msgid "Device - %s"
+msgstr "Įrenginys - %s"

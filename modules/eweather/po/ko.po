@@ -1,0 +1,119 @@
+# Korean Translation of EWeather module
+# Copyright (C) 2012 Enlightenment development team
+# This file is distributed under the same license as the PACKAGE package.
+# Daniel Juyung Seo <seojuyung2@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: EWeather\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-01-01 16:09+0900\n"
+"PO-Revision-Date: 2013-01-01 17:41+0900\n"
+"Last-Translator: Daniel Juyung Seo <seojuyung2@gmali.com>\n"
+"Language-Team: Korean <KO@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/module/e_mod_config.c:130
+msgid "EWeather Configuration"
+msgstr "EWeather 설정"
+
+#: src/module/e_mod_config.c:189
+msgid "Poll Time"
+msgstr "갱신 주기"
+
+#: src/module/e_mod_config.c:192
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f 분"
+
+#: src/module/e_mod_config.c:200
+msgid "Select a data source"
+msgstr "데이터 원본 선택"
+
+#: src/module/e_mod_config.c:215
+msgid "Units Settings"
+msgstr "단위 설정"
+
+#: src/module/e_mod_config.c:219
+msgid "(°F) Fahrenheit"
+msgstr "(°F) 화씨"
+
+#: src/module/e_mod_config.c:221
+msgid "(°C) Celcius"
+msgstr "(°C) 섭씨"
+
+#: src/module/e_mod_config.c:230
+msgid "Yahoo Forecasts Code"
+msgstr "야후 일기예보 코드"
+
+#: src/module/e_mod_config.c:235
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "야후 일기예보 코드/미국 Zip 코드"
+
+#: src/module/e_mod_config.c:240
+msgid "To find the code for your area, go to:"
+msgstr "지역 코드를 찾으려면 다음으로 가세요:"
+
+#: src/module/e_mod_config.c:242
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, 지역을 찾으려면 아래 링크를 확인하세요."
+
+#: src/module/e_mod_config.c:251
+msgid "Google Forecasts Code"
+msgstr "구글 일기예보 코드"
+
+#: src/module/e_mod_config.c:256
+msgid "Google Forecasts City Code"
+msgstr "구글 일기예보 도시 코드"
+
+#: src/module/e_mod_config.c:261
+msgid "Specify the name of your city"
+msgstr "도시 이름을 지정하세요"
+
+#: src/module/e_mod_config.c:263
+msgid " with extra information like the state or the country"
+msgstr "주 혹은 나라와 같은 추가 정보와 함"
+
+#: src/module/e_mod_gadcon.c:105
+msgid "EWeather"
+msgstr "EWeather"
+
+#: src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "설정"
+
+#: src/module/e_mod_main.c:47
+msgid ""
+"Weather Module Configuration data needed upgrading. Your old "
+"configuration<br> has been wiped and a new set of defaults initialized. "
+"This<br>will happen regularly during development, so don't report a<br>bug. "
+"This simply means Weather module needs new configuration<br>data by default "
+"for usable functionality that your old<br>configuration simply lacks. This "
+"new set of defaults will fix<br>that by adding it in. You can re-configure "
+"things now to your<br>liking. Sorry for the inconvenience.<br>"
+msgstr ""
+"날씨 모듈 설정 데이터 업그레이드가 필요합니다. 이전의 설정을 지우고<br>새로"
+"운 기본 설정으로 초기화했습니다. 이는<br>개발 과정 중에 흔하게 일어나는 일이"
+"므로, 버그로 보고하지 마십시오.<br>간단하게 말해서 이전 설정의 부족함으로 인"
+"해 <br>날씨 모듈에서 새 기본값 모음을 필요로<br>한다는 의미입니다. 새 기본값 "
+"모음을 추가하여 문제를 해결합니다.<br>이제 여러분의 취향대로 다시 설정할 수 "
+"있습니다.<br>여러분의 설정에 문제를 일으켜 죄송합니다.<br>"
+
+#: src/module/e_mod_main.c:65
+msgid ""
+"Your Weather Module configuration is NEWER than the Weather Module version. "
+"This is very<br>strange. This should not happen unless you downgraded<br>the "
+"Weather Module or copied the configuration from a place where<br>a newer "
+"version of the Weather Module was running. This is bad and<br>as a "
+"precaution your configuration has been now restored to<br>defaults. Sorry "
+"for the inconvenience.<br>"
+msgstr ""
+"현재 날씨 모듈보다 더 최신의 설정을 사용하고 있습니다.<br>매우 이상한 일입니"
+"다. 날씨 모듈을 다운그레이드 하거나<br>실행 중인 새 버전의 날씨 모듈에서 설정"
+"을<br>복사해오지 않는 이상 일어날 수 없는 일입니다. 미리 경고한 대로<br>이는 "
+"잘못된 현상이며 설정을 기본으로 되돌려 놓았습니다.<br> 불편을 드려 죄송합니"
+"다. <br>"

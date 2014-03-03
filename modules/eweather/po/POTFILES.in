@@ -1,0 +1,4 @@
+# List of source files which contain translatable strings.
+src/module/e_mod_config.c
+src/module/e_mod_gadcon.c
+src/module/e_mod_main.c

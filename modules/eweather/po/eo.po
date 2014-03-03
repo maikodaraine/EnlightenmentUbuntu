@@ -1,0 +1,89 @@
+# Esperanto translation for enlightenment
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-06-21 01:05+0200\n"
+"PO-Revision-Date: 2013-06-21 07:27+0000\n"
+"Last-Translator: Eliovir <Unknown>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-06-22 05:38+0000\n"
+"X-Generator: Launchpad (build 16677)\n"
+"Language: eo\n"
+
+#: src/module/e_mod_config.c:122
+msgid "EWeather Configuration"
+msgstr "Agordoj de EVetero"
+
+#: src/module/e_mod_config.c:181
+msgid "Poll Time"
+msgstr "Ofto de ĝisdatigoj"
+
+#: src/module/e_mod_config.c:184
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f minutoj"
+
+#: src/module/e_mod_config.c:192
+msgid "Select a data source"
+msgstr "Elektu fonton de datumoj"
+
+#: src/module/e_mod_config.c:207
+msgid "Units Settings"
+msgstr "Agordoj de mezurunuoj"
+
+#: src/module/e_mod_config.c:211
+msgid "(°F) Fahrenheit"
+msgstr "(°F) farenhejta"
+
+#: src/module/e_mod_config.c:213
+msgid "(°C) Celsius"
+msgstr "(°C) celsia"
+
+#: src/module/e_mod_config.c:222
+msgid "Yahoo Forecasts Code"
+msgstr "Kodo de Yahoo-veterprognozoj"
+
+#: src/module/e_mod_config.c:227
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "Poŝtkodo de Yahoo-veterprognozoj"
+
+#: src/module/e_mod_config.c:232
+msgid "To find the code for your area, go to:"
+msgstr "Por trovi la kodon de via loko, iru al:"
+
+#: src/module/e_mod_config.c:234
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, trovu vian lokon kaj rigardu la adreson"
+
+#: src/module/e_mod_config.c:243
+msgid "Google Forecasts Code"
+msgstr "Kodo de Google-verterprognozoj"
+
+#: src/module/e_mod_config.c:248
+msgid "Google Forecasts City Code"
+msgstr "Urbokodo de Google-verterprognozoj"
+
+#: src/module/e_mod_config.c:253
+msgid "Specify the name of your city"
+msgstr "Tajpu la nomon de via urbo"
+
+#: src/module/e_mod_config.c:255
+msgid " with extra information like the state or the country"
+msgstr " kun kromaj informoj kiel la ŝtato aŭ la lando"
+
+#: src/module/e_mod_gadcon.c:105 src/module/e_mod_main.c:42
+msgid "EWeather"
+msgstr "EVetero"
+
+#: src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "Agordoj"

@@ -1,0 +1,98 @@
+#include <e.h>
+#include <Elementary.h>
+#include <Efreet.h>
+
+#include "elfe_config.h"
+
+Evas_Object *
+elfe_utils_fdo_icon_add(Evas_Object *parent, const char *icon, int size)
+{
+   Evas_Object *ic;
+   const char *path;
+
+   ic = elm_icon_add(parent);
+   evas_object_size_hint_aspect_set(ic, EVAS_ASPECT_CONTROL_BOTH, 1, 1);
+
+   if (!icon)
+     {
+	elm_image_file_set(ic, elfe_home_cfg->theme, "icon/application-default");
+	return ic;
+     }
+
+   if (icon && icon[0] == '/')
+       {
+           elm_image_file_set(ic, icon, NULL);
+           return ic;
+       }
+
+   path = efreet_icon_path_find(getenv("E_ICON_THEME"), icon, size);
+   if (!path)
+     {
+	path = efreet_icon_path_find("default", icon, size);
+	if (!path)
+	  {
+	     path = efreet_icon_path_find("hicolor", icon, size);
+	     if (!path)
+	       {
+		  path = efreet_icon_path_find("gnome", icon, size);
+		  if (!path)
+		    {
+		       path = efreet_icon_path_find("Human", icon, size);
+		    }
+	       }
+	  }
+     }
+
+   if (path)
+       elm_image_file_set(ic, path, NULL);
+   else if (!elm_image_file_set(ic, elfe_home_cfg->theme, icon))
+       elm_image_file_set(ic, elfe_home_cfg->theme, "icon/application-default");
+
+   return ic;
+}
+
+const char *
+elfe_utils_fdo_icon_path_get(Efreet_Menu *menu, int size)
+{
+    const char *path = NULL;
+
+    if (menu->icon && menu->icon[0] == '/')
+      return eina_stringshare_add(menu->icon);
+
+    path = efreet_icon_path_find(getenv("E_ICON_THEME"), menu->icon, size);
+    if (!path)
+     {
+	path = efreet_icon_path_find("default", menu->icon, size);
+	if (!path)
+	  {
+	     path = efreet_icon_path_find("hicolor", menu->icon, size);
+	     if (!path)
+	       {
+		  path = efreet_icon_path_find("gnome", menu->icon, size);
+		  if (!path)
+		    {
+		       path = efreet_icon_path_find("Human", menu->icon, size);
+		    }
+	       }
+	  }
+     }
+
+    if (path)
+      return eina_stringshare_add(path);
+    else
+      return NULL;
+
+}
+
+E_Gadcon_Client_Class *
+elfe_utils_gadcon_client_class_from_name(const char *name)
+{
+   E_Gadcon_Client_Class *gcc = NULL;
+   Eina_List *l;
+   EINA_LIST_FOREACH(e_gadcon_provider_list(), l, gcc)
+     {
+	if (!strcmp(gcc->name, name))
+	  return gcc;
+     }
+   return NULL;
+}

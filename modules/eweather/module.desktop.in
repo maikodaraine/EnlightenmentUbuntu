@@ -1,0 +1,25 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Link
+Name=EWeather
+Name[cs]=Počasí
+Name[el]=Καιρός
+Name[eo]=EVetero
+Name[fr]=E-météo
+Name[hu]=Időjárás
+Name[pt]=E-Meteorologia
+Name[ru]=Е-Погода
+Comment=A weather gadget.
+Comment[cs]=Zobrazí aktuální počasí.
+Comment[de]=Aktuelles Wetter betrachten
+Comment[el]=Ένα συστατικό που δείχνει τις καιρικές συνθήκες.
+Comment[eo]=Vidigi veteron.
+Comment[es]=Módulo para las condiciones metereológicas.
+Comment[fr]=Affiche la météo actuelle.
+Comment[gl]=Módulo para as condicións metereolóxicas.
+Comment[hu]=Az aktuális, helyi időjárást megjelenítő modul.
+Comment[it]=Un modulo per le condizioni meteo.
+Comment[pt]=Módulo meteorológico
+Comment[ru]=Гаджет показа погоды.
+Icon=eweather
+X-Enlightenment-ModuleType=utils

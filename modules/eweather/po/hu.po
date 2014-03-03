@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eweather\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-12-25 15:43+0100\n"
+"PO-Revision-Date: 2013-12-25 16:48+0100\n"
+"Last-Translator: rezso <rezso@rezso.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: hu\n"
+
+#: ../src/module/e_mod_config.c:122
+msgid "EWeather Configuration"
+msgstr "EWeather beállítások"
+
+#: ../src/module/e_mod_config.c:181
+msgid "Poll Time"
+msgstr "Frissítési idő"
+
+#: ../src/module/e_mod_config.c:184
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f perc"
+
+#: ../src/module/e_mod_config.c:192
+msgid "Select a data source"
+msgstr "Adatforrás kiválasztása"
+
+#: ../src/module/e_mod_config.c:207
+msgid "Units Settings"
+msgstr "Mértékegység beállítások"
+
+#: ../src/module/e_mod_config.c:211
+msgid "(°F) Fahrenheit"
+msgstr "(°F) Fahrenheit"
+
+#: ../src/module/e_mod_config.c:213
+msgid "(°C) Celsius"
+msgstr "(°C) Celsius"
+
+#: ../src/module/e_mod_config.c:222
+msgid "Yahoo Forecasts Code"
+msgstr "Yahoo előrejelzés kód"
+
+#: ../src/module/e_mod_config.c:227
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "Yahoo előrejelzés kód/USA irányítószám"
+
+#: ../src/module/e_mod_config.c:232
+msgid "To find the code for your area, go to:"
+msgstr "Hogy megtaláld a területi kódodat, menj ide:"
+
+#: ../src/module/e_mod_config.c:234
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, keresd meg a területed, és nézd meg az URL-t"
+
+#: ../src/module/e_mod_config.c:243
+msgid "Google Forecasts Code"
+msgstr "Google előrejelzés kód"
+
+#: ../src/module/e_mod_config.c:248
+msgid "Google Forecasts City Code"
+msgstr "Google előrejelzés város kód"
+
+#: ../src/module/e_mod_config.c:253
+msgid "Specify the name of your city"
+msgstr "Add meg a városod nevét"
+
+#: ../src/module/e_mod_config.c:255
+msgid " with extra information like the state or the country"
+msgstr " extra információkkal, mint állam vagy ország"
+
+#: ../src/module/e_mod_gadcon.c:105 ../src/module/e_mod_main.c:42
+msgid "EWeather"
+msgstr "EWeather"
+
+#: ../src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "Beállítások"

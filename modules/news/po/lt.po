@@ -1,0 +1,487 @@
+# Lithuanian translation for enlightenment
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-01-05 11:35+0100\n"
+"PO-Revision-Date: 2010-02-16 10:49+0000\n"
+"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
+"Language-Team: Lithuanian <lt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-01-06 04:53+0000\n"
+"X-Generator: Launchpad (build 16393)\n"
+
+#: src/e_mod_main.c:52
+msgid "Config init failed"
+msgstr "Nepavyko inicijuoti konfigūracijos"
+
+#: src/e_mod_main.c:53
+msgid "Parser init failed"
+msgstr "Nepavyko inicijuoti analizatoriaus"
+
+#: src/e_mod_main.c:54
+msgid "Feeds init failed"
+msgstr "Nepavyko inicijuoti sklaidos kanalų"
+
+#: src/e_mod_main.c:55
+msgid "Viewer init failed"
+msgstr "Nepavyko inicijuoti žiūryklės"
+
+#: src/e_mod_main.c:56
+msgid "Popup subsystem init failed"
+msgstr "Nepavyko inicijuoti iškylančiųjų langų posistemės"
+
+#: src/e_mod_main.c:219
+msgid "News"
+msgstr "Naujienos"
+
+#: src/news_config.c:100
+#, c-format
+msgid ""
+"<hilight>News module : Configuration Upgraded</hilight><br><br>Your "
+"configuration of news module<br>has been upgraded<br>Your settings were "
+"removed<br>Sorry for the inconvenience<br><br>(%d -> %d)"
+msgstr ""
+"<hilight>Naujienų modulis : Konfigūracija atnaujinta</hilight><br><br>Jūsų "
+"naujienų modulio konfigūracija<br>atnaujinta.<br>Jūsų nustatymai buvo "
+"pašalinti.<br>Atsiprašome už nepatogumus<br><br>(%d -> %d)"
+
+#: src/news_config.c:112
+#, c-format
+msgid ""
+"<hilight>News module : Configuration Downgraded</hilight><br><br>Your "
+"configuration of News module<br>has been downgraded<br>Your settings were "
+"removed<br>Sorry for the inconvenience<br><br>(%d ->%d)"
+msgstr ""
+"<hilight>Naujienų modulis : Konfigūracija atstatyta</hilight><br><br>Jūsų "
+"naujienų modulio konfigūracija<br>atstatyta.<br>Jūsų nustatymai buvo "
+"pašalinti.<br>Atsiprašome už nepatogumus<br><br>(%d -> %d)"
+
+#: src/news_config_dialog.c:90
+msgid "News Main Configuration"
+msgstr "Pagrindinė naujienų konfigūracija"
+
+#: src/news_config_dialog.c:192 src/news_config_dialog.c:230
+#: src/news_config_dialog_feeds.c:358 src/news_menu.c:153
+msgid "Feeds"
+msgstr "Sklaidos kanalai"
+
+#: src/news_config_dialog.c:194 src/news_config_dialog.c:238
+msgid "Sort lists by name (disable Move action)"
+msgstr "Rikiuoti sąrašus pagal vardą (išjungti perkėlimo veiksmą)"
+
+#: src/news_config_dialog.c:199 src/news_config_dialog.c:307
+#: src/news_viewer.c:307
+msgid "News Viewer"
+msgstr "Naujienų žiūryklė"
+
+#: src/news_config_dialog.c:201
+msgid "Font size"
+msgstr "Šrifto dydis"
+
+#: src/news_config_dialog.c:204 src/news_config_dialog.c:318
+#, c-format
+msgid "%1.0f"
+msgstr "%1.0f"
+
+#: src/news_config_dialog.c:207
+msgid "Font color"
+msgstr "Šrifto spalva"
+
+#: src/news_config_dialog.c:232 src/news_config_dialog.c:272
+#: src/news_config_dialog.c:292
+msgid "Timer"
+msgstr "Laikmatis"
+
+#: src/news_config_dialog.c:234
+#, c-format
+msgid "%1.0f min"
+msgstr "%1.0f min."
+
+#: src/news_config_dialog.c:243
+msgid "Browser"
+msgstr "Naršyklė"
+
+#: src/news_config_dialog.c:245
+msgid "Uses xdg-open script, from freedesktop.org"
+msgstr "Naudoja xdg-open skriptą iš freedesktop.org"
+
+#: src/news_config_dialog.c:250
+msgid "Popup On News"
+msgstr "Rodyti iškylantįjį langą kai yra naujienų"
+
+#: src/news_config_dialog.c:253
+msgid "Never"
+msgstr "Niekada"
+
+#: src/news_config_dialog.c:259
+msgid "Only on urgent feeds"
+msgstr "Tik esant svarbių naujienų"
+
+#: src/news_config_dialog.c:265
+msgid "On all feeds"
+msgstr "Visiems sklaidos kanalams"
+
+#: src/news_config_dialog.c:274 src/news_config_dialog.c:294
+#, c-format
+msgid "%1.0f s"
+msgstr "%1.0f s"
+
+#: src/news_config_dialog.c:282
+msgid "Popup On Warning / Error"
+msgstr "Rodyti iškylantyjį langą klaidoms/įspėjimams"
+
+#: src/news_config_dialog.c:287
+msgid "Show on timeout ?"
+msgstr "Rodyti pasibaigus laikui?"
+
+#: src/news_config_dialog.c:309
+msgid "Unread feeds first"
+msgstr "Neperskaityti sklaidos kanalai pirmiau"
+
+#: src/news_config_dialog.c:311
+msgid "Unread articles first"
+msgstr "Neperskaityti straipsniai pirmiau"
+
+#: src/news_config_dialog.c:313
+msgid "Sort articles by date"
+msgstr "Rikiuoti straipsnius pagal datą"
+
+#: src/news_config_dialog.c:316
+msgid "Font"
+msgstr "Šriftas"
+
+#: src/news_config_dialog.c:326
+msgid "Font Shadow"
+msgstr "Šrifto šešėlis"
+
+#: src/news_config_dialog.c:338
+msgid "Proxy"
+msgstr "Įgaliotasis serveris"
+
+#: src/news_config_dialog.c:340
+msgid "Enable"
+msgstr "Įjungti"
+
+#: src/news_config_dialog.c:342
+msgid "Host"
+msgstr "Serveris"
+
+#: src/news_config_dialog.c:346
+msgid "Port"
+msgstr "Prievadas"
+
+#: src/news_config_dialog_category.c:50
+msgid "News Category Configuration"
+msgstr "Naujienų kategorijų konfigūracija"
+
+#: src/news_config_dialog_category.c:135
+msgid "Icon"
+msgstr "Piktograma"
+
+#: src/news_config_dialog_category.c:145 src/news_config_dialog_feed.c:410
+msgid "Name"
+msgstr "Pavadinimas"
+
+#: src/news_config_dialog_category.c:203 src/news_config_dialog_feed.c:543
+msgid "Select an Icon"
+msgstr "Parinkti piktogramą"
+
+#: src/news_config_dialog_category.c:228 src/news_config_dialog_feed.c:568
+msgid "OK"
+msgstr "Gerai"
+
+#: src/news_config_dialog_category.c:229 src/news_config_dialog_feed.c:569
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: src/news_config_dialog_feed.c:63
+msgid "You need to <hilight>create a category</hilight> first"
+msgstr "Pirmiausia Jūs privalote <hilight>sukurti kategoriją</hilight>"
+
+#: src/news_config_dialog_feed.c:77
+msgid "News Feed Configuration"
+msgstr "Sklaidos kanalų konfigūracija"
+
+#: src/news_config_dialog_feed.c:329
+msgid "Basic informations"
+msgstr "Pagrindinė informacija"
+
+#: src/news_config_dialog_feed.c:345
+msgid "Name :"
+msgstr "Pavadinimas :"
+
+#: src/news_config_dialog_feed.c:349
+msgid "Feed url :"
+msgstr "Sklaidos kanalo adresas :"
+
+#: src/news_config_dialog_feed.c:353
+msgid "Mark as important feed"
+msgstr "Pažymėti kaip svarbų"
+
+#: src/news_config_dialog_feed.c:358
+msgid "Category"
+msgstr "Kategorija"
+
+#: src/news_config_dialog_feed.c:368 src/news_config_dialog_feed.c:412
+msgid "Language"
+msgstr "Kalba"
+
+#: src/news_config_dialog_feed.c:391
+msgid "Advanced informations"
+msgstr "Sudėtingesnė informacija"
+
+#: src/news_config_dialog_feed.c:393 src/news_config_dialog_feed.c:414
+msgid "Description"
+msgstr "Aprašas"
+
+#: src/news_config_dialog_feed.c:397 src/news_config_dialog_feed.c:416
+msgid "Home url"
+msgstr "Namų adresas"
+
+#: src/news_config_dialog_feed.c:405
+msgid "Server informations"
+msgstr "Serverio informacija"
+
+#: src/news_config_dialog_feed.c:407
+msgid "Do allow the server to overwrite the informations you entered ?"
+msgstr "Ar leisti serveriui perrašyti Jūsų įvestą informaciją?"
+
+#: src/news_config_dialog_feeds.c:82
+msgid "News Feeds Configuration"
+msgstr "Sklaidos kanalų konfigūracija"
+
+#: src/news_config_dialog_feeds.c:290
+msgid "Categories"
+msgstr "Kategorijos"
+
+#: src/news_config_dialog_feeds.c:301 src/news_config_dialog_feeds.c:375
+#: src/news_config_dialog_item_content.c:283
+msgid "Move Up"
+msgstr ""
+
+#: src/news_config_dialog_feeds.c:304 src/news_config_dialog_feeds.c:378
+#: src/news_config_dialog_item_content.c:287
+msgid "Move Down"
+msgstr ""
+
+#: src/news_config_dialog_feeds.c:314 src/news_config_dialog_feeds.c:388
+msgid "Add"
+msgstr "Pridėti"
+
+#: src/news_config_dialog_feeds.c:316 src/news_config_dialog_feeds.c:390
+msgid "Delete"
+msgstr "Pašalinti"
+
+#: src/news_config_dialog_feeds.c:319 src/news_config_dialog_feeds.c:393
+msgid "Configure"
+msgstr "Konfigūruoti"
+
+#: src/news_config_dialog_feeds.c:331 src/news_config_dialog_langs.c:133
+msgid "Languages"
+msgstr "Kalbos"
+
+#: src/news_config_dialog_feeds.c:333
+msgid "All"
+msgstr "Visi"
+
+#: src/news_config_dialog_feeds.c:336
+msgid "Select"
+msgstr "Pasirinkti"
+
+#: src/news_config_dialog_feeds.c:346
+msgid "Empty the lists"
+msgstr "Išvalyti sąrašus"
+
+#: src/news_config_dialog_feeds.c:349
+msgid "Restore default lists"
+msgstr "Atkurti numatytuosius sąrašus"
+
+#: src/news_config_dialog_feeds.c:686
+msgid ""
+"There are <hilight>feeds</hilight> in this category.<br>You have to "
+"<hilight>remove them first</hilight>"
+msgstr ""
+"Šioje kategorijoje yra <hilight>sklaidos kanalų</hilight>.<br>Jūs privalote "
+"<hilight>juos pašalinti</hilight>."
+
+#: src/news_config_dialog_feeds.c:754 src/news_config_dialog_feeds.c:779
+msgid "News Module - Are you sure ?"
+msgstr "Naujienų modulis - Ar Jūs įsitikinęs?"
+
+#: src/news_config_dialog_item.c:40
+msgid "News Gadget Configuration"
+msgstr "Naujienų įtaiso konfigūracija"
+
+#: src/news_config_dialog_item.c:104
+msgid "View Mode"
+msgstr "Rodymo būdas"
+
+#: src/news_config_dialog_item.c:107
+msgid "Show one icon for all feeds"
+msgstr "Rodyti vieną piktogramą visiems sklaidos kanalams"
+
+#: src/news_config_dialog_item.c:109
+msgid "Show all feeds"
+msgstr "Rodyti visus sklaidos kanalus"
+
+#: src/news_config_dialog_item.c:111
+msgid "Show unread feeds"
+msgstr "Rodyti neperskaitytus sklaidos kanalus"
+
+#: src/news_config_dialog_item.c:113
+msgid "Show all feeds marked as important"
+msgstr "Rodyti svarbius sklaidos kanalus"
+
+#: src/news_config_dialog_item.c:115
+msgid "Show unread feeds marked as important"
+msgstr "Rodyti svarbius neperskaitytus sklaidos kanalus"
+
+#: src/news_config_dialog_item.c:120
+msgid "Feed open in"
+msgstr "Atverti sklaidos kanalą"
+
+#: src/news_config_dialog_item.c:123
+msgid "the feed viewer"
+msgstr "sklaidos kanalų žiūryklėje"
+
+#: src/news_config_dialog_item.c:125
+msgid "my favorite browser"
+msgstr "mano mėgiamoje naršyklėje"
+
+#: src/news_config_dialog_item.c:127
+msgid "Browser opens home url"
+msgstr "Naršyklė atveria namų adresą"
+
+#: src/news_config_dialog_item.c:129
+msgid "instead of feed url"
+msgstr "vietoje sklaidos kanalo adreso"
+
+#: src/news_config_dialog_item.c:136
+msgid "Apply this to all News gadgets"
+msgstr "Pritaikyti visiems naujienų įtaisams"
+
+#: src/news_config_dialog_item_content.c:53
+msgid "News Gadget Content Configuration"
+msgstr "Naujienų įtaiso turinio konfigūracija"
+
+#: src/news_config_dialog_item_content.c:258
+msgid "Available Feeds"
+msgstr ""
+
+#: src/news_config_dialog_item_content.c:267
+msgid "Add this Feed"
+msgstr "Pridėti šį sklaidos kanalą"
+
+#: src/news_config_dialog_item_content.c:274
+msgid "Selected Feeds"
+msgstr "Parinkti sklaidos kanalai"
+
+#: src/news_config_dialog_item_content.c:292
+msgid "Remove this Feed"
+msgstr "Pašalinti šį sklaidos kanalą"
+
+#: src/news_config_dialog_langs.c:45
+msgid "News Feeds Language Configuration"
+msgstr "Naujienų sklaidos kanalų kalbos konfigūracija"
+
+#: src/news_config_dialog_langs.c:123
+msgid "Welcome to News Module !"
+msgstr "Jus sveikina naujienų modulis !"
+
+#: src/news_config_dialog_langs.c:125
+msgid "Please select the languages that you are able to read"
+msgstr "Prašome nurodyti kalbas, kuriomis mokate skaityti"
+
+#: src/news_feed.c:291
+msgid "The <hilight>name</hilight> you entered is not correct"
+msgstr "<hilight>Įvestas vardas</hilight> yra neteisingas"
+
+#: src/news_feed.c:296
+msgid "The need to <hilight>select a category</hilight>."
+msgstr "Jūs privalote <hilight>pasirinkti kategoriją</hilight>."
+
+#: src/news_feed.c:302
+#, c-format
+msgid ""
+"A feed with the <hilight>name</hilight> %s <hilight>already "
+"exists</hilight><br>in the %s category<br><br>Its not possible to have feeds "
+"with the same name<br>in one category."
+msgstr ""
+"Sklaidos kanalas <hilight>pavadintas</hilight> %s <hilight>jau "
+"yra</hilight><br>kategorijoje %s<br><br>Negalima turėti sklaidos kanalų "
+"vienodais vardais<br>vienoje kategorijoje."
+
+#: src/news_feed.c:311
+msgid "You need to select a <hilight>language</hilight>."
+msgstr "Privalote pasirinkti <hilight>kalbą</hilight>."
+
+#: src/news_feed.c:318
+msgid "The <hilight>url</hilight> you specified is not correct"
+msgstr "Nurodytas <hilight>adresas</hilight> yra neteisingas"
+
+#: src/news_feed.c:880
+msgid "You need to enter a <hilight>name</hilight> !"
+msgstr "Privalote įvesti <hilight>pavadinimą</hilight> !"
+
+#: src/news_feed.c:888
+msgid ""
+"The <hilight>name</hilight> you entered is <hilight>already "
+"used</hilight><br>by another category"
+msgstr ""
+"Įvestas <hilight>vardas</hilight> jau <hilight>yra "
+"naudojamas</hilight><br><br>kitoje kategorijoje"
+
+#: src/news_menu.c:131
+msgid "Set all as read"
+msgstr ""
+
+#: src/news_menu.c:137 src/news_viewer.c:380
+msgid "Update"
+msgstr ""
+
+#: src/news_menu.c:148
+msgid "Gadget"
+msgstr ""
+
+#: src/news_menu.c:158
+msgid "Main"
+msgstr ""
+
+#: src/news_menu.c:163
+msgid "Settings"
+msgstr ""
+
+#: src/news_menu.c:168
+msgid "Gadget Contents"
+msgstr ""
+
+#: src/news_utils.h:13
+msgid "News Module DEBUG DEBUG DEBUG DEBUG"
+msgstr "Naujienų modulis DEBUG DEBUG DEBUG DEBUG"
+
+#: src/news_utils.h:20
+msgid "News Module"
+msgstr "Naujienų modulis"
+
+#: src/news_utils.h:27
+msgid "News Module Error"
+msgstr "Naujienų modulio klaida"
+
+#: src/news_viewer.c:372
+msgid "Feeds in this gadget"
+msgstr "Sklaidos kanalai šiame įtaise"
+
+#: src/news_viewer.c:388
+msgid "Set as read"
+msgstr ""
+
+#: src/news_viewer.c:438
+msgid "Articles in selected feed"
+msgstr "Straipsniai pasirinktame sklaidos kanale"

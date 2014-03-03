@@ -1,0 +1,30 @@
+Elev8 Module for E17
+--------------------
+
+This is a proof of concept module that will let you have E17 gadgets written
+in JavaScript, using the Elev8 API. It works to the extent that one can
+create gadgets using Elementary widgets and create menu entries, and use
+Elev8 modules, such as D-Bus and storage.
+
+
+BUILDING
+
+You'll need a recent version of Elev8 (specially its Elementary module).
+
+
+
+USING
+
+Set ELEV8_MODPATH to point to the path of your Elev8 module installation
+directory before launching Enlightenment.
+
+Copy test-gadget.js to /tmp.
+
+Load the Elev8 module in Settings->Modules. Accept that it is not a standard
+module and that it might be unstable.
+
+Loading the module will scan the /tmp directory (currently hardcoded!) for
+'*.js' files, and create a new gadget class for each gadget. When the module
+is loaded, one can just add them to the shelves or desktop directly, by
+choosing the file name as the module name (e.g. 'test-gadget.js').
+

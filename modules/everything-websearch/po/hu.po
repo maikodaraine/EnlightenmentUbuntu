@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: everything-websearch\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-12-25 15:41+0100\n"
+"PO-Revision-Date: 2013-12-25 16:37+0100\n"
+"Last-Translator: rezso <rezso@rezso.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: ../src/e_mod_main.c:736
+msgid "Abort download"
+msgstr "Letöltés megszakítása"
+
+#: ../src/e_mod_main.c:781
+#, c-format
+msgid "Got %d kbytes of"
+msgstr "Letöltve %d kbyte / "
+
+#: ../src/e_mod_main.c:799
+msgid "Enqueue"
+msgstr "Betevés a lejátszólistába"
+
+#: ../src/e_mod_main.c:806
+msgid "Play"
+msgstr "Lejátszás"
+
+#: ../src/e_mod_main.c:836
+msgid "Finished download"
+msgstr "Letöltés befejezve"
+
+#: ../src/e_mod_main.c:922
+msgid "Start download"
+msgstr "Letöltés indítása"
+
+#: ../src/e_mod_main.c:1004
+msgid "Enqueue files for download"
+msgstr "Fájlok sorbaállítása letöltésre"
+
+#: ../src/e_mod_main.c:1021 ../src/e_mod_main.c:1250 ../src/e_mod_main.c:1401
+msgid "Youtube"
+msgstr "Youtube"
+
+#. ecore_con_url_http_post_send(ud->dd->con_url, post);
+#: ../src/e_mod_main.c:1062 ../src/e_mod_main.c:1067 ../src/e_mod_main.c:1094
+#: ../src/e_mod_main.c:1155 ../src/e_mod_main.c:1294
+msgid "Upload Image"
+msgstr "Kép feltöltése"
+
+#: ../src/e_mod_main.c:1062
+msgid "Link copied to clipboard"
+msgstr "A link átmásolva a vágólapra"
+
+#: ../src/e_mod_main.c:1067
+msgid "Something went wrong :("
+msgstr "Valami nem jó :("
+
+#: ../src/e_mod_main.c:1092
+#, c-format
+msgid "Completed %1.1f%% of %s"
+msgstr "Kész: %1.1f%% / %s"
+
+#: ../src/e_mod_main.c:1240
+msgid "Google"
+msgstr "Google"
+
+#: ../src/e_mod_main.c:1245
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: ../src/e_mod_main.c:1255 ../src/e_mod_main.c:1395
+msgid "Translate"
+msgstr "Fordítás"
+
+#: ../src/e_mod_main.c:1268
+msgid "Google for it"
+msgstr "Rákeresés a Google-val"
+
+#: ../src/e_mod_main.c:1271
+msgid "Wikipedia Page"
+msgstr "Wikipedia oldal"
+
+#: ../src/e_mod_main.c:1274
+msgid "Feeling Lucky"
+msgstr "Jó napom van :)"
+
+#: ../src/e_mod_main.c:1277
+msgid "Watch on Youtube"
+msgstr "megtekintés a Youtube-on"
+
+#: ../src/e_mod_main.c:1281
+msgid "Download as Audio"
+msgstr "Letöltés hangként"
+
+#: ../src/e_mod_main.c:1284
+msgid "Play Video"
+msgstr "Videó lejátszása"
+
+#: ../src/e_mod_main.c:1287
+msgid "Download and enqueue"
+msgstr "Letöltés és sorbaállítás lejátszásra"
+
+#: ../src/e_mod_main.c:1290
+msgid "Download and play"
+msgstr "Letöltés és lejátszás"
+
+#: ../src/e_mod_main.c:1368 ../src/e_mod_main.c:1540 ../src/e_mod_main.c:1559
+#, fuzzy
+msgid "Everything Websearch"
+msgstr "Minden kijelölése"
+
+#: ../src/e_mod_main.c:1382
+msgid "General"
+msgstr "Általános"
+
+#: ../src/e_mod_main.c:1385
+msgid "Browser"
+msgstr "Böngésző"
+
+#: ../src/e_mod_main.c:1390
+msgid "Language"
+msgstr "Nyelv"
+
+#: ../src/e_mod_main.c:1404
+msgid "Video player"
+msgstr "Videolejátszó"
+
+#: ../src/e_mod_main.c:1409
+msgid "Download directory"
+msgstr "Letöltési mappa"
+
+#: ../src/e_mod_main.c:1414
+msgid "Download requires mplayer and mp3lame"
+msgstr "A letöltéshez mplayer és mp3lame kell"
+
+#: ../src/e_mod_main.c:1537
+msgid "Launcher"
+msgstr "Indító"

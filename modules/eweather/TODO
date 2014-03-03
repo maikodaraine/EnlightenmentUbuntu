@@ -1,0 +1,4 @@
+* Automatic yahoo code retrieval using Town and Country
+  names provided by user.
+* Maybe it would be nice to integrate elocation to
+  preset some reasonable yahoo code on first run.

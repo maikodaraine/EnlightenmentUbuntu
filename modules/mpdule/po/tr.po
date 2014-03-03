@@ -1,0 +1,72 @@
+# Turkish translation for enlightenment
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2012-12-23 15:06+0400\n"
+"PO-Revision-Date: 2013-01-10 21:40+0000\n"
+"Last-Translator: Necdet Yucel <Unknown>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-01-11 04:36+0000\n"
+"X-Generator: Launchpad (build 16412)\n"
+
+#: src/e_mod_config.c:39
+msgid "MPDule Configuration"
+msgstr "MPDule Yapılandırması"
+
+#: src/e_mod_config.c:87
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#: src/e_mod_config.c:88
+msgid "Poll Time:"
+msgstr ""
+
+#: src/e_mod_config.c:91
+#, c-format
+msgid "%1.0f seconds"
+msgstr "%1.0f saniye"
+
+#: src/e_mod_config.c:94
+msgid "Hostname:"
+msgstr "Makine adı:"
+
+#: src/e_mod_config.c:101
+msgid "Port:"
+msgstr "Port:"
+
+#: src/e_mod_config.c:106
+msgid "Show Popup"
+msgstr ""
+
+#: src/e_mod_main.c:175
+msgid "MPDule"
+msgstr "MPDule"
+
+#: src/e_mod_main.c:217
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/e_mod_main.c:495 src/e_mod_main.c:497
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: src/e_mod_main.c:502 src/e_mod_main.c:504
+msgid "Stopped"
+msgstr "Durdurulan"
+
+#: src/e_mod_main.c:509 src/e_mod_main.c:511
+msgid "Playing"
+msgstr "Oynatılıyor"
+
+#: src/e_mod_main.c:516 src/e_mod_main.c:518
+msgid "Paused"
+msgstr "Duraklatıldı"

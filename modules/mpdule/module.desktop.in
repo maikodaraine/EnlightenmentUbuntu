@@ -1,0 +1,19 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Link
+Name=MPDule
+Name[eo]=MPDule
+Name[fr]=MPDule
+Comment=View what's playing in MPD.
+Comment[cs]=Zobrazí, co hraje v MPD.
+Comment[el]=Εμφάνιση του τι παίζει στο MPD.
+Comment[eo]=<br>Vidi kio muzikas pere de MPD.
+Comment[es]=Vea lo que se está reproduciendo en MPD.
+Comment[fr]=Une interface pour le démon MPD.
+Comment[gl]=Vexa o que se reproduce no MPD.
+Comment[hu]=Láthatod, mit játszik épp az MPD.
+Comment[it]=Un'interfaccia per il demone MPD.
+Comment[pt]=Uma interface para o MPD
+Comment[ru]=Показывает что играет в MPD.
+Icon=e-module-mpdule
+X-Enlightenment-ModuleType=utils

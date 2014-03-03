@@ -1,0 +1,133 @@
+# Serbian translation for enlightenment
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-08-24 11:51+0200\n"
+"PO-Revision-Date: 2013-06-24 09:31+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-08-25 05:04+0000\n"
+"X-Generator: Launchpad (build 16738)\n"
+"Language: sr\n"
+
+#: src/e_mod_config.c:55
+msgid "Places Settings"
+msgstr "Поставке места"
+
+#: src/e_mod_config.c:138
+msgid "General"
+msgstr "Опште"
+
+#: src/e_mod_config.c:141
+msgid "Show in main menu"
+msgstr "Приказуј у главном изборнику"
+
+#: src/e_mod_config.c:145
+msgid "Hide the gadget header"
+msgstr "Сакривај заглавље справице"
+
+#: src/e_mod_config.c:149
+msgid "Auto close the popup"
+msgstr "Сам затвори искакање"
+
+#: src/e_mod_config.c:153
+msgid "Mount volumes at boot"
+msgstr "Прикачуј спољне уређаје при подизању"
+
+#: src/e_mod_config.c:157
+msgid "Mount volumes on insert"
+msgstr "Прикачи спољне уређаје по убацивању"
+
+#: src/e_mod_config.c:161
+msgid "Open filemanager on insert"
+msgstr "Отвори управника датотека по убацивању"
+
+#: src/e_mod_config.c:168
+msgid "Use a custom file manager"
+msgstr "Користи прилагођеног управника датотека"
+
+#: src/e_mod_config.c:181
+msgid "Show in menu"
+msgstr "Прикажи у изборнику"
+
+#: src/e_mod_config.c:184 src/e_mod_places.c:803
+msgid "Home"
+msgstr "Почетна"
+
+#: src/e_mod_config.c:187 src/e_mod_places.c:812
+msgid "Desktop"
+msgstr "Радна површ"
+
+#: src/e_mod_config.c:190 src/e_mod_places.c:821
+msgid "Trash"
+msgstr "Смеће"
+
+#: src/e_mod_config.c:193 src/e_mod_places.c:652 src/e_mod_places.c:830
+msgid "Filesystem"
+msgstr "Систем датотека"
+
+#: src/e_mod_config.c:196 src/e_mod_places.c:839
+msgid "Temp"
+msgstr "Привремена"
+
+#: src/e_mod_config.c:199
+msgid "Favorites"
+msgstr "Омиљено"
+
+#: src/e_mod_main.c:59
+msgid "Files"
+msgstr "Датотеке"
+
+#: src/e_mod_main.c:61 src/e_mod_main.c:329 src/e_mod_places.c:274
+#: src/e_mod_places.c:896
+msgid "Places"
+msgstr "Места"
+
+#: src/e_mod_main.c:426
+msgid "Places Configuration Updated"
+msgstr "Поставке места су освежене"
+
+#: src/e_mod_main.c:542
+msgid "Settings"
+msgstr "Поставке"
+
+#: src/e_mod_places.c:506
+msgid "Warning"
+msgstr "Упозорење"
+
+#: src/e_mod_places.c:507
+msgid ""
+"<b>Cannot run the Enlightenment FileManager.</b><br>Please choose a custom "
+"file manager in<br>the gadget configuration."
+msgstr ""
+"<b>Нисам успео да покренем управника датотека Просвећења.</b><br>Изаберите "
+"прилагођеног управника датотека у<br>поставкама справице."
+
+#: src/e_mod_places.c:656
+msgid "No Name"
+msgstr "Без имена"
+
+#: src/e_mod_places.c:663
+msgid "free of"
+msgstr ""
+
+#: src/e_mod_places.c:669
+#, c-format
+msgid "%s Not Mounted"
+msgstr "%s није прикачен"
+
+#: src/e_mod_places.c:696
+msgid "unmount"
+msgstr "откачи"
+
+#: src/e_mod_places.c:701
+msgid "eject"
+msgstr "избаци"

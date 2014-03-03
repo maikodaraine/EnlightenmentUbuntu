@@ -1,0 +1,144 @@
+# Portuguese translation for everything-websearch
+# This file is distributed under the same license as the enlightenment package.
+# Sérgio Marques <smarquespt@gmail.com>, 2010-2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: Everything-websearch\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-04-08 11:31+0200\n"
+"PO-Revision-Date: 2013-04-30 12:57-0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"Language-Team: Portuguese <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: pt\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: src/e_mod_main.c:587 src/e_mod_main.c:1395
+msgid "Translate"
+msgstr "Traduzir"
+
+#: src/e_mod_main.c:736
+msgid "Abort download"
+msgstr "Cancelar transferência"
+
+#: src/e_mod_main.c:781
+#, c-format
+msgid "Got %d kbytes of"
+msgstr "Obtidos %d kbytes de"
+
+#: src/e_mod_main.c:795
+msgid "Enqueue in Playlist"
+msgstr "Colocar na fila de reprodução"
+
+#: src/e_mod_main.c:799
+msgid "Enqueue"
+msgstr "Colocar na fila"
+
+#: src/e_mod_main.c:802
+msgid "Play File"
+msgstr "Reproduzir ficheiro"
+
+#: src/e_mod_main.c:806
+msgid "Play"
+msgstr "Reproduzir"
+
+#: src/e_mod_main.c:836
+msgid "Finished download"
+msgstr "Transferência concluída"
+
+#: src/e_mod_main.c:922
+msgid "Start download"
+msgstr "Iniciar transferência"
+
+#: src/e_mod_main.c:1004
+msgid "Enqueue files for download"
+msgstr "Colocar ficheiros na fila de transferência"
+
+#: src/e_mod_main.c:1021 src/e_mod_main.c:1401
+msgid "Youtube"
+msgstr "Youtube"
+
+#: src/e_mod_main.c:1062 src/e_mod_main.c:1067 src/e_mod_main.c:1094
+#: src/e_mod_main.c:1155 src/e_mod_main.c:1294
+msgid "Upload Image"
+msgstr "Enviar imagem"
+
+#: src/e_mod_main.c:1062
+msgid "Link copied to clipboard"
+msgstr "Ligação copiada para a área de transferência"
+
+#: src/e_mod_main.c:1067
+msgid "Something went wrong :("
+msgstr "Aconteceu algo estranho:("
+
+#: src/e_mod_main.c:1092
+#, c-format
+msgid "Completed %1.1f%% of %s"
+msgstr "Terminado %1.1f%% de %s"
+
+#: src/e_mod_main.c:1268
+msgid "Google for it"
+msgstr "Google for it"
+
+#: src/e_mod_main.c:1271
+msgid "Wikipedia Page"
+msgstr "Página Wikipedia"
+
+#: src/e_mod_main.c:1274
+msgid "Feeling Lucky"
+msgstr "Sinto-me com sorte"
+
+#: src/e_mod_main.c:1277
+msgid "Watch on Youtube"
+msgstr "Ver no Youtube"
+
+#: src/e_mod_main.c:1281
+msgid "Download as Audio"
+msgstr "Transferir como áudio"
+
+#: src/e_mod_main.c:1284
+msgid "Play Video"
+msgstr "Reproduzir vídeo"
+
+#: src/e_mod_main.c:1287
+msgid "Download and enqueue"
+msgstr "Transferir e colocar na fila"
+
+#: src/e_mod_main.c:1290
+msgid "Download and play"
+msgstr "Transferir e reproduzir"
+
+#: src/e_mod_main.c:1368 src/e_mod_main.c:1540 src/e_mod_main.c:1559
+msgid "Everything Websearch"
+msgstr "Everything - Pesquisa web"
+
+#: src/e_mod_main.c:1382
+msgid "General"
+msgstr "Geral"
+
+#: src/e_mod_main.c:1385
+msgid "Browser"
+msgstr "Navegador"
+
+#: src/e_mod_main.c:1390
+msgid "Language"
+msgstr "Idioma"
+
+#: src/e_mod_main.c:1404
+msgid "Video player"
+msgstr "Reprodutor de vídeo"
+
+#: src/e_mod_main.c:1409
+msgid "Download directory"
+msgstr "Diretório de transferência"
+
+#: src/e_mod_main.c:1414
+msgid "Download requires mplayer and mp3lame"
+msgstr "A transferência requer mplayer e mp3lame"
+
+#: src/e_mod_main.c:1537
+msgid "Launcher"
+msgstr "Lançador"

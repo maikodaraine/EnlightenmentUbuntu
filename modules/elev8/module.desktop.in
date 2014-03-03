@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Link
+Name=Elev8
+Name[ru]=Скелет
+Name[de]=Elev8ett
+Name[eo]=Elev8eto
+Name[el]=Elev8
+Icon=e-module-elev8
+Comment=Third floor. Mattresses. Pillows. Towels.
+#Several different types available here. NEED TO DOC THESE.
+X-Enlightenment-ModuleType=utils

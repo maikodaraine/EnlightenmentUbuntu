@@ -1,0 +1,23 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Link
+Name=Net
+Name[cs]=Síť
+Name[el]=Δίκτυο
+Name[eo]=Reto
+Name[fr]=Réseau
+Name[hu]=Hálózat
+Name[ru]=Сеть
+Comment=Network interface monitor.
+Comment[cs]=Monitoruje síťové připojení.
+Comment[el]=Παρακολούθηση του δικτύου.
+Comment[eo]=Elrigardi la retan interfacon.
+Comment[es]=Monitor de la interfaz de red.
+Comment[fr]=Moniteur réseau.
+Comment[gl]=Monitor da interface de rede.
+Comment[hu]=A hálózatot követhetjük nyomon (feltöltés/letöltés sebessége)a modullal.
+Comment[it]=Monitor delle interfacce di rete.
+Comment[pt]=Módulo para monitorizar as interfaces de rede
+Comment[ru]=Монитор сетевого интерфейса.
+Icon=e-module-net
+X-Enlightenment-ModuleType=system

@@ -1,0 +1,504 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Marc Furtià  i Puig\\\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-01-29 18:09+0100\n"
+"PO-Revision-Date: 2013-02-01 09:53+0100\n"
+"Last-Translator: Marc Furtià i Puig <marc.furtia@gmail.com>\n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Bookmarks: -1,-1,1139,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: src/e_mod_main.c:52
+msgid "Config init failed"
+msgstr "Configuració d'inici fallada"
+
+#: src/e_mod_main.c:53
+msgid "Parser init failed"
+msgstr "Analitzador inici fallada"
+
+#: src/e_mod_main.c:54
+msgid "Feeds init failed"
+msgstr "Feeds inici fallats"
+
+#: src/e_mod_main.c:55
+msgid "Viewer init failed"
+msgstr "Vista inici fallada"
+
+#: src/e_mod_main.c:56
+msgid "Popup subsystem init failed"
+msgstr "Subsistema Finestra Emergent inicial fallada"
+
+#: src/e_mod_main.c:219
+msgid "News"
+msgstr "Notícies"
+
+#: src/news_config.c:100
+#, c-format
+msgid "<hilight>News module : Configuration Upgraded</hilight><br><br>Your configuration of news module<br>has been upgraded<br>Your settings were removed<br>Sorry for the inconvenience<br><br>(%d -> %d)"
+msgstr "<hilight>Mòdul Notícies : Configuració Actualitzada</hilight><br><br>La configuració del mòdul de les notícies<br> ha estat actualitzat<br>Les teves preferències han estat borrades<br>Perdona per l'inconvenient<br><br>(%d -> %d)"
+
+#: src/news_config.c:112
+#, c-format
+msgid "<hilight>News module : Configuration Downgraded</hilight><br><br>Your configuration of News module<br>has been downgraded<br>Your settings were removed<br>Sorry for the inconvenience<br><br>(%d ->%d)"
+msgstr "<hilight>Mòdul Notícies : Configuració Des-actualitzada</hilight><br><br>La configuració del mòdul Notícies<br>ha estat desactualitzat<br>Les serves preferències ha estat borrada<br>Perdona per l'inconvenient<br><br>(%d ->%d)"
+
+#: src/news_config_dialog.c:90
+msgid "News Main Configuration"
+msgstr "Configuració Principal Notícies"
+
+#: src/news_config_dialog.c:192
+#: src/news_config_dialog.c:230
+#: src/news_config_dialog_feeds.c:358
+#: src/news_menu.c:153
+msgid "Feeds"
+msgstr "Feeds"
+
+#: src/news_config_dialog.c:194
+#: src/news_config_dialog.c:238
+msgid "Sort lists by name (disable Move action)"
+msgstr "Ordena llista per nom ( des-habilita acció moviment)"
+
+#: src/news_config_dialog.c:199
+#: src/news_config_dialog.c:307
+#: src/news_viewer.c:307
+msgid "News Viewer"
+msgstr "Visor Notícies"
+
+#: src/news_config_dialog.c:201
+msgid "Font size"
+msgstr "Mida Font"
+
+#: src/news_config_dialog.c:204
+#: src/news_config_dialog.c:318
+#, c-format
+msgid "%1.0f"
+msgstr "%1.0f"
+
+#: src/news_config_dialog.c:207
+msgid "Font color"
+msgstr "Color de Font"
+
+#: src/news_config_dialog.c:232
+#: src/news_config_dialog.c:272
+#: src/news_config_dialog.c:292
+msgid "Timer"
+msgstr "Temporitzador "
+
+#: src/news_config_dialog.c:234
+#, c-format
+msgid "%1.0f min"
+msgstr "%1.0f Minuts"
+
+#: src/news_config_dialog.c:243
+msgid "Browser"
+msgstr "Navegador"
+
+#: src/news_config_dialog.c:245
+msgid "Uses xdg-open script, from freedesktop.org"
+msgstr "Usa script xdg-open, de freedesktop.org"
+
+#: src/news_config_dialog.c:250
+msgid "Popup On News"
+msgstr "Finestres emergents de Notícies"
+
+#: src/news_config_dialog.c:253
+msgid "Never"
+msgstr "Mai"
+
+#: src/news_config_dialog.c:259
+msgid "Only on urgent feeds"
+msgstr "Només en feeds urgents"
+
+#: src/news_config_dialog.c:265
+msgid "On all feeds"
+msgstr "En tots els feeds"
+
+#: src/news_config_dialog.c:274
+#: src/news_config_dialog.c:294
+#, c-format
+msgid "%1.0f s"
+msgstr "%1.0f s"
+
+#: src/news_config_dialog.c:282
+msgid "Popup On Warning / Error"
+msgstr "Finestres emergens en Perill / Error"
+
+#: src/news_config_dialog.c:287
+msgid "Show on timeout ?"
+msgstr "Mostra en fora de temps?"
+
+#: src/news_config_dialog.c:309
+msgid "Unread feeds first"
+msgstr "Feeds no llegits primer"
+
+#: src/news_config_dialog.c:311
+msgid "Unread articles first"
+msgstr "Articles no llegits primer"
+
+#: src/news_config_dialog.c:313
+msgid "Sort articles by date"
+msgstr "Ordena articles per data"
+
+#: src/news_config_dialog.c:316
+msgid "Font"
+msgstr "Font"
+
+#: src/news_config_dialog.c:326
+msgid "Font Shadow"
+msgstr "Ombra Font"
+
+#: src/news_config_dialog.c:338
+msgid "Proxy"
+msgstr "Proxy"
+
+#: src/news_config_dialog.c:340
+msgid "Enable"
+msgstr "Autoritza"
+
+#: src/news_config_dialog.c:342
+msgid "Host"
+msgstr "Host"
+
+#: src/news_config_dialog.c:346
+msgid "Port"
+msgstr "Port"
+
+#: src/news_config_dialog_category.c:50
+msgid "News Category Configuration"
+msgstr "Configuració Categoria Notícies"
+
+#: src/news_config_dialog_category.c:135
+msgid "Icon"
+msgstr "Icona"
+
+#: src/news_config_dialog_category.c:145
+#: src/news_config_dialog_feed.c:410
+msgid "Name"
+msgstr "Nom"
+
+#: src/news_config_dialog_category.c:203
+#: src/news_config_dialog_feed.c:543
+msgid "Select an Icon"
+msgstr "Selecciona un icona "
+
+#: src/news_config_dialog_category.c:228
+#: src/news_config_dialog_feed.c:568
+msgid "OK"
+msgstr "D'acord"
+
+#: src/news_config_dialog_category.c:229
+#: src/news_config_dialog_feed.c:569
+msgid "Cancel"
+msgstr "Cancel·la "
+
+#: src/news_config_dialog_feed.c:63
+msgid "You need to <hilight>create a category</hilight> first"
+msgstr "Es necessita <hilight> crear una categoria</hilight> primer"
+
+#: src/news_config_dialog_feed.c:77
+msgid "News Feed Configuration"
+msgstr "Configuració Notícies Feed"
+
+#: src/news_config_dialog_feed.c:329
+msgid "Basic informations"
+msgstr "Informació Bàsica"
+
+#: src/news_config_dialog_feed.c:345
+msgid "Name :"
+msgstr "Nom:"
+
+#: src/news_config_dialog_feed.c:349
+msgid "Feed url :"
+msgstr "URL de Feed:"
+
+#: src/news_config_dialog_feed.c:353
+msgid "Mark as important feed"
+msgstr "Marca com important aquest feed"
+
+#: src/news_config_dialog_feed.c:358
+msgid "Category"
+msgstr "Categoria "
+
+#: src/news_config_dialog_feed.c:368
+#: src/news_config_dialog_feed.c:412
+msgid "Language"
+msgstr "Llengua"
+
+#: src/news_config_dialog_feed.c:391
+msgid "Advanced informations"
+msgstr "Informació Avançada "
+
+#: src/news_config_dialog_feed.c:393
+#: src/news_config_dialog_feed.c:414
+msgid "Description"
+msgstr "Descripció "
+
+#: src/news_config_dialog_feed.c:397
+#: src/news_config_dialog_feed.c:416
+msgid "Home url"
+msgstr "Home URL"
+
+#: src/news_config_dialog_feed.c:405
+msgid "Server informations"
+msgstr "Informació Servidor"
+
+#: src/news_config_dialog_feed.c:407
+msgid "Do allow the server to overwrite the informations you entered ?"
+msgstr "Es permet al servidor sobre-escriure informació que s'ha entrat ?"
+
+#: src/news_config_dialog_feeds.c:82
+msgid "News Feeds Configuration"
+msgstr "Configuració Notícies Feeds"
+
+#: src/news_config_dialog_feeds.c:290
+msgid "Categories"
+msgstr "Categories"
+
+#: src/news_config_dialog_feeds.c:301
+#: src/news_config_dialog_feeds.c:375
+#: src/news_config_dialog_item_content.c:283
+msgid "Move Up"
+msgstr "Mou Amunt"
+
+#: src/news_config_dialog_feeds.c:304
+#: src/news_config_dialog_feeds.c:378
+#: src/news_config_dialog_item_content.c:287
+msgid "Move Down"
+msgstr "Mou Avall"
+
+#: src/news_config_dialog_feeds.c:314
+#: src/news_config_dialog_feeds.c:388
+msgid "Add"
+msgstr "Afegir"
+
+#: src/news_config_dialog_feeds.c:316
+#: src/news_config_dialog_feeds.c:390
+msgid "Delete"
+msgstr "Borra"
+
+#: src/news_config_dialog_feeds.c:319
+#: src/news_config_dialog_feeds.c:393
+msgid "Configure"
+msgstr "Configura"
+
+#: src/news_config_dialog_feeds.c:331
+#: src/news_config_dialog_langs.c:133
+msgid "Languages"
+msgstr "LLengues"
+
+#: src/news_config_dialog_feeds.c:333
+msgid "All"
+msgstr "Tot"
+
+#: src/news_config_dialog_feeds.c:336
+msgid "Select"
+msgstr "Selecció"
+
+#: src/news_config_dialog_feeds.c:346
+msgid "Empty the lists"
+msgstr "Buida la llista"
+
+#: src/news_config_dialog_feeds.c:349
+msgid "Restore default lists"
+msgstr "Restaura la llista per defecte"
+
+#: src/news_config_dialog_feeds.c:686
+msgid "There are <hilight>feeds</hilight> in this category.<br>You have to <hilight>remove them first</hilight>"
+msgstr "Hi ha <hilight>Feeds</hilight> en aquesta categoria.<br>S'han de <hilight>borrar els feeds primer</hilight>"
+
+#: src/news_config_dialog_feeds.c:754
+#: src/news_config_dialog_feeds.c:779
+msgid "News Module - Are you sure ?"
+msgstr "Mòdul Novetats - Estàs segur ?"
+
+#: src/news_config_dialog_item.c:40
+msgid "News Gadget Configuration"
+msgstr "Configuració Artefacte Novetats"
+
+#: src/news_config_dialog_item.c:104
+msgid "View Mode"
+msgstr "Mode de Vista"
+
+#: src/news_config_dialog_item.c:107
+msgid "Show one icon for all feeds"
+msgstr "Mostra un icona per tots els feeds"
+
+#: src/news_config_dialog_item.c:109
+msgid "Show all feeds"
+msgstr "Mostra tots els feeds"
+
+#: src/news_config_dialog_item.c:111
+msgid "Show unread feeds"
+msgstr "Mostra feeds no llegits"
+
+#: src/news_config_dialog_item.c:113
+msgid "Show all feeds marked as important"
+msgstr "Mostra tots els feeds marcats com a importants"
+
+#: src/news_config_dialog_item.c:115
+msgid "Show unread feeds marked as important"
+msgstr "Mostra feeds no llegits marcats com a important"
+
+#: src/news_config_dialog_item.c:120
+msgid "Feed open in"
+msgstr "Obra Feed a"
+
+#: src/news_config_dialog_item.c:123
+msgid "the feed viewer"
+msgstr "Visor de Feed"
+
+#: src/news_config_dialog_item.c:125
+msgid "my favorite browser"
+msgstr "El meu navegador preferit"
+
+#: src/news_config_dialog_item.c:127
+msgid "Browser opens home url"
+msgstr "Navegador obra home url"
+
+#: src/news_config_dialog_item.c:129
+msgid "instead of feed url"
+msgstr "millor  de feed url"
+
+#: src/news_config_dialog_item.c:136
+msgid "Apply this to all News gadgets"
+msgstr "Aplica això a tots els artefactes de Notícies"
+
+#: src/news_config_dialog_item_content.c:53
+msgid "News Gadget Content Configuration"
+msgstr "Configuració Contingut Artefacte de Novetats"
+
+#: src/news_config_dialog_item_content.c:258
+msgid "Available Feeds"
+msgstr "Feeds Disponibles"
+
+#: src/news_config_dialog_item_content.c:267
+msgid "Add this Feed"
+msgstr "Afegeix Notícia"
+
+#: src/news_config_dialog_item_content.c:274
+msgid "Selected Feeds"
+msgstr "Feeds Seleccionats "
+
+#: src/news_config_dialog_item_content.c:292
+msgid "Remove this Feed"
+msgstr "Borra aquest Feed"
+
+#: src/news_config_dialog_langs.c:45
+msgid "News Feeds Language Configuration"
+msgstr "Configuració Llengua Feeds de novetats"
+
+#: src/news_config_dialog_langs.c:123
+msgid "Welcome to News Module !"
+msgstr "Benvingut al Mòdul Notícies"
+
+#: src/news_config_dialog_langs.c:125
+msgid "Please select the languages that you are able to read"
+msgstr "Si us plau selecciona les llengues que ets capaç de llegir"
+
+#: src/news_feed.c:291
+msgid "The <hilight>name</hilight> you entered is not correct"
+msgstr "El <hilight>Nom</hilight> que s'ha entrat no és correcta"
+
+#: src/news_feed.c:296
+msgid "The need to <hilight>select a category</hilight>."
+msgstr "Es necessita <hilight>seleccionar una categoria</hilight>."
+
+#: src/news_feed.c:302
+#, c-format
+msgid "A feed with the <hilight>name</hilight> %s <hilight>already exists</hilight><br>in the %s category<br><br>Its not possible to have feeds with the same name<br>in one category."
+msgstr "El Feed amb el <hilight>Nom</hilight> %s ist <hilight>ja existeix</hilight> en la categoria %s.<br>br>No és possible tenir  feeds amb el mateix nom<br> en una categoria."
+
+#: src/news_feed.c:311
+msgid "You need to select a <hilight>language</hilight>."
+msgstr "Es necessita escollir una <hilight>llengua</hilight>"
+
+#: src/news_feed.c:318
+msgid "The <hilight>url</hilight> you specified is not correct"
+msgstr "La <hilight>URL</hilight> no és correcta "
+
+#: src/news_feed.c:880
+msgid "You need to enter a <hilight>name</hilight> !"
+msgstr "Es necessita entrar un <hilight>Nom</hilight>!"
+
+#: src/news_feed.c:888
+msgid "The <hilight>name</hilight> you entered is <hilight>already used</hilight><br>by another category"
+msgstr "El <hilight>Nom</hilight>que s'ha introduit està <hilight>essent usat</hilight><br>Per una altra categoria"
+
+#: src/news_menu.c:131
+msgid "Set all as read"
+msgstr "Marca tot com a llegit"
+
+#: src/news_menu.c:137
+#: src/news_viewer.c:380
+msgid "Update"
+msgstr "Actualitza"
+
+#: src/news_menu.c:148
+msgid "Gadget"
+msgstr "Artefacte"
+
+#: src/news_menu.c:158
+msgid "Main"
+msgstr "Cos"
+
+#: src/news_menu.c:163
+msgid "Settings"
+msgstr "Preferències"
+
+#: src/news_menu.c:168
+msgid "Gadget Contents"
+msgstr "Contingut Artefacte"
+
+#: src/news_utils.h:13
+msgid "News Module DEBUG DEBUG DEBUG DEBUG"
+msgstr "Mòdul Novetats DEBUG DEBUG DEBUG DEBUG"
+
+#: src/news_utils.h:20
+msgid "News Module"
+msgstr "Mòdul Novetats"
+
+#: src/news_utils.h:27
+msgid "News Module Error"
+msgstr "Error Mòdul Novetats"
+
+#: src/news_viewer.c:372
+msgid "Feeds in this gadget"
+msgstr "Feeds en l'artefacte "
+
+#: src/news_viewer.c:388
+msgid "Set as read"
+msgstr "Marca com a llegit"
+
+#: src/news_viewer.c:438
+msgid "Articles in selected feed"
+msgstr "Articles en el feed seleccionat "
+
+#~ msgid "Newsfeeds"
+#~ msgstr "Newsfeeds"
+
+#~ msgid "Configure this feed"
+#~ msgstr "Dieses Feed konfigurieren"
+
+#~ msgid "Update all feeds"
+#~ msgstr "Alle Feeds aktualisieren"
+
+#~ msgid "Configure gadget"
+#~ msgstr "Gadget konfigurieren"
+
+#~ msgid "Configure gadget content"
+#~ msgstr "Gadgetinhalt konfigurieren"
+
+#~ msgid "Main Configuration"
+#~ msgstr "Hauptkonfiguration"
+
+#~ msgid "Feeds Configuration"
+#~ msgstr "Feedkonfiguration"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguration"

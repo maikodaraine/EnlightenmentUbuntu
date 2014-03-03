@@ -1,0 +1,87 @@
+# Russian translation of EWeather module
+# Copyright (C) 2012 Enlightenment development team
+# This file is distributed under the same license as the enlightenment package.
+# Igor Murzov <e-mail@date.by>, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: EWeather\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2013-01-15 02:00+0400\n"
+"PO-Revision-Date: 2013-01-15 02:00+0400\n"
+"Last-Translator: Igor Murzov <e-mail@date.by>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/module/e_mod_config.c:122
+msgid "EWeather Configuration"
+msgstr "Настройка Е-Погоды"
+
+#: src/module/e_mod_config.c:181
+msgid "Poll Time"
+msgstr "Интервал опроса"
+
+#: src/module/e_mod_config.c:184
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f минут"
+
+#: src/module/e_mod_config.c:192
+msgid "Select a data source"
+msgstr "Выберите источник данных"
+
+#: src/module/e_mod_config.c:207
+msgid "Units Settings"
+msgstr "Настройки единиц измерения"
+
+#: src/module/e_mod_config.c:211
+msgid "(°F) Fahrenheit"
+msgstr "(°F) Фаренгейты"
+
+#: src/module/e_mod_config.c:213
+msgid "(°C) Celsius"
+msgstr "(°C) Цельсии"
+
+#: src/module/e_mod_config.c:222
+msgid "Yahoo Forecasts Code"
+msgstr "Код прогноза на Yahoo"
+
+#: src/module/e_mod_config.c:227
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "Код прогноза на Yahoo / Индекс США"
+
+#: src/module/e_mod_config.c:232
+msgid "To find the code for your area, go to:"
+msgstr "Чтобы найти код своего города, зайдите на:"
+
+#: src/module/e_mod_config.c:234
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, найдите свой город и посмотрите на URL"
+
+#: src/module/e_mod_config.c:243
+msgid "Google Forecasts Code"
+msgstr "Код прогноза в Google"
+
+#: src/module/e_mod_config.c:248
+msgid "Google Forecasts City Code"
+msgstr "Код города в Google"
+
+#: src/module/e_mod_config.c:253
+msgid "Specify the name of your city"
+msgstr "Укажите название своего города"
+
+#: src/module/e_mod_config.c:255
+msgid " with extra information like the state or the country"
+msgstr " с дополнительной информацией о стране или области"
+
+#: src/module/e_mod_gadcon.c:105 src/module/e_mod_main.c:42
+msgid "EWeather"
+msgstr "Е-Погода"
+
+#: src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "Настройки"

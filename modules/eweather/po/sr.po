@@ -1,0 +1,89 @@
+# Serbian translation for enlightenment
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the enlightenment package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: enlightenment\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-08-24 11:50+0200\n"
+"PO-Revision-Date: 2013-06-23 19:46+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-08-25 05:04+0000\n"
+"X-Generator: Launchpad (build 16738)\n"
+"Language: sr\n"
+
+#: src/module/e_mod_config.c:122
+msgid "EWeather Configuration"
+msgstr "Поставке Е-времена"
+
+#: src/module/e_mod_config.c:181
+msgid "Poll Time"
+msgstr "Време добављања"
+
+#: src/module/e_mod_config.c:184
+#, c-format
+msgid "%2.0f minutes"
+msgstr "%2.0f минута"
+
+#: src/module/e_mod_config.c:192
+msgid "Select a data source"
+msgstr "Изаберите извор података"
+
+#: src/module/e_mod_config.c:207
+msgid "Units Settings"
+msgstr "Поставке јединица"
+
+#: src/module/e_mod_config.c:211
+msgid "(°F) Fahrenheit"
+msgstr "(°F) фаренхајт"
+
+#: src/module/e_mod_config.c:213
+msgid "(°C) Celsius"
+msgstr "(°C) целзијус"
+
+#: src/module/e_mod_config.c:222
+msgid "Yahoo Forecasts Code"
+msgstr "Шифра за Јаху прогрнозу"
+
+#: src/module/e_mod_config.c:227
+msgid "Yahoo Forecasts Code/US Zip Code"
+msgstr "УС зип шифра за Јаху прогнозу"
+
+#: src/module/e_mod_config.c:232
+msgid "To find the code for your area, go to:"
+msgstr "Да би сазнали шифру своје области посетите:"
+
+#: src/module/e_mod_config.c:234
+#, c-format
+msgid "%s, find your area, and look at the URL"
+msgstr "%s, пронађите своју област и погледајте УРЛ адресу"
+
+#: src/module/e_mod_config.c:243
+msgid "Google Forecasts Code"
+msgstr "Шифра Гугл прогнозе"
+
+#: src/module/e_mod_config.c:248
+msgid "Google Forecasts City Code"
+msgstr "Шифра Фуфгла за прогнозу града"
+
+#: src/module/e_mod_config.c:253
+msgid "Specify the name of your city"
+msgstr "Наведите име свог града"
+
+#: src/module/e_mod_config.c:255
+msgid " with extra information like the state or the country"
+msgstr " са додатним подацима, као што су држава или област"
+
+#: src/module/e_mod_gadcon.c:105 src/module/e_mod_main.c:42
+msgid "EWeather"
+msgstr "Е-прогноза"
+
+#: src/module/e_mod_gadcon.c:149
+msgid "Settings"
+msgstr "Поставке"

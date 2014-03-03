@@ -1,0 +1,49 @@
+#
+# Саша Петровић <salepetronije@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: trunk\n"
+"Report-Msgid-Bugs-To: $MSGID_BUGS_ADDRESS\n"
+"POT-Creation-Date: 2013-06-20 11:30+0200\n"
+"PO-Revision-Date: 2013-06-23 19:07+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"Language-Team: српски <xfce-i18n@xfce.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-06-24 04:43+0000\n"
+"X-Generator: Launchpad (build 16677)\n"
+"Language: \n"
+
+#: src/bin/gui.c:256
+msgid "Unable to grab keyboard, exiting...\n"
+msgstr "Нисам успео да захватим тастатуру, излазим...\n"
+
+#: src/bin/main.c:26
+#, c-format
+msgid "Unable to init Eina!"
+msgstr "Нисам успео да покренем Еину!"
+
+#: src/bin/main.c:32
+#, c-format
+msgid "Unable to init ecore\n"
+msgstr "Нисам успео да покренем екор\n"
+
+#: src/bin/main.c:38
+#, c-format
+msgid "Unable to init efreet"
+msgstr "Нисам успео да покренем ефрет"
+
+#: src/bin/main.c:43
+#, c-format
+msgid "Unable to init elementary"
+msgstr "Нисам успео да покренем елементари"
+
+#: src/bin/main.c:50
+msgid "Unable to initialize GUI!"
+msgstr "нисам успео да покренем ГКС!"
+
+#: src/bin/main.c:56
+msgid "Unable to initialize Polkit Agent interface!"
+msgstr "Нисам успео да покренем сучеље Polkit извршиоца!"

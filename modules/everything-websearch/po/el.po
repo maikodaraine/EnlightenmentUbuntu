@@ -1,0 +1,165 @@
+# Everything-websearch module, Greek translation.
+# This file is put in the public domain.
+# ragecryx <ragecryx@yahoo.gr>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: Everything-websearch\n"
+"Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
+"POT-Creation-Date: 2010-05-30 21:21+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: George Koutsikos <ragecryx@yahoo.gr>\n"
+"Language-Team: Greek <ragecryx@yahoo.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: src/e_mod_main.c:579
+#: src/e_mod_main.c:1203
+#: src/e_mod_main.c:1344
+msgid "Translate"
+msgstr "Μετάφραση"
+
+#: src/e_mod_main.c:719
+msgid "Abort download"
+msgstr "Αναβολή λήψης"
+
+#: src/e_mod_main.c:764
+#, c-format
+msgid "Got %d kbytes of"
+msgstr "Έλαβα %d kbyte από"
+
+#: src/e_mod_main.c:778
+msgid "Enqueue in Playlist"
+msgstr "Προσθήκη στη λίστα αναπαραγωγής"
+
+#: src/e_mod_main.c:782
+msgid "Enqueue"
+msgstr "Προσθήκη στη λίστα"
+
+#: src/e_mod_main.c:785
+msgid "Play File"
+msgstr "Αναπαραγωγή αρχείου"
+
+#: src/e_mod_main.c:789
+msgid "Play"
+msgstr "Αναπαραγωγή"
+
+#: src/e_mod_main.c:819
+msgid "Finished download"
+msgstr "Ολοκληρωμένη λήψη"
+
+#: src/e_mod_main.c:901
+msgid "Start download"
+msgstr "Εκκίνηση λήψης"
+
+#: src/e_mod_main.c:985
+msgid "Enqueue files for download"
+msgstr "Προσθήκη αρχείων στη λίστα για λήψη"
+
+#: src/e_mod_main.c:1002
+#: src/e_mod_main.c:1198
+#: src/e_mod_main.c:1350
+msgid "Youtube"
+msgstr "YouTube"
+
+#: src/e_mod_main.c:1038
+#: src/e_mod_main.c:1042
+#: src/e_mod_main.c:1069
+#: src/e_mod_main.c:1104
+#: src/e_mod_main.c:1239
+msgid "Upload Image"
+msgstr "Ανέβασε μια εικόνα"
+
+#: src/e_mod_main.c:1038
+msgid "Link copied to clipboard"
+msgstr "Ο σύνδεσμος αντιγράφηκε στο πρόχειρο"
+
+#: src/e_mod_main.c:1042
+msgid "Something went wrong :("
+msgstr "Κάτι πήγε στραβά"
+
+#: src/e_mod_main.c:1067
+#, c-format
+msgid "Completed %1.1f%% of %s"
+msgstr "Ολοκληρώθηκε %1.1f%% από %s"
+
+#: src/e_mod_main.c:1188
+msgid "Google"
+msgstr "Google"
+
+#: src/e_mod_main.c:1193
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: src/e_mod_main.c:1215
+msgid "Google for it"
+msgstr "Ψάξτο στο Google"
+
+#: src/e_mod_main.c:1218
+msgid "Wikipedia Page"
+msgstr "Σελίδα της Wikipedia"
+
+#: src/e_mod_main.c:1221
+msgid "Feeling Lucky"
+msgstr "Νοιώθω τυχερός"
+
+#: src/e_mod_main.c:1224
+msgid "Watch on Youtube"
+msgstr "Δες το στο YouTube"
+
+#: src/e_mod_main.c:1227
+msgid "Download as Audio"
+msgstr "Λήψη ως αρχείο ήχου"
+
+#: src/e_mod_main.c:1230
+msgid "Play Video"
+msgstr "Αναπαραγωγή βίντεο"
+
+#: src/e_mod_main.c:1233
+msgid "Download and enqueue"
+msgstr "Λήψη και προσθήκη στη λίστα"
+
+#: src/e_mod_main.c:1236
+msgid "Download and play"
+msgstr "Λήψη και αναπαραγωγή"
+
+#: src/e_mod_main.c:1317
+#: src/e_mod_main.c:1489
+#: src/e_mod_main.c:1509
+msgid "Everything Websearch"
+msgstr "Αναζήτηση ιστού Everything"
+
+#: src/e_mod_main.c:1331
+msgid "General"
+msgstr "Γενικά"
+
+#: src/e_mod_main.c:1334
+msgid "Browser"
+msgstr "Περιηγητής"
+
+#: src/e_mod_main.c:1339
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: src/e_mod_main.c:1353
+msgid "Video player"
+msgstr "Αναπαραγωγέας βίντεο"
+
+#: src/e_mod_main.c:1358
+msgid "Download directory"
+msgstr "Κατάλογος λήψεων"
+
+#: src/e_mod_main.c:1363
+msgid "Download requires mplayer and mp3lame"
+msgstr "Η λήψη απαιτεί το mplayer και το mp3lame"
+
+#: src/e_mod_main.c:1486
+msgid "Extensions"
+msgstr "Επεκτάσεις"
+
+#~ msgid "Youtube converter"
+#~ msgstr "Μετατροπέας YouTube"

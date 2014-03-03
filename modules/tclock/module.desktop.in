@@ -1,0 +1,22 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Link
+Name=TClock
+Name[de]=TClock
+Name[el]=Ρολόι TClock
+Name[eo]=THorloĝo
+Name[fr]=HorlogeT
+Comment=A digital clock gadget.
+Comment[cs]=Gadget poskytující digitální hodiny.
+Comment[de]=Digitale Uhranzeige.
+Comment[el]=Ένα ψηφιακό ρολόι.
+Comment[eo]=Vidigi ciferecan horloĝon.
+Comment[es]=Un reloj digital.
+Comment[fr]=Une horloge numérique.
+Comment[gl]=Un reloxo dixital.
+Comment[hu]=Egy digitális óra.
+Comment[it]=Un modulo per un orologio digitale.
+Comment[pt]=Um relógio digital.
+Comment[ru]=Гаджет цифровых часов.
+Icon=e-module-tclock
+X-Enlightenment-ModuleType=utils
