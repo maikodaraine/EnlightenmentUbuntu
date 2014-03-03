@@ -1,0 +1,4 @@
+src/gui.c
+src/game.c
+src/elemines.h
+src/main.c

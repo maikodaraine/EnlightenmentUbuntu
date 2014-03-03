@@ -1,0 +1,4 @@
+fonts {
+  font: "Inconsolata.otf" "Sans";
+  font: "Bangers.ttf"     "Title";
+}

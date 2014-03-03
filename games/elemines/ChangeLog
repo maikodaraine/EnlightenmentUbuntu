@@ -1,0 +1,63 @@
+elemines 0.3
+------------
+
+Requires EFL 1.8
+- Sound support using multisense
+
+
+elemines 0.2.3
+--------------
+
+Mines count and board size are now defined in the edje theme
+Big code refactoring/improvement by Cedric Bail:
+- most of the layout done with edje
+- use eina iterators to walk the matrix
+- use ecore getopt
+- add support for QuickLaunch
+
+New theme:
+- default-big (20x10, 24 mines)
+
+New translation:
+- polish
+
+
+elemines 0.2.2
+--------------
+
+Fix the middle click feature once again
+Fix flags accounting
+Validate user data to prevent endless loop
+
+New translation:
+- russian
+
+
+elemines 0.2.1
+--------------
+
+Fix the middle click feature
+Detect high score
+
+New translations:
+- esperanto
+- galician
+- italiano
+- korean
+- portuguese
+
+
+elemines 0.2
+------------
+
+Config to change mine number in game
+Add score management using etrophy
+Implement third click
+Resize the red flags and other cosmetic changes
+Translation support (french)
+
+
+elemines 0.1
+------------
+
+Initial release

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Econcentration
+Name[eo]=EKoncentriĝo
+Comment=Game
+Comment[eo]=Ludo
+Comment[es]=Juego
+Comment[gl]=Xogo
+Comment[it]=Gioco
+Comment[pt]=Jogo
+Exec=econcentration
+Icon=econcentration
+Terminal=false
+Type=Application
+Categories=Game;CardGame;Enlightenment;

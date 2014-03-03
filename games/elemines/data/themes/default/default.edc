@@ -1,0 +1,226 @@
+/*
+ * elemines: an EFL minesweeper
+ * Copyright (C) 2012-2014 Jerome Pinot <ngc891@gmail.com> and various
+ * contributors (see AUTHORS).
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ * FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ * COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+ * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#include "edc/images.edc"
+#include "edc/fonts.edc"
+#include "edc/colors.edc"
+
+data {
+  item: "MINES"  "12";
+  item: "SIZE_X" "10";
+  item: "SIZE_Y" "10";
+  item: "width"  "500";
+  item: "height" "600";
+}
+
+collections {
+
+  #include "edc/toolbar.edc"
+  #include "edc/background.edc"
+
+  /* timer box */
+  group {
+    name: "timer";
+    image: "clock.png" COMP;
+    parts {
+      part {
+        name: "clock";
+        type: IMAGE;
+        description {
+          state: "default" 0.0;
+          image {
+            normal: "clock.png";
+          }
+          rel1 {
+            relative: 0.0 0.0;
+            offset: 50 0;
+          }
+          rel2 {
+            relative: 0.0 0.0;
+            offset: 100 50;
+          }
+        }
+      }
+      part {
+        name: "time";
+        type: TEXT;
+        effect: SOFT_SHADOW;
+        scale: 1;
+        description {
+          state: "default" 0.0;
+          color_class: "standard";
+          text {
+            text: "00:00";
+            font: "Sans";
+            size: 28;
+            align: 0.5 0.5;
+          }
+          rel1 {
+            relative: 0.0 0.0;
+            offset: 100 0;
+          }
+          rel2 {
+            relative: 1.0 1.0;
+            offset: 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* remaining mines counter */
+  group {
+    name: "mines";
+    parts {
+      part {
+        name: "icon";
+        type: IMAGE;
+        description {
+          state: "default" 0.0;
+          image {
+            normal: "bomb.png";
+          }
+          rel1 {
+            relative: 0.0 0.0;
+            offset: 70 0;
+          }
+          rel2 {
+            relative: 0.0 0.0;
+            offset: 120 50;
+          }
+        }
+      }
+      part {
+        name: "mines";
+        type: TEXT;
+        effect: SOFT_SHADOW;
+        scale: 1;
+        description {
+          state: "default" 0.0;
+          color_class: "standard";
+          text {
+            text: "";
+            font: "Sans";
+            size: 28;
+            align: 0.5 0.5;
+          }
+          rel1 {
+            relative: 0.0 0.0;
+            offset: 80 0;
+          }
+          rel2 {
+            relative: 1.0 1.0;
+            offset: 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* The board and its content */
+  #include "edc/grass-side.edc"
+
+  group {
+     name: "board";
+     broadcast_signal: 0;
+     parts {
+        part {
+           name: "board";
+           type: TABLE;
+
+           description {
+              table.homogeneous: TABLE;
+           }
+
+#define ITEM(X, Y, W, H, Source)                                        \
+           item {                                                       \
+              type: GROUP;                                              \
+              source: Source;                                           \
+              position: X Y;                                            \
+              weight: 1 1;                                              \
+              align: -1 -1;                                             \
+              spread: W H;                                              \
+           }
+
+           table {
+              items  {
+                 ITEM(1, 0, 10, 1, "grass/s");
+                 ITEM(1, 11, 10, 1, "grass/n");
+                 ITEM(1, 1, 10, 10, "cell");
+                 ITEM(0, 1, 1, 10, "grass/w");
+                 ITEM(11, 1, 1, 10, "grass/e");
+              }
+           }
+        }
+        part {
+           name: "congrat";
+           type: GROUP;
+           source: "congratulation";
+           description {
+              visible: 0;
+              color: 0 0 0 0;
+           }
+           description {
+              state: congrat 0.0;
+              inherit: default 0.0;
+              visible: 1;
+           }
+           description {
+              state: congrat 1.0;
+              inherit: congrat 0.0;
+              color: 255 255 255 255;
+           }
+        }
+     }
+
+     programs {
+        program {
+           signal: "congrat";
+           action: STATE_SET congrat 0.0;
+           target: congrat;
+           after: congrat/anim;
+        }
+        program {
+           name: congrat/anim;
+           action: STATE_SET congrat 1.0;
+           transition: LINEAR 1.0;
+           target: congrat;
+        }
+        program {
+           signal: reset;
+           action: STATE_SET default 0.0;
+           target: congrat;
+        }
+     }
+  }
+
+  #include "edc/pause.edc"
+  #include "edc/cell.edc"
+  #include "edc/congratulation.edc"
+
+}

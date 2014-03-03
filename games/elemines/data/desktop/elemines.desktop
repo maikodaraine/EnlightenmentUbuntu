@@ -1,0 +1,21 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Version=1.0
+Name=elemines
+Name[fr]=Elemines
+GenericName=mine sweeper
+GenericName[es]=Buscaminas
+GenericName[fr]=démineur
+GenericName[gl]=Buscaminas
+GenericName[it]=Campo minato
+GenericName[ru]=Сапёр
+Comment=EFL mine sweeper
+Comment[es]=Buscaminas basado en las EFL
+Comment[fr]=démineur basé sur les EFL
+Comment[gl]=Buscaminas basado nas EFL
+Comment[it]=Campo minato basato sulle EFL
+Comment[ru]=Сапёр
+Icon=elemines
+Exec=elemines
+Categories=Application;Game;BoardGame;

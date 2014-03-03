@@ -1,0 +1,94 @@
+# Korean translations for Elemines.
+# Copyright (C) 2013-2014 Jérôme Pinot
+# This file is distributed under the same license as the Elemines package.
+# Park Eunri <park.eunri@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: elemines 0.3\n"
+"Report-Msgid-Bugs-To: ngc891@gmail.com\n"
+"POT-Creation-Date: 2014-01-12 12:29+0900\n"
+"PO-Revision-Date: 2013-01-24 16:20+0900\n"
+"Last-Translator: Park Eunri <park.eunri@gmail.com>\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/gui.c:57
+msgid "High Scores"
+msgstr "최고 기록"
+
+#: src/gui.c:96 src/gui.c:383
+msgid "Configuration"
+msgstr "설정"
+
+#: src/gui.c:106
+#, c-format
+msgid "%.0f mines"
+msgstr "%.0f 지뢰"
+
+#: src/gui.c:117
+#, c-format
+msgid ""
+"<b>Note:</b> default mine number is <b>%d</b> with scoring in <b>%s</b> "
+"category. If you change the mine number to something else, your score will "
+"be put in the <b>%s</b> category."
+msgstr ""
+"<b>주의:</b> 기본 지뢰수 <b>%d</d>개는 <b>%s</b> 범주에서 기록. 만일 다른 지"
+"뢰수로 변경하고자 할때는 <b>%s</b> 범주에서 기록."
+
+#: src/gui.c:131 src/gui.c:161
+msgid "OK"
+msgstr "확인"
+
+#: src/gui.c:146 src/gui.c:386
+msgid "About"
+msgstr "정보"
+
+#: src/gui.c:150
+#, c-format
+msgid ""
+"<b>%s %s</b><br><br>%s<br><br>Pictures derived from Battle For Wesnoth:"
+"<br>http://www.wesnoth.org/<br>"
+msgstr ""
+"<b>%s %s</b><br><br>%s<br><br>이미지는 Battle For Wesnoth에서 가져옴:"
+"<br>http://www.wesnoth.org/<br>"
+
+#: src/gui.c:381
+msgid "Refresh"
+msgstr "다시 시작"
+
+#: src/gui.c:382
+msgid "Pause"
+msgstr "일시중지"
+
+#: src/gui.c:385
+msgid "Scores"
+msgstr "기록"
+
+#: src/gui.c:387
+msgid "Quit"
+msgstr "닫기"
+
+#: src/game.c:144
+#, c-format
+msgid "Score: %d"
+msgstr "득점: %d"
+
+#: src/game.c:151
+msgid "High Score!!"
+msgstr "최고 득점!!"
+
+#: src/game.c:159
+msgid "You win!"
+msgstr "승리!"
+
+#: src/elemines.h:56
+msgid "Standard"
+msgstr "표준"
+
+#: src/elemines.h:57
+msgid "Custom"
+msgstr "사용자 정의"

@@ -1,0 +1,45 @@
+Elemines is an EFL minesweeper clone.
+
+Rules:
+------
+
+The object of the game is to clear an abstract minefield without detonating a
+mine. The game is played by revealing squares of the grid, by clicking them 
+with a mouse. If a square containing a mine is revealed, you lose the game. 
+Otherwise, a digit is revealed in the square, indicating  the number of 
+adjacent squares that contain mines.
+
+
+How to play:
+------------
+
+Left click to uncover a tile
+Right to add/remove a flag
+Middle click to clear around once the correct number of mines have been flagged.
+
+
+Configuration:
+--------------
+
+On the command line, you can change the number of mines in the field with the
+-m option. Default is 12. The board is 10x10 so mine limit is 99. You can
+change the mines in the game by clicking on the 'Config.' button.
+
+An alternate default-big theme is available, with twice more bombes and tiles:
+
+  $ elemines -t=default-big
+
+
+Scoring:
+--------
+
+Score is based on the mine number and the time to complete the task. It's
+compute like (board_size * mines - time). There are two categories for scores:
+'Standard' if you played using the default mine number of 12, and 'Custom' for
+the other cases.
+
+
+Sound:
+------
+
+To have sound in elemines, your EFL must have been compiled with sound support.

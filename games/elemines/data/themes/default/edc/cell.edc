@@ -1,0 +1,429 @@
+/* main group: cell control */
+group { 
+  name: "cell";
+  sounds {
+    sample {
+      name: "boom" RAW;
+      source: "boom.flac";
+    }
+    sample {
+      name: "flag" RAW;
+      source: "flag.flac";
+    }
+    sample {
+      name: "digg" RAW;
+      source: "digging.flac";
+    }
+    sample {
+      name: "fanfare" RAW;
+      source: "fanfare.flac";
+    }
+  }
+  parts {
+    /* red selection box */
+    part {
+      name: "border";
+      type: RECT;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        color: 255 255 255 0;
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: 0 0;
+        }
+      }
+      description {
+        state: "over" 0.0;
+        inherit: "default" 0.0;
+        color: 255 0 0 255;
+      }
+    }
+    /* 2 standard backgrounds */
+    part {
+      name: "bg";
+      type: IMAGE;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        image {
+          normal: "grass.png";
+        }
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 1 1;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: -1 -1;
+        }
+      }
+      description {
+        state: "clean" 0.1;
+        inherit: "default" 0.0;
+        image {
+          normal: "sand.png";
+        }
+      }
+    }
+    /* end game: overlay all the board */
+    part {
+      name: "cover";
+      type: RECT;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        color: 0 0 0 0;
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 1 1;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: -1 -1;
+        }
+      }
+      description {
+        state: "grey" 0.1;
+        inherit: "default" 0.0;
+        color: 150 150 150 150;
+      }
+      description {
+        state: "lose" 0.2;
+        inherit: "default" 0.0;
+        color: 255 126 0 120;
+      }
+      description {
+        state: "win" 0.3;
+        inherit: "default" 0.0;
+        color: 0 0 0 0;
+      }
+    }
+    /* scenery objects layers */
+    part {
+      name: "flowers";
+      type: IMAGE;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        image {
+          normal: "empty.png";
+        }
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 1 1;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: -1 -1;
+        }
+      }
+      description {
+        state: "flowers" 0.1;
+        inherit: "default" 0.0;
+        image {
+          normal: "flowers.png";
+        }
+      }
+    }
+    part {
+      name: "mushrooms";
+      type: IMAGE;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        image {
+          normal: "empty.png";
+        }
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 1 1;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: -1 -1;
+        }
+      }
+      description {
+        state: "mushrooms" 0.1;
+        inherit: "default" 0.0;
+        image {
+          normal: "mushrooms.png";
+        }
+      }
+    }
+    part {
+      name: "stones";
+      type: IMAGE;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        image {
+          normal: "empty.png";
+        }
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 1 1;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: -1 -1;
+        }
+      }
+      description {
+        state: "stones" 0.1;
+        inherit: "default" 0.0;
+        image {
+          normal: "stones.png";
+        }
+      }
+    }
+    /* text that shows neighbours */
+    part {
+      name: "hint";
+      type: TEXT;
+      effect: SOFT_SHADOW;
+      scale: 1;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        color: 0 0 0 255;
+        color2: 255 255 255 140;
+        color3: 100 100 100 140;
+        text {
+          text: "";
+          font: "Sans";
+          size: 28;
+          align: 0.5 0.5;
+        }
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: 0 0;
+        }
+      }
+      /* change colours according to neighbours */
+#define CELL_TEXT_COLOR(State, Color)                                   \
+      description {                                                     \
+        state: State 0.1;                                               \
+        inherit: "default" 0.0;                                         \
+        color: Color;                                                   \
+        text.text: State;                                               \
+      }
+      CELL_TEXT_COLOR("1", 14 87 12 255);
+      CELL_TEXT_COLOR("2", 21 17 231 255);
+      CELL_TEXT_COLOR("3", 233 232 16 255);
+      CELL_TEXT_COLOR("4", 233 98 15 255);
+      CELL_TEXT_COLOR("5", 230 15 13 255);
+      CELL_TEXT_COLOR("6", 240 0 240 255);
+      CELL_TEXT_COLOR("7", 255 255 255 255);
+      CELL_TEXT_COLOR("8", 0 0 0 255);
+    }
+    /* flag/bomb/boom */
+    part {
+      name: "image";
+      type: IMAGE;
+      mouse_events: 0;
+      repeat_events: 0;
+      description {
+        state: "default" 0.0;
+        visible: 0;
+        image {
+          normal: "flag1.png";
+        }
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 1 1;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: -1 -1;
+        }
+      }
+      description {
+        state: "flag" 0.1;
+        inherit: "default" 0.0;
+        visible: 1;
+        image {
+          normal: "flag1.png";
+          tween: "flag2.png";
+          tween: "flag3.png";
+          tween: "flag4.png";
+        }
+      }
+      description {
+        state: "boom" 0.2;
+        inherit: "default" 0.0;
+        visible: 1;
+        image {
+          normal: "hole.png";
+          tween: "fire1.png";
+          tween: "fire2.png";
+          tween: "fire3.png";
+          tween: "fire4.png";
+          tween: "fire5.png";
+          tween: "fire6.png";
+          tween: "fire7.png";
+          tween: "fire8.png";
+          tween: "hole.png";
+        }
+      }
+      description {
+        state: "bomb" 0.3;
+        inherit: "default" 0.0;
+        visible: 1;
+        image {
+          normal: "bomb.png";
+        }
+      }
+    }
+    /* to detect mouse move */
+    part {
+      name: "overlay";
+      type: RECT;
+      description {
+        state: "default" 0.0;
+        color: 255 255 255 0;
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: 0 0;
+        }
+      }
+    }
+
+    programs {
+      /* show the nice red box on mouse over */
+      program {
+        signal: "mouse,in";
+        source: "overlay";
+        action: STATE_SET "over" 0.0;
+        target: "border";
+        transition: SINUSOIDAL 0.2;
+      }
+      program {
+        signal: "mouse,out";
+        source: "overlay";
+        action: STATE_SET "default" 0.0;
+        target: "border";
+        transition: SINUSOIDAL 0.7;
+      }
+      program {
+        signal: "reset";
+        action: STATE_SET "default" 0.0;
+        target: "flowers";
+        target: "mushrooms";
+        target: "image";
+        target: "cover";
+        target: "bg";
+        target: "hint";
+      }
+      program {
+        signal: "digg";
+        action: PLAY_SAMPLE "digg" 1.0;
+        after: "digg2";
+      }
+      program {
+        name: "digg2";
+        action: STATE_SET "default" 0.0;
+        target: "flowers";
+        target: "mushrooms";
+        after: "digg/bg";
+      }
+      program {
+        name: "digg/bg";
+        action: STATE_SET "clean" 0.0;
+        target: "bg";
+      }
+      program {
+        signal: "default";
+        action: STATE_SET "default" 0.0;
+        target: "image";
+      }
+      program {
+        signal: "flag";
+        action: PLAY_SAMPLE "flag" 1.0;
+        after: "flag2";
+      }
+      program {
+        name: "flag2";
+        action: STATE_SET "flag" 0.1;
+        transition: LINEAR 1.0;
+        target: "image";
+      }
+      program {
+        signal: "boom";
+        action: PLAY_SAMPLE "boom" 1.0;
+        after: "boom2";
+      }
+      program {
+        name: "boom2";
+        action: STATE_SET "boom" 0.2;
+        transition: LINEAR 2.0;
+        target: "image";
+      }
+#define CELL_STATE_SET(Signal, Target)                                  \
+      program {                                                         \
+        signal: Signal;                                                 \
+        action: STATE_SET Signal 0.3;                                   \
+        target: Target;                                                 \
+      }
+      CELL_STATE_SET("bomb", "image");
+      /* change colours */
+      CELL_STATE_SET("1", "hint");
+      CELL_STATE_SET("2", "hint");
+      CELL_STATE_SET("3", "hint");
+      CELL_STATE_SET("4", "hint");
+      CELL_STATE_SET("5", "hint");
+      CELL_STATE_SET("6", "hint");
+      CELL_STATE_SET("7", "hint");
+      CELL_STATE_SET("8", "hint");
+      /* scenery */
+      CELL_STATE_SET("flowers", "flowers");
+      CELL_STATE_SET("mushrooms", "mushrooms");
+      CELL_STATE_SET("stones", "stones");
+      /* win/lose */
+      program {
+        name: "grey";
+        signal: "grey";
+        action: STATE_SET "grey" 0.1;
+        target: "cover";
+      }
+      program {
+        signal: "lose";
+        action: STATE_SET "lose" 0.2;
+        target: "cover";
+        transition: BOUNCE 1.0 0.5 10.0;
+        after: "grey";
+      }
+      program {
+        signal: "win";
+        action: PLAY_SAMPLE "fanfare" 1.0;
+        after: "win2";
+      }
+      program {
+        name: "win2";
+        action: STATE_SET "win" 0.3;
+        target: "cover";
+        transition: LINEAR 3.0;
+      }
+    }
+  }
+}

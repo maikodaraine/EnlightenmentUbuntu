@@ -1,0 +1,95 @@
+# Galician translation for Elemines.
+# Copyright (C) 2013-2014 Jérôme Pinot
+# This file is distributed under the same license as the Elemines package.
+# Aníbal Garrido <khanyux@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: elemines 0.3\n"
+"Report-Msgid-Bugs-To: ngc891@gmail.com\n"
+"POT-Creation-Date: 2014-01-12 12:29+0900\n"
+"PO-Revision-Date: 2013-11-07 09:27+0100\n"
+"Last-Translator: Aníbal Garrido Hermo <khanyux@gmail.com>\n"
+"Language-Team: Galician <proxecto@trasno.net>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/gui.c:57
+msgid "High Scores"
+msgstr "Mellores puntuacións"
+
+#: src/gui.c:96 src/gui.c:383
+msgid "Configuration"
+msgstr "Configuración"
+
+#: src/gui.c:106
+#, c-format
+msgid "%.0f mines"
+msgstr "%.0f minas"
+
+#: src/gui.c:117
+#, c-format
+msgid ""
+"<b>Note:</b> default mine number is <b>%d</b> with scoring in <b>%s</b> "
+"category. If you change the mine number to something else, your score will "
+"be put in the <b>%s</b> category."
+msgstr ""
+"<b>Nota:</b> o número predefinido de minas é <b>%d</b> que puntúan na "
+"categoría <b>%s</b>. Se cambia o número de minas por calquera outro, a súa "
+"puntuación poñerase na categoría <b>%s</b>."
+
+#: src/gui.c:131 src/gui.c:161
+msgid "OK"
+msgstr "Aceptar"
+
+#: src/gui.c:146 src/gui.c:386
+msgid "About"
+msgstr "Acerca de"
+
+#: src/gui.c:150
+#, c-format
+msgid ""
+"<b>%s %s</b><br><br>%s<br><br>Pictures derived from Battle For Wesnoth:"
+"<br>http://www.wesnoth.org/<br>"
+msgstr ""
+"<b>%s %s</b><br><br>%s<br><br>Imaxes derivadas de \"Battle For Wesnoth\":"
+"<br>http://www.wesnoth.org/<br>"
+
+#: src/gui.c:381
+msgid "Refresh"
+msgstr "Anovar"
+
+#: src/gui.c:382
+msgid "Pause"
+msgstr "Pausa"
+
+#: src/gui.c:385
+msgid "Scores"
+msgstr "Puntuacións"
+
+#: src/gui.c:387
+msgid "Quit"
+msgstr "Saír"
+
+#: src/game.c:144
+#, c-format
+msgid "Score: %d"
+msgstr "Puntuación: %d"
+
+#: src/game.c:151
+msgid "High Score!!"
+msgstr "Puntuación máis alta!!"
+
+#: src/game.c:159
+msgid "You win!"
+msgstr "Ganaches!"
+
+#: src/elemines.h:56
+msgid "Standard"
+msgstr "Estándar"
+
+#: src/elemines.h:57
+msgid "Custom"
+msgstr "Personalizado"

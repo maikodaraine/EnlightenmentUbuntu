@@ -1,0 +1,20 @@
+color_classes {
+  color_class {
+    name: "standard";
+    color:    0   0   0 255;
+    color2: 150 150 150  80;
+    color3: 220 220 220  40;
+  }
+  color_class {
+    name: "win";
+    color:  255   0   0 255;
+    color2: 150 150 150  80;
+    color3: 220 220 220  40;
+  }
+  color_class {
+    name: "win2";
+    color:    0 255   0 255;
+    color2: 150 150 150  80;
+    color3: 220 220 220  40;
+  }
+}

@@ -1,0 +1,190 @@
+/* congratulation message */
+group {
+  name: "congratulation";
+  parts {
+    part {
+      name: "win bg";
+      type: RECT;
+      description {
+        state: "default" 0.0;
+        color: 0 0 0 0;
+        rel1 {
+          relative: 0.0 0.0;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 1.0 1.0;
+          offset: 0 0;
+        }
+      }
+      description {
+        state: "win" 0.1;
+        inherit: "default" 0.0;
+        color: 200 200 200 80;
+      }
+    }
+    part {
+      name: "sad bomb";
+      type: IMAGE;
+      description {
+        state: "default" 0.0;
+        image {
+          normal: "empty.png";
+        }
+        rel1 {
+          relative: 0.1 0.3;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 0.4 0.6;
+          offset: 0 0;
+        }
+      }
+      description {
+        state: "win" 0.1;
+        inherit: "default" 0.0;
+        aspect: 1.0 1.0;
+        image {
+          normal: "bomb-sad.png";
+        }
+      }
+    }
+    part {
+      name: "you win";
+      type: TEXT;
+      effect: SOFT_SHADOW;
+      scale: 1;
+      description {
+        state: "default" 0.0;
+        text {
+          text: "";
+        }
+        rel1 {
+          relative: 0.4 0.3;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 0.9 0.6;
+          offset: 0 0;
+        }
+      }
+      description {
+        state: "win" 0.1;
+        inherit: "default" 0.0;
+        color_class: "win";
+        text {
+          text: "You win!";
+          font: "Title";
+          size: 56;
+          align: 0.5 0.5;
+        }
+      }
+      description {
+        state: "win2" 0.2;
+        inherit: "win" 0.1;
+        color_class: "win2";
+      }
+    }
+    part {
+      name: "score";
+      type: TEXT;
+      effect: SOFT_SHADOW;
+      scale: 1;
+      description {
+        state: "default" 0.0;
+        text {
+          text: "";
+        }
+        rel1 {
+          relative: 0.4 0.5;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 0.9 0.6;
+          offset: 0 0;
+        }
+      }
+      description {
+        state: "win" 0.1;
+        inherit: "default" 0.0;
+        color_class: "win";
+        text {
+          text: "";
+          font: "Title";
+          size: 28;
+          align: 0.5 0.5;
+        }
+      }
+      description {
+        state: "win2" 0.2;
+        inherit: "win" 0.1;
+        color_class: "win2";
+      }
+    }
+    part {
+      name: "best score";
+      type: TEXT;
+      effect: SOFT_SHADOW;
+      scale: 1;
+      description {
+        state: "default" 0.0;
+        text {
+          text: "";
+          font: "Title";
+        }
+        rel1 {
+          relative: 0.1 0.7;
+          offset: 0 0;
+        }
+        rel2 {
+          relative: 0.9 0.9;
+          offset: 0 0;
+        }
+      }
+      description {
+        state: "win" 0.1;
+        inherit: "default" 0.0;
+      }
+      description {
+        state: "win2" 0.1;
+        inherit: "default" 0.0;
+        color_class: "win";
+        text {
+          text: "";
+          font: "Title";
+          size: 46;
+          align: 0.5 0.5;
+        }
+      }
+    }
+  }
+  programs {
+    program {
+      signal: "you win";
+      action: STATE_SET "win" 0.1;
+      target: "win bg";
+      target: "sad bomb";
+      target: "you win";
+      target: "score";
+      target: "best score";
+      after: "win2";
+    }
+    program {
+      name: "win2";
+      action: STATE_SET "win2" 0.2;
+      target: "you win";
+      target: "score";
+      target: "best score";
+      transition: BOUNCE 2 0 20;
+    }
+    program {
+      signal: "normal";
+      action: STATE_SET "default" 0.0;
+      target: "win bg";
+      target: "sad bomb";
+      target: "you win";
+      target: "score";
+      target: "best score";
+    }
+  }
+}

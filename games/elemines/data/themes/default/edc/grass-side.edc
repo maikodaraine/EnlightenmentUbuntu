@@ -1,0 +1,19 @@
+#define GRASS(Side)                                                     \
+group {                                                                 \
+  name: "grass/"Side;                                                   \
+  parts {                                                               \
+    part {                                                              \
+      type: IMAGE;                                                      \
+      mouse_events: 0;                                                  \
+      repeat_events: 0;                                                 \
+      description {                                                     \
+        image.normal: "grass-"Side".png";                               \
+        visible: 1;                                                     \
+      }                                                                 \
+    }                                                                   \
+  }                                                                     \
+}
+GRASS(e);
+GRASS(n);
+GRASS(s);
+GRASS(w);

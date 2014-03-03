@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Jérôme Pinot
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: elemines 0.3\n"
+"Report-Msgid-Bugs-To: ngc891@gmail.com\n"
+"POT-Creation-Date: 2014-01-12 12:29+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/gui.c:57
+msgid "High Scores"
+msgstr ""
+
+#: src/gui.c:96 src/gui.c:383
+msgid "Configuration"
+msgstr ""
+
+#: src/gui.c:106
+#, c-format
+msgid "%.0f mines"
+msgstr ""
+
+#: src/gui.c:117
+#, c-format
+msgid ""
+"<b>Note:</b> default mine number is <b>%d</b> with scoring in <b>%s</b> "
+"category. If you change the mine number to something else, your score will "
+"be put in the <b>%s</b> category."
+msgstr ""
+
+#: src/gui.c:131 src/gui.c:161
+msgid "OK"
+msgstr ""
+
+#: src/gui.c:146 src/gui.c:386
+msgid "About"
+msgstr ""
+
+#: src/gui.c:150
+#, c-format
+msgid ""
+"<b>%s %s</b><br><br>%s<br><br>Pictures derived from Battle For Wesnoth:"
+"<br>http://www.wesnoth.org/<br>"
+msgstr ""
+
+#: src/gui.c:381
+msgid "Refresh"
+msgstr ""
+
+#: src/gui.c:382
+msgid "Pause"
+msgstr ""
+
+#: src/gui.c:385
+msgid "Scores"
+msgstr ""
+
+#: src/gui.c:387
+msgid "Quit"
+msgstr ""
+
+#: src/game.c:144
+#, c-format
+msgid "Score: %d"
+msgstr ""
+
+#: src/game.c:151
+msgid "High Score!!"
+msgstr ""
+
+#: src/game.c:159
+msgid "You win!"
+msgstr ""
+
+#: src/elemines.h:56
+msgid "Standard"
+msgstr ""
+
+#: src/elemines.h:57
+msgid "Custom"
+msgstr ""

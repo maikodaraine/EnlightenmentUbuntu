@@ -1,0 +1,24 @@
+/* new icons for toolbar */
+#define ELM_ICON(Name)                                                  \
+group {                                                                 \
+  name: "elm/icon/"Name"/default";                                      \
+  alias: "elm/icon/toolbar/"Name"/default";                             \
+  min: 32 32;                                                           \
+  parts {                                                               \
+    part {                                                              \
+      name: "base";                                                     \
+      description {                                                     \
+        state: "default" 0.0;                                           \
+        aspect: 1.0 1.0;                                                \
+        aspect_preference: BOTH;                                        \
+        image.normal: Name".png";                                       \
+      }                                                                 \
+    }                                                                   \
+  }                                                                     \
+}
+ELM_ICON(refresh);
+ELM_ICON(pause);
+ELM_ICON(config);
+ELM_ICON(score);
+ELM_ICON(about);
+ELM_ICON(quit);

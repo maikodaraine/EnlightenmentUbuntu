@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Echo
+Name[eo]=Eĥo
+Name[fr]=Écho
+Comment=Game
+Comment[eo]=Ludo
+Comment[es]=Juego
+Comment[gl]=Xogo
+Comment[it]=Gioco
+Comment[pt]=Jogo
+Icon=e_cho
+Exec=e_cho
+Terminal=false
+Categories=Game;KidsGame;Enlightenment;

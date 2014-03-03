@@ -1,0 +1,84 @@
+.TH ELEMINES 1 "12 Jan 2014" "elemines 0.3"
+
+.SH NAME
+elemines \- a minesweeper clone based on the EFL
+
+.SH SYNOPSIS
+.B elemines
+[-d] [-f] [-t=THEME] [-m=MINES] [-L] [-C] [-V] [-h]
+
+.SH DESCRIPTION
+
+Elemines is a single-player video game. The object of the game is to clear
+an abstract minefield without detonating a mine. The game is played by revealing
+squares of the grid, by clicking them with a mouse. If a square containing a mine
+is revealed, you lose the game. Otherwise, a digit is revealed in the square,
+indicating the number of adjacent squares that contain mines.
+
+With no option, the program starts with a 10x10 grid and 12 mines to find.
+
+
+.SH CONTROLS
+
+.TP
+.B Left Mouse Button
+Reveal a square.
+
+.TP
+.B Right Mouse Button
+Add (or remove) a flag.
+
+.TP
+.B Middle Mouse Button
+Clear around a revealed square once the correct number of mines have been flagged around it.
+
+.SH OPTIONS
+
+.TP
+.B -d, --debug
+Turn on debugging.
+
+.TP
+.B -f, --fullscreen
+Run fullscreen. This is useful on mobile devices.
+
+.TP
+.B -t=THEME, --theme=THEME
+Use THEME.edj as theme file. Theme files should be in the $(pkgdatadir)/themes/ folder.
+Elemines provides `default' and `default-big'.
+
+.TP
+.B -m=MINES, --mines=MINES
+Specify the number of mines hidden in the field. MINES must be an integer smaller
+than the number of cells (100 for `default').
+
+.TP
+.B -L, --license
+Show license.
+
+.TP
+.B -C, --copyright
+Show copyright.
+
+.TP
+.B -V, --version
+Show program version.
+
+.TP
+.B -h, --help
+Print list of options with short description.
+
+
+.SH BUGS
+
+Reports are welcome.
+
+
+.SH HOMEPAGE
+
+http://elemines.sourceforge.net 
+
+
+.SH AUTHORS
+
+Jerome Pinot <ngc891@gmail.com> and various contributors.

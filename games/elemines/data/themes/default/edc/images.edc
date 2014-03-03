@@ -1,0 +1,37 @@
+images {
+  /* game pictures */
+  image: "bomb.png"      COMP;
+  image: "bomb-sad.png"  COMP;
+  image: "clock.png"     COMP;
+  image: "empty.png"     COMP;
+  image: "fire1.png"     COMP;
+  image: "fire2.png"     COMP;
+  image: "fire3.png"     COMP;
+  image: "fire4.png"     COMP;
+  image: "fire5.png"     COMP;
+  image: "fire6.png"     COMP;
+  image: "fire7.png"     COMP;
+  image: "fire8.png"     COMP;
+  image: "flag1.png"     COMP;
+  image: "flag2.png"     COMP;
+  image: "flag3.png"     COMP;
+  image: "flag4.png"     COMP;
+  image: "flowers.png"   COMP;
+  image: "grass.png"     COMP;
+  image: "grass-s.png"   COMP;
+  image: "grass-n.png"   COMP;
+  image: "grass-e.png"   COMP;
+  image: "grass-w.png"   COMP;
+  image: "hole.png"      COMP;
+  image: "mushrooms.png" COMP;
+  image: "sand.png"      COMP;
+  image: "sky.png"       COMP;
+  image: "stones.png"    COMP;
+  /* toolbar icons */
+  image: "refresh.png"   COMP;
+  image: "pause.png"     COMP;
+  image: "config.png"    COMP;
+  image: "score.png"     COMP;
+  image: "about.png"     COMP;
+  image: "quit.png"      COMP;
+}
