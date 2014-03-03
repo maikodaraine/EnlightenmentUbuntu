@@ -1,0 +1,516 @@
+  group {
+     name: "elm/panel/base/left";
+     images
+       {
+          image: "frame_label_over.png" COMP;
+          image: "button_up.png" COMP;
+          image: "button_down.png" COMP;
+          image: "button_disabled.png" COMP;
+          image: "button_glow.png" COMP;
+          image: "drag_glow.png" COMP;
+          image: "icon_arrow_left.png" COMP;
+          image: "icon_arrow_right.png" COMP;
+       }
+       data {
+          item: "focus_highlight" "on";
+       }
+     parts
+       {
+          part
+            {
+               name: "bg";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    color: 255 255 255 0;
+                    rel2.offset: -1 -1;
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    rel1.relative: -1.0 0.0;
+                    rel1.offset: 21 0;
+                    rel2.relative: 0.0 1.0;
+                    rel2.offset: 20 -1;
+                 }
+            }
+          part
+            {
+               name: "clipper";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1
+                      {
+                         offset: 4 4;
+                         to: "base";
+                      }
+                    rel2
+                      {
+                         offset: -5 -5;
+                         to: "base";
+                      }
+                 }
+            }
+          BUTTON_PART("button",
+           max: 32 48;
+           fixed: 1 1;
+           align: 0.0 0.5;
+           rel1
+             {
+                relative: 1.0 0.0;
+                offset: -2 0;
+                to_x: "base";
+             }
+           rel2.to_x: "bg";,
+          5 0 4 12)
+          BUTTON_GLOW_PART("button", 220)
+          FOCUS_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          DRAG_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          part
+            {
+               name: "button_icon";
+               type: IMAGE;
+               repeat_events: 1;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "button";
+                    rel2.to: "button";
+                    align: 0.5 0.5;
+                    min: 16 16;
+                    max: 16 16;
+                    image.normal: "icon_arrow_left.png";
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "icon_arrow_right.png";
+                 }
+            }
+          part
+            {
+               name: "base";
+               type: IMAGE;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "bg";
+                    rel2.to: "bg";
+                    rel2.offset: -20 -1;
+                    image
+                      {
+                         normal: "frame_label_over.png";
+                         border: 4 4 4 4;
+                      }
+                 }
+            }
+          part
+            {
+               name: "elm.swallow.content";
+               type: SWALLOW;
+               clip_to: "clipper";
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "clipper";
+                    rel2.to: "clipper";
+                 }
+            }
+          PART_EVENTS("button",)
+       }
+     PANEL_PROGRAMS
+  }
+
+  group {
+     name: "elm/panel/base/top";
+     images
+       {
+          image: "frame_label_over.png" COMP;
+          image: "button_up.png" COMP;
+          image: "button_down.png" COMP;
+          image: "button_disabled.png" COMP;
+          image: "button_glow.png" COMP;
+          image: "drag_glow.png" COMP;
+          image: "icon_arrow_up.png" COMP;
+          image: "icon_arrow_down.png" COMP;
+       }
+       data {
+          item: "focus_highlight" "on";
+       }
+     parts
+       {
+          part
+            {
+               name: "bg";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    color: 255 255 255 0;
+                    rel2.offset: -1 -1;
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    rel1.relative: 0.0 -1.0;
+                    rel1.offset: 0 -21;
+                    rel2.relative: 1.0 0.0;
+                    rel2.offset: -1 20;
+                 }
+            }
+          part
+            {
+               name: "clipper";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1
+                      {
+                         offset: 4 4;
+                         to: "base";
+                      }
+                    rel2
+                      {
+                         offset: -5 -5;
+                         to: "base";
+                      }
+                 }
+            }
+          BUTTON_PART("button",
+           max: 48 32;
+           align: 0.5 0.0;
+           rel1
+             {
+                relative: 0 1.0;
+                offset: 0 -6;
+                to_y: "base";
+             }
+           rel2.to_y: "bg";,
+          12 4 0 5)
+          BUTTON_GLOW_PART("button", 220)
+          FOCUS_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          DRAG_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          part
+            {
+               name: "button_icon";
+               type: IMAGE;
+               repeat_events: 1;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "button";
+                    rel2.to: "button";
+                    align: 0.5 0.5;
+                    min: 16 16;
+                    max: 16 16;
+                    image.normal: "icon_arrow_up.png";
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "icon_arrow_down.png";
+                 }
+            }
+          part
+            {
+               name: "base";
+               type: IMAGE;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "bg";
+                    rel2.to: "bg";
+                    rel2.offset: -1 -20;
+                    image
+                      {
+                         normal: "frame_label_over.png";
+                         border: 4 4 4 4;
+                      }
+                 }
+            }
+          part
+            {
+               name: "elm.swallow.content";
+               type: SWALLOW;
+               clip_to: "clipper";
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "clipper";
+                    rel2.to: "clipper";
+                 }
+            }
+          PART_EVENTS("button",)
+       }
+     PANEL_PROGRAMS
+  }
+
+  group {
+     name: "elm/panel/base/bottom";
+     images
+       {
+          image: "frame_label_over.png" COMP;
+          image: "button_up.png" COMP;
+          image: "button_down.png" COMP;
+          image: "button_disabled.png" COMP;
+          image: "button_glow.png" COMP;
+          image: "drag_glow.png" COMP;
+          image: "icon_arrow_up.png" COMP;
+          image: "icon_arrow_down.png" COMP;
+       }
+       data {
+          item: "focus_highlight" "on";
+       }
+     parts
+       {
+          part
+            {
+               name: "bg";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    color: 255 255 255 0;
+                    rel2.offset: -1 -1;
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    rel1.relative: 0.0 1.0;
+                    rel1.offset: -1 -24;
+                    rel2.relative: 1.0 2.0;
+                    rel2.offset: 0 -21;
+                 }
+            }
+          part
+            {
+               name: "clipper";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1
+                      {
+                         offset: 4 4;
+                         to: "base";
+                      }
+                    rel2
+                      {
+                         offset: -5 -5;
+                         to: "base";
+                      }
+                 }
+            }
+          BUTTON_PART("button",
+           max: 48 32;
+           fixed: 1 1;
+           align: 0.5 0.0;
+           rel1.to_y: "bg";
+           rel2.relative: 1.0 0.0;
+           rel2.offset: 0 5;
+           rel2.to_y: "base";,
+          4 12 5 0)
+          BUTTON_GLOW_PART("button", 220)
+          FOCUS_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          DRAG_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          part
+            {
+               name: "button_icon";
+               type: IMAGE;
+               repeat_events: 1;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "button";
+                    rel2.to: "button";
+                    align: 0.5 0.5;
+                    min: 16 16;
+                    max: 16 16;
+                    image.normal: "icon_arrow_down.png";
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "icon_arrow_up.png";
+                 }
+            }
+          part
+            {
+               name: "base";
+               type: IMAGE;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "bg";
+                    rel1.offset: -1 20;
+                    rel2.to: "bg";
+                    image
+                      {
+                         normal: "frame_label_over.png";
+                         border: 4 4 4 4;
+                      }
+                 }
+            }
+          part
+            {
+               name: "elm.swallow.content";
+               type: SWALLOW;
+               clip_to: "clipper";
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "clipper";
+                    rel2.to: "clipper";
+                 }
+            }
+          PART_EVENTS("button",)
+       }
+     PANEL_PROGRAMS
+  }
+
+  group {
+     name: "elm/panel/base/right";
+     images
+       {
+          image: "button_up.png" COMP;
+          image: "button_down.png" COMP;
+          image: "button_disabled.png" COMP;
+          image: "button_glow.png" COMP;
+          image: "drag_glow.png" COMP;
+          image: "frame_label_over.png" COMP;
+          image: "icon_arrow_left.png" COMP;
+          image: "icon_arrow_right.png" COMP;
+       }
+     parts
+       {
+          part
+            {
+               name: "bg";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    color: 255 255 255 0;
+                    rel2.offset: -1 -1;
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    rel1.relative: 1.0 0.0;
+                    rel1.offset: -22 0;
+                    rel2.relative: 2.0 1.0;
+                    rel2.offset: -23 -1;
+                 }
+            }
+          part
+            {
+               name: "clipper";
+               type: RECT;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1
+                      {
+                         offset: 4 4;
+                         to: "base";
+                      }
+                    rel2
+                      {
+                         offset: -5 -5;
+                         to: "base";
+                      }
+                 }
+            }
+          BUTTON_PART("button",
+            max: 32 48;
+            fixed: 1 1;
+            align: 1 0.5;
+            rel1.to_x: "bg";
+            rel2
+              {
+                 offset: 2 0;
+                 relative: 0.0 1.0;
+                 to_x: "base";
+              },
+          0 5 4 12)
+          BUTTON_GLOW_PART("button", 220)
+          FOCUS_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          DRAG_GLOW(0.0, 0.0, 0, 0, "button", 1.0, 1.0, -1, -1, "button")
+          part
+            {
+               name: "button_icon";
+               type: IMAGE;
+               repeat_events: 1;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "button";
+                    rel2.to: "button";
+                    align: 0.5 0.5;
+                    min: 16 16;
+                    max: 16 16;
+                    image.normal: "icon_arrow_right.png";
+                 }
+               description
+                 {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "icon_arrow_left.png";
+                 }
+            }
+          part
+            {
+               name: "base";
+               type: IMAGE;
+               mouse_events: 0;
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "bg";
+                    rel1.offset: 20 0;
+                    rel2.to: "bg";
+                    image
+                      {
+                         normal: "frame_label_over.png";
+                         border: 4 4 4 4;
+                      }
+                 }
+            }
+          part
+            {
+               name: "elm.swallow.content";
+               type: SWALLOW;
+               clip_to: "clipper";
+               description
+                 {
+                    state: "default" 0.0;
+                    rel1.to: "clipper";
+                    rel2.to: "clipper";
+                 }
+            }
+          PART_EVENTS("button",)
+       }
+     PANEL_PROGRAMS
+  }

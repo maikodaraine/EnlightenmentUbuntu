@@ -1,0 +1,230 @@
+color_classes {
+   color_class { name: "border_bg";
+      color: 0 0 0 255;
+   }
+   color_class { name: "border_title";
+      color: 200 200 200 255;
+   }
+   color_class { name: "border_title_active";
+      color: 255 255 255 255;
+   }
+   color_class { name: "menu_title";
+      color: 170 170 170 255;
+   }
+   color_class { name: "menu_title_active";
+      color: 190 190 190 255;
+   }
+   color_class { name: "menu_item";
+      color: 170 170 170 255;
+   }
+   color_class { name: "menu_item_active";
+      color: 220 220 220 255;
+   }
+   color_class { name: "menu_item_disabled";
+      color: 150 150 150 255;
+   }
+   color_class { name: "shelf_base";
+      color: 255 255 255 255;
+   }
+   color_class { name: "shelf_secondary_icon";
+      color: 170 170 170 255;
+   }
+   color_class { name: "pager_icon_selected";
+      color: 255 255 255 255;
+   }
+   color_class { name: "pager_icon_unselected";
+      color: 130 130 130 255;
+   }
+   color_class { name: "systray_overlay";
+      color: 0 0 0 30;
+   }
+   color_class { name: "scrollframe_base";
+      color: 255 255 0 255;
+   }
+   color_class { name: "battery_low";
+      color: 200 120 120 255;
+   }
+   // WinList
+   color_class { name: "winlist_label";
+      color: 255 255 255 255;
+   }
+   color_class { name: "winlist_item";
+      color: 170 170 170 255;
+   }
+   color_class { name: "winlist_item_active";
+      color: 220 220 220 255;
+   }
+   // Button
+   color_class { name: "button_text";
+      color: 224 224 224 255;
+   }
+   color_class { name: "button_text_over";
+      color: 255 255 255 255;
+   }
+   color_class { name: "button_text_disabled";
+      color: 70 70 70 255;
+   }
+   //File Manager
+   color_class { name: "fileman_base";
+      color: 255 255 255 255;
+   }
+   color_class { name: "fileman_icon_label";
+      color: 180 180 180 255;
+   }
+   color_class { name: "fileman_icon_label_selected";
+      color: 255 255 255 255;
+   }
+   //List
+   color_class { name: "list_item_base";
+      color: 0 0 0 255;
+   }
+   color_class { name: "list_item_header_base";
+      color: 0 0 0 255;
+   }
+   color_class { name: "list_item";
+      color: 180 180 180 255;
+   }
+   color_class { name: "list_item_selected";
+      color: 255 255 255 255;
+   }
+   color_class { name: "list_item_header";
+      color: 25 25 25 255;
+   }
+
+   color_class { name: "dialog_base";
+      color: 255 255 255 255;
+   }
+   color_class { name: "move_text";
+      color: 255 121 0 255;
+   }
+   color_class { name: "resize_text";
+      color: 255 121 0 255;
+   }
+   // Check
+   color_class { name: "check_text";
+      color: 128 128 128 255;
+   }
+   color_class { name: "check_text_disabled";
+      color: 70 70 70 255;
+   }
+   color_class { name: "check_mark";
+      color: 255 255 255 255;
+   }
+   color_class { name: "check_mark_disabled";
+      color: 70 70 70 255;
+   }
+   // Radio
+   color_class { name: "radio_text";
+      color: 128 128 128 255;
+   }
+   color_class { name: "radio_text_disabled";
+      color: 70 70 70 255;
+   }
+   color_class { name: "radio_mark";
+      color: 255 255 255 255;
+   }
+   color_class { name: "radio_mark_disabled";
+      color: 70 70 70 255;
+   }
+   // Scroller
+   color_class { name: "scroller_runner";
+      color: 50 50 50 255;
+   }
+   // Entry
+   color_class { name: "entry_text";
+      color: 0 0 0 255;
+   }
+   color_class { name: "entry_text_disabled";
+      color: 80 80 80 255;
+   }
+   // Slider
+   color_class { name: "slider_label";
+      color: 180 180 180 255;
+   }
+   color_class { name: "slider_enable";
+      color: 255 255 255 255;
+   }
+   color_class { name: "slider_disabled";
+      color: 150 150 150 255;
+   }
+   color_class { name: "slider_units";
+      color: 128 128 128 255;
+   }
+   color_class { name: "slider_indicator";
+      color: 180 180 180 255;
+   }
+   // Spinner
+   color_class { name: "spinner_text";
+      color: 220 220 220 255;
+   }
+   color_class { name: "spinner_text_disabled";
+      color: 150 150 150 255;
+   }
+   color_class { name: "slider_disable_clipper";
+      color: 80 80 80 255;
+   }
+   // Frame
+   color_class { name: "frame_title";
+      color: 180 180 180 255;
+   }
+   color_class { name: "label_text";
+      color: 128 128 128 255;
+   }
+   color_class { name: "label_text_disabled";
+      color: 70 70 70 128;
+   }
+   color_class { name: "comp_focus-out_color";
+      color: 180 180 180 255;
+   }
+   color_class { name: "clock_time";
+      color: 200 200 200 255;
+   }
+   color_class { name: "clock_date";
+      color: 100 100 100 255;
+   }
+   color_class { name: "battery_popup_text";
+      color: 180 180 180 255;
+   }
+   // Toolbar
+   color_class { name: "toolbar_text";
+      color: 180 180 180 255;
+      color2: 0 0 0 100;
+      color3: 0 0 0 100;
+   }
+   color_class { name: "toolbar_text_selected";
+      color: 224 224 224 255;
+      color2: 0 0 0 255;
+      color3: 0 0 0 255;
+   }
+   color_class { name: "toolbar_text_disabled";
+      color: 130 130 130 255;
+      color2: 0 0 0 255;
+      color3: 0 0 0 255;
+   }
+   // Index
+   color_class { name: "index_text";
+      color: 224 224 224 255;
+   }
+   color_class { name: "index_text_selected";
+      color: 255 255 255 255;
+   }
+   // Toggle
+   color_class { name: "toggle_text";
+      color: 180 180 180 255;
+   }
+   color_class { name: "toggle_disable_clipper";
+      color: 80 80 80 255;
+   }
+   color_class { name: "toggle_text_on";
+      color: 224 224 224 255;
+   }
+   color_class { name: "toggle_text_on_disabled";
+      color: 70 70 70 255;
+   }
+   color_class { name: "toggle_text_off";
+      color: 224 224 224 255;
+   }
+   color_class { name: "toggle_text_off_disabled";
+      color: 70 70 70 255;
+   }
+}

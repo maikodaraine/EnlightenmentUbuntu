@@ -1,0 +1,13 @@
+#define THEME_NAME "Efenniht"
+#define THEME_VERSION "0.2"
+#define THEME_LICENSE "GPL"
+#define THEME_AUTHOR "ProFUSION Embedded Systems"
+
+
+
+data {
+   item: "theme/name"    THEME_NAME;
+   item: "theme/version" THEME_VERSION;
+   item: "theme/license" THEME_LICENSE;
+   item: "theme/author"  THEME_AUTHOR;
+}

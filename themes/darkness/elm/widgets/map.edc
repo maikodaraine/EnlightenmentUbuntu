@@ -1,0 +1,253 @@
+   group { name: "elm/map/marker/radio/default";
+        data {
+            item: size_w 24;
+            item: size_h 24;
+            item: size_max_w 58;
+            item: size_max_h 58;
+        }
+        images {
+                image: "map_item.png" COMP;
+        }
+        parts {
+            part { name: "whole";
+                type: RECT;
+                description { state: "default" 0.0;
+                }
+            }
+            part { name: "base";
+                ignore_flags: ON_HOLD;
+                description { state: "default" 0.0;
+                    image.normal: "map_item.png";
+                }
+            }
+            part { name: "elm.icon";
+                type: SWALLOW;
+                clip_to: "whole";
+                mouse_events:  0;
+                description { state: "default" 0.0;
+                    rel1.relative: 0.27 0.27;
+                    rel2.relative: 0.73 0.73;
+                }
+            }
+            part { name: "elm.text";
+                type:          TEXT;
+                effect:        SOFT_SHADOW;
+                mouse_events:  0;
+                scale: 1;
+                description { state: "default" 0.0;
+                    align:    0.5 0.5;
+                    color: 224 224 224 255;
+                    color3: 0 0 0 64;
+                    rel1.relative: 0.28 0.25;
+                    rel2.relative: 0.75 0.75;
+                    text {
+                        font:     "Sans";
+                        size:     10;
+                        min:      0 0;
+                        align:    0.5 0.5;
+                    }
+                }
+            }
+       }
+       programs {
+            program { name: "open";
+                signal: "mouse,clicked,1";
+                source: "base";
+                action: SIGNAL_EMIT "open" "elm";
+            }
+            program { name: "bringin";
+                signal: "mouse,down,1,double";
+                source: "base";
+                action: SIGNAL_EMIT "bringin" "elm";
+            }
+       }
+   }
+   group { name: "elm/map/marker/radio2/default";
+        data {
+            item: size_w 24;
+            item: size_h 24;
+            item: size_max_w 58;
+            item: size_max_h 58;
+        }
+        images {
+                image: "map_item_2.png" COMP;
+        }
+        parts {
+            part { name: "base";
+                ignore_flags: ON_HOLD;
+                description { state: "default" 0.0;
+                    image.normal: "map_item_2.png";
+                }
+            }
+            part { name: "elm.text";
+                type:          TEXT;
+                effect:        SOFT_SHADOW;
+                mouse_events:  0;
+                scale: 1;
+                description { state: "default" 0.0;
+                    align:    0.5 0.5;
+                    color: 224 224 224 255;
+                    color3: 0 0 0 64;
+                    rel1.relative: 0.28 0.25;
+                    rel2.relative: 0.75 0.75;
+                    text {
+                        font:     "Sans";
+                        size:     10;
+                        min:      0 0;
+                        align:    0.5 0.5;
+                    }
+                }
+            }
+       }
+       programs {
+            program { name: "open";
+                signal: "mouse,clicked,1";
+                source: "base";
+                action: SIGNAL_EMIT "open" "elm";
+            }
+            program { name: "bringin";
+                signal: "mouse,down,1,double";
+                source: "base";
+                action: SIGNAL_EMIT "bringin" "elm";
+            }
+       }
+   }
+   group { name: "elm/map/marker/empty/default";
+        data {
+            item: size_w 22;
+            item: size_h 22;
+            item: size_max_w 64;
+            item: size_max_h 64;
+        }
+        parts {
+            part { name: "whole";
+                type: RECT;
+                description { state: "default" 0.0;
+                }
+            }
+            part { name: "base";
+                ignore_flags: ON_HOLD;
+                description { state: "default" 0.0;
+                }
+            }
+            part { name: "elm.icon";
+                type: SWALLOW;
+                clip_to: "whole";
+                mouse_events:  0;
+                description { state: "default" 0.0;
+                }
+            }
+            part { name: "elm.text";
+                type:          TEXT;
+                effect:        SOFT_SHADOW;
+                mouse_events:  0;
+                scale: 1;
+                description { state: "default" 0.0;
+                    align:    0.5 0.5;
+                    color: 224 224 224 255;
+                    color3: 0 0 0 64;
+                    rel1.relative: 0.28 0.25;
+                    rel2.relative: 0.75 0.75;
+                    text {
+                        font:     "Sans";
+                        size:     10;
+                        min:      0 0;
+                        align:    0.5 0.5;
+                    }
+                }
+            }
+       }
+       programs {
+            program { name: "open";
+                signal: "mouse,clicked,1";
+                source: "base";
+                action: SIGNAL_EMIT "open" "elm";
+            }
+            program { name: "bringin";
+                signal: "mouse,down,1,double";
+                source: "base";
+                action: SIGNAL_EMIT "bringin" "elm";
+            }
+       }
+   }
+   group { name: "elm/map/marker_bubble/default";
+    images {
+      image: "bubble.png" COMP;
+      image: "bubble_shine.png" COMP;
+    }
+    data {
+            item: size_w 400;
+            item: size_h 100;
+        }
+    parts {
+    part { name: "clipper";
+        type: RECT;
+        mouse_events:  1;
+        description { state: "default" 0.0;
+          color: 255 255 255 0;
+        }
+        description { state: "show" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 255;
+        }
+      }
+     part { name: "base0";
+        mouse_events:  0;
+        clip_to: "clipper";
+        description { state: "default" 0.0;
+          image {
+            normal: "bubble.png";
+            border: 11 36 10 19;
+          }
+          image.middle: SOLID;
+          fill.smooth: 0;
+        }
+        description { state: "rtl" 0.0;
+           inherit: "default" 0.0;
+           image {
+              normal: "bubble_4.png";
+              border: 11 36 18 9;
+           }
+        }
+      }
+      part { name: "elm.swallow.content";
+        type: SWALLOW;
+        clip_to: "clipper";
+        description { state: "default" 0.0;
+            align: 0.5 0.5;
+          rel1 {
+            offset: 9 8;
+          }
+          rel2 {
+            offset: -10 -17;
+          }
+        }
+      }
+      part { name: "shine";
+        mouse_events:  0;
+        clip_to: "clipper";
+        description { state:    "default" 0.0;
+          rel1 {
+            to: "base0";
+          }
+          rel2 {
+            to: "base0";
+            relative: 1.0 0.5;
+          }
+          image {
+            normal: "bubble_shine.png";
+            border: 5 5 5 0;
+          }
+          fill.smooth: 0;
+        }
+        }
+    }
+    programs {
+        program { name: "show";
+            signal: "show";
+            action: STATE_SET "show" 0.0;
+            target: "clipper";
+            transition: ACCELERATE 0.5;
+        }
+    }
+  }
