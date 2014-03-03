@@ -1,0 +1,14 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+modules=@libdir@/ecore
+module_arch=@MODULE_ARCH@
+
+Name: ecore
+Description: Ecore event abstraction library
+Requires.private: @requirements_pc_ecore@
+Version: @VERSION@
+Libs: -L${libdir} -lecore
+Libs.private: @requirements_libs_ecore@
+Cflags: -I${includedir}/efl-@VMAJ@ -I${includedir}/ecore-@VMAJ@
